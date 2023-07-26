@@ -1,0 +1,481 @@
+//function
+function myfunc(x, y) {
+    return (x + y)/2
+}
+// console.log(myfunc(8,9))
+// let a=3;
+// let b=4;
+// let c=4;
+// let x=4;
+// let y=4;
+const sum = (a, b) => {
+    return a + b;
+}
+// console.log(sum(x,y))
+
+//function is a block of code designed to perform a particular task
+//A JavaScript function is executed when "something" invokes it (calls it).
+//Function parameters are listed inside the parentheses () in the function definition.
+// Function arguments are the values received by the function when it is invoked.
+// Inside the function, the arguments (the parameters) behave as local variables.
+// Function return value is the value returned by the function when it is executed.
+
+const helloa=()=>{ 
+console.log("Hey how are you?")
+return "Soumya"  
+}
+// helloa();
+// const e = helloa();
+// console.log(e)
+
+// Synchronous Programming
+// Synchronous means the code runs in a particular sequence of instructions given in the program. Each instruction waits for the previous instruction to complete its execution.
+
+// let a =prompt("What is your name")
+// let b =prompt("What is your age")
+// let c =prompt("What is your fav color")
+// console.log(a+" "+"is"+" "+b+" "+"years old has"+" "+c+" "+"favorite color")
+
+//Asynchronous Function:Which we initiate now and they finish later...
+//Instructions in asynchronous code can execute in parallel.
+//Next operation can occur while the previous operation is still getting processed.
+
+// console.log("Start`")
+// setTimeout(() => {
+//     console.log("Hey I am Good")
+// }, 3000);
+// console.log("End");
+
+//CallBack Function:It is a function passed into another function as an arguement,which is then invoked inside the outer function to complete an action
+const funcA = () => {
+    setTimeout(() => {
+        console.log(`Welcome funcA`)
+        funcB();
+    }, 3000);
+}
+const funcB = () => {
+    console.log(`Welcome funcB`)
+}
+// funcA();
+
+
+const personOne = (friend, callFriend) => {
+    console.log(`I am Busy right now.I am talking to ${friend}.i will call you back`);
+    callFriend();
+}
+const personTwo = () => {
+    console.log(`hey Whats Up.I call back you dekha.`)
+}
+
+// personOne("Thapa", personTwo);
+
+//Pass By Value vrs Pass By Reference
+//Passed BY Value:primitive data type
+// eg1:
+// let a = 5;
+// let b = a;
+// b = b + 5;
+// console.log(b);
+//Passed By Reference:Nonprimitive Data type eg: objects,array
+const obj1 = {
+    user: "soumya",
+    pass: "password"
+}
+// const obj2 = obj1;
+const obj2= Object.assign({},obj1)
+
+obj2.pass = "Param" //Change the value in both objects if you dont use Object.assign({},objectname) method
+
+// console.log(obj1)
+// console.log(obj2)
+// eg2:
+const arr1 = [1, 2, 3, 4];
+// const arr2 = arr1;
+// if you want to change arr2 only then use this syntax
+const arr2=[].concat(arr1) 
+//The concat() method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.
+arr2.push(6, 7);
+// console.log(arr1);
+// console.log(arr2);
+
+//Concat()
+const hello = "Hello,";
+// console.log(hello.concat("Kevin", ". Have a nice day."));
+
+const greetList = ["Hello", " ", "Venkat", "!"];
+// console.log("".concat(...greetList))
+
+// const subject =["math","",sociology","science","eng"]
+// console.log("".concat(...subject))
+
+// "".concat({}); // "[object Object]"
+// "".concat([]); // ""
+// "".concat(null); // "null"
+// "".concat(true); // "true"
+// "".concat(4, 5); // "45"
+
+//what is call back hell?
+//callback hell is essentilly nested callbacks stacked below one another forming a pyramid structure.
+//every calbacks depands/waits for the previous callbacks,thereby making a pyramid structure that 
+//affects the readability and maintainability of the code.
+//1:get student roll no after 2s
+//2:get name and age  after 2s
+//3:get gender after 2s
+const getrollno = () => {
+    setTimeout(()=>{
+        console.log("Api getting roll no")
+        let roll_no=[1,2,3,4,5];
+        console.log(roll_no)
+
+        setTimeout((roll_no)=>{
+            const biodata={
+                name:"soumya",
+                age:23
+            }
+            console.log(`my roll no ${roll_no} is name is ${biodata.name} and age is ${biodata.age}`)
+
+            setTimeout((name) => {
+                biodata.gender="male";
+                console.log(`My gender is ${biodata.gender}`)
+            },2000,biodata.name);
+        },2000,roll_no[1])
+    },2000)
+}
+// getrollno();
+
+//Promises
+//Promises are used to handel asynchronous operation in java script .they are easy to manage when dealing with multiple asynchronus operations where call backs can creat callback hell leading to unmanagable code.
+//A promise ia an object that keep tack about wheather a certain event has happened already or not
+//Determines what happens after the events has happend.
+//Promises are 3 stages
+// 1.pending
+// 2.resolve
+// 3.reject
+//executer function
+//Pomise producing
+const pob1 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        let roll_no = [1, 2, 3, 4, 5];
+        resolve(roll_no);
+        reject('Error While Communicating')
+    }, 2000);
+});
+//Promises consumes
+pob1.then((rollno) => {
+    // console.log(rollno);
+}).catch((error) => {
+    // console.log(error);
+})
+
+const getBiodataa = (indexdata) => {
+    return new Promise((resolve, reject) => {
+        setTimeout((indexdata) => {
+            const biodata = {
+                name: 'vinod',
+                age: 24,
+            }
+            resolve(`My roll no is ${indexdata}.my name is ${biodata.name} and I am ${biodata.age} years Old`)
+        }, 2000, indexdata);
+    })
+}
+
+pob1.then((rollno) => {
+    // console.log(rollno);
+    getBiodataa(rollno[1]).then((kuchbhi)=>{
+        // console.log(kuchbhi);
+    })
+}).catch((error) => {
+    // console.log(error);
+})
+
+//eg2
+const sum1 =new Promise((resolve, reject) => {
+    let a = 2*2;
+    if(a==4){
+        resolve("correct")
+    }
+    else{
+        reject("wrong")
+    }
+})
+// sum1.then((message)=>{
+//     console.log("ans is:"+message)
+// }).catch((error)=>{
+//     console.log("ans is:"+mesage)
+// })
+//extra added async and await
+// async function result(){
+//     try{
+//         const o1=await sum1;
+//     console.log(o1)
+// }catch (error) {
+//         console.log(error)
+// }  
+// }
+// result();
+
+//Async and Await
+//There's is  special syntax to work with promises in a more comfortable fashion,call "Async/await". it is surprisingly easy to understand and use.
+//The Word 'async' before a function means one simple thing: a function always returns a promise.
+//so the async keyword is added to functions to tell them to return a promise rather than directly returning the value.
+//we can use await when calling any function that returns a promise,including webAPI functions.
+//The keywords await makes javascript wait until that promises settels and returns its result.
+
+const pobj1 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        let roll_no = [1, 2, 3, 4, 5];
+        resolve(roll_no);
+        reject('Error While Comunicating')
+    }, 2000);
+});
+const getBiodata = (indexdata) => {
+    return new Promise((resolve, reject) => {
+        setTimeout((indexdata) => {
+            const biodata = {
+                name: 'vinod',
+                age: 24,
+            }
+            resolve(`My roll no is ${indexdata}.my name is ${biodata.name} and I am ${biodata.age} years Old`)
+            reject("data is not found")
+        }, 2000, indexdata);
+    })
+}
+async function getData(){
+    const rollnodata =await pobj1;
+    // console.log(rollnodata)
+    
+    const biodatas=await getBiodata(rollnodata[1]);
+    // console.log(biodatas);
+}
+getData();
+
+//MAP(),FIlTER(),REDUCE()
+//foreach Loop:Array Methods:CAlls a function,once for each array element
+const a1 =[2,23,5,7,28,34]
+a1.forEach((value,index,array)=>{
+// console.log(`${index}=${value} ${array}`)
+});
+
+//hence forEach() method does not return a new array, whereas the map() method returns a new array. The map() method is used to transform the elements of an array, whereas the forEach() method is used to loop through the elements of an array.
+//MAP():Creating a new array by performing some operations on each array element
+let d =a1.map((value,index,array)=>{
+    // console.log(value,index,array)
+    return value+1;
+})
+// console.log(d)
+// let arr3=[{
+//     name:"John",age:20},
+//      {name:'Jane', age:26}
+//     ]
+//    let f= arr3.map((value,index,array)=>{
+//        if(value.age === 20){
+//         return {...value,name:"rahul"}
+//        }
+//        return value;
+//     });
+    // console.log(f)
+//Filter():Filters am array with values that passes a test creat a new array
+let h =a1.filter((value)=>{
+    return value>7;
+})
+// console.log(h)
+//Reduce():reduce an array to A single value
+let k = a1.reduce((h1,h2)=>{
+    return h1+h2;
+})
+// console.log(k)
+//From(): Used to creat an array from any other object
+let j = Array.from("Soumya Ranjan Behera")
+// console.log(j)
+//For...of:To get values from an array
+for(let i of a1){
+    // console.log(i)
+}
+//For...in:To get indexs from an array
+for(let i in a1){
+    // console.log(i) 
+}
+
+//What is Middlewire?
+//1.it's a function that will have all the access for requesting an object and respond to an object,and moving to the next midllewire function in the application request-respose cycle.
+//2.send the response to the server before requesting.
+
+//What is event Emmiter?
+// module that facilitates communication/interaction between objects in Node
+//it is pattern that listen a named event,fires a callback,then emits the event with value
+
+//What is REPL?(Read Evaluate Print Loop)
+//It's an interactive shell that processes Node.js expressions. 
+//The shell reads JavaScript code which the user enters, evaluates the result of interpreting the line of code, prints the result to the user, and loops continues until the user signals to quit.
+
+//What is EventLoop?
+//JavaScript has a runtime model based on an event loop, which is responsible for executing the code, collecting and processing events, and executing queued sub-tasks.
+//This model is quite different from models in other languages like C and Java.
+
+//What is Clouser?
+//A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment).
+//What is Hoisting?
+//Hoisting is the default behaviour of javascript where all the variables and function declairation are moved to the top
+// const object=()=>{
+//     console.log("Soumya is a good boy")
+// }
+// object();
+
+//Explain “this” keyword.
+//The “this” keyword refers to the object that the function is a property of.
+var di = {
+    name:"Soumya",
+    getname: function(){
+        console.log(this.name)
+    }
+}
+// di.getname();
+
+// var obj3 = {
+//     name:"Soumya",
+//     getname: function(){
+//         console.log(this.name)
+//     }
+// }
+// var getname=obj3.getname;
+// var obj4={
+//     name:"Akshya",
+//     getname
+// }
+// obj4.getname()
+
+//Explain call(), apply() and, bind() methods.
+//CAll():
+// It’s a predefined method in javascript.
+// This method invokes a method (function) by specifying the owner object.
+//call() method allows an object to use the method (function) of another object
+// eg:1 
+// function hey(){
+// console.log("Hello"+this.name)
+// }
+// let obj3={
+//     name:"harry"
+// } 
+// return helloharry
+// hey.call(obj3)
+// eg:2 
+var person = {
+    age: 23,
+    getAge: function(){
+    console.log(this.age);
+    }
+    }
+    var person2 = {age: 54};
+    // person.getAge.call(person2);
+// Returns 54
+//eg:3  
+// function saySomething(message){
+//     console.log(this.name + " is " + message) ;
+//     }
+//     var person4 = {name: "John"};
+    // saySomething.call(person4, "awesome");
+// Returns "John is awesome"
+
+//APPLY():
+//call() method takes arguments separately whereas, apply() method takes
+//arguments as an array.
+function saySomething(message){
+console.log(this.name + " is " + message) ;
+}
+var person4 = {name: "John"};
+// saySomething.apply(person4, ["awesome"]);
+//BIND():
+// This method returns a new function, where the value of “this” keyword will be
+// bound to the owner object, which is provided as a parameter.
+var bikeDetails = {
+    displayDetails: function(registrationNumber,brandName){
+    return this.name+ " , "+ "bike details: "+ registrationNumber + " , " + brandName;
+    }
+    }
+    var person1 = {name: "Vivek"};
+    var detailsOfPerson1 = bikeDetails.displayDetails.bind(person1, "TS0122", "Bullet");
+    // Binds the displayDetails function to the person1 object
+    detailsOfPerson1();
+    // console.log(detailsOfPerson1())
+    // Returns Vivek, bike details: TS0452, Thunderbird
+
+//What is Curring in javascript 
+//currying is an advanced technique to transform a function of arguments n, to n
+// functions of one or fewer arguments.
+
+//function multiply(a,b){
+// return a*b;
+// }
+// function currying(fn){
+// return function(a){
+// return function(b){
+// return fn(a,b);
+// }
+// }
+// }
+// var curriedMultiply = currying(multiply);
+// multiply(4, 3); // Returns 12
+// curriedMultiply(4)(3); // Also returns 12
+
+//Explain Scope and Scope Chain in javascript.
+// There are three types of scopes in JS:
+// Global Scope
+// Local or Function Scope
+// Block Scope
+
+// Mention some advantages of javascript.
+// There are many advantages of javascript. Some of them are
+// 1. Javascript is executed on the client-side as well as server-side also. There are a
+// variety of Frontend Frameworks that you may study and utilize. However, if you
+// want to use JavaScript on the backend, you'll need to learn NodeJS. It is
+// currently the only JavaScript framework that may be used on the backend.
+// 2. Javascript is a simple language to learn.
+// 3. Web pages now have more functionality because of Javascript.
+// 4. To the end-user, Javascript is quite quick.
+
+//Types OF error in javascript
+// Syntax error: Syntax errors are mistakes or spelling problems in the code that
+// cause the program to not execute at all or to stop running halfway through.
+// Error messages are usually supplied as well.
+// 2. Logical error: Reasoning mistakes occur when the syntax is proper but the logic
+// or program is incorrect. The application executes without problems in this case.
+// However, the output findings are inaccurate. These are sometimes more difficult
+// to correct than
+
+//What is the use of a constructor function in javascript?
+//Constructor functions are used to create objects in javascript.
+//If we want to create multiple objects having similar properties and methods,
+// constructor functions are used.
+// function Person(name,age,gender){
+    // this.name = name;
+    // this.age = age;
+    // this.gender = gender;
+    // }
+    // var person1 = new Person("Vivek", 76, "male");
+    // console.log(person1);
+
+//What is DOM?
+//DOM stands for Document Object Model. DOM is a programming interface for
+// HTML and XML documents.
+// When the browser tries to render an HTML document, it creates an object based
+// on the HTML document called DOM. Using this DOM, we can manipulate or
+// change various elements inside the HTML document.
+
+//hoisting
+y=8;
+// console.log(y)
+var y;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
