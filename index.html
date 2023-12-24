@@ -1,35 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice</title>
 </head>
+
 <body>
-    <h1>Printing Star pattern</h1>
-    <script>
-        for(let i=1;i<=5;i++){
-            for(let j=1;j<=i;j++){
+
+    <h1 style="color: blue;">Soumya takes H<sub>2</sub>SO<sub>4</sub> in daily basis</h1>
+    <h1 style="color: blueviolet;">Also he is&nbsp;&lt; 1<sup>st</sup> in the <em>running</em>  <mark>cut this word</mark> competition</h1>
+    <a href="facebook.com" target="_blank">facebook</a>
+    <a href="facebook.com" target="_parent">facebook</a>
+    <a href="facebook.com" target="_self">facebook</a>
+    <a href="facebook.com" target="_top">facebook</a>
+    <!-- accept attribute is used with only input type=file,it controls which type of file ,user can pick,when trying to select files for uploading to server -->
+    <input type="file" accept=".jpg .jpeg .printing">
+    <!-- Download attribute is used with anchor element,when present it make sure to download the file link added in href instead of opening in navigatating -->
+    <a href="cv.pdf" download="cv.pdf">Download Here</a>
+    <!-- used to specify content about the image,the content is visible when the image link is broken -->
+    <img src="img.png" alt="A beautiful image">
+    <!-- makes any html element editable  -->
+    <div contenteditable="true">Click here to edit</div>
+    <!-- used with input tag to enable and disable spell checking by the browser -->
+    <input type="text" spellcheck="true" placeholder="write something">
+    <!-- you can use the title attribute to provide additional information about an element.tis information is displayed asa tooltip after some delay,when the user hovers over the element -->
+    <a href="cv.pdf" title="Click here to Navigate">My Cv</a>
+    <!-- allows Multiple section of files and options from dropsown list -->
+    <input type="file" multiple>
+    <select multiple>
+        <option value="JS">Js</option>
+        <option value="react">React</option>
+        <option value="Angular">Angular</option>
+    </select>
+    <!-- used to input controls,it prevents any interaction to the input control,if present,the input control can not be edited -->
+    <input type="text" value="This is readonly" readonly>
+
+    <!-- <h1>Printing Star pattern</h1> -->
+    <!-- <h1>Printing Star pattern</h1> -->
+    <!-- <h1>Printing Star pattern</h1> -->
+    <!-- <script>
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= i; j++) {
                 document.write("*")
             }
             document.write("<br/>")
         }
-       
-let i,j,k,n=5;
-for(i=1;i<=n;i++){
-    // for printing spaces
-// for(k=1;k=n-i;k++){
-//     document.write("")
-// }
-// for printing stars
-for(j=1;j<=i;j++){
-    document.write("*")
-}
-document.write("<br/>")
-}
+        
+        const getoddno = (start, end) => {
+        oddno = []
+        for (let i = start; i <= end; i++) {
+            if (i % 2 != 0) {
+                    oddno.push(i)
+                }
+            }
+            return oddno;
+        };
+        const result = getoddno(1, 50);
+        console.log(result)
 
-    </script>
+        for (let i = 1; i <= 30; i++) {
+                if (i % 2 != 0) {
+                    document.write(i+"</br>")
+                }
+            }
+
+        let i, j, k, n = 5;
+        for (i = 1; i <= n; i++) {
+            // for printing spaces
+            // for(k=1;k=n-i;k++){
+            //     document.write("")
+            // }
+            // for printing stars
+            for (j = 1; j <= i; j++) {
+                document.write("*")
+            }
+            document.write("<br/>")
+        }
+
+    </script> -->
 </body>
 <!-- <script src="./practice.js"></script> -->
+<script src="./instapractice.js"></script>
+
 </html>

@@ -1,16 +1,22 @@
+//what is javascript
+//it is a scripting language that enables you to creat a dynamically updated content,control multimedia,animated images etc... and not only it uses in browser but also you can use it in server.
+
+//what is nodejs
+//node js is the runtime environment of javascript used to build the scalable application and it can run in multiple os,and it is asynchoronous in nature.
+
 //function
 function myfunc(x, y) {
-    return (x + y)/2
+  return (x + y) / 2;
 }
-// console.log(myfunc(8,9))
+// console.log(myfunc(8,5))
 // let a=3;
 // let b=4;
 // let c=4;
 // let x=4;
 // let y=4;
 const sum = (a, b) => {
-    return a + b;
-}
+  return a + b;
+};
 // console.log(sum(x,y))
 
 //function is a block of code designed to perform a particular task
@@ -20,20 +26,21 @@ const sum = (a, b) => {
 // Inside the function, the arguments (the parameters) behave as local variables.
 // Function return value is the value returned by the function when it is executed.
 
-const helloa=()=>{ 
-console.log("Hey how are you?")
-return "Soumya"  
-}
+const helloa = () => {
+  console.log("Hey how are you?");
+  return "Soumya";
+};
 // helloa();
 // const e = helloa();
 // console.log(e)
 
 // Synchronous Programming
 // Synchronous means the code runs in a particular sequence of instructions given in the program. Each instruction waits for the previous instruction to complete its execution.
+// const prompt = require("prompt-sync")();
 
-// let a =prompt("What is your name")
-// let b =prompt("What is your age")
-// let c =prompt("What is your fav color")
+// let a = prompt("What is your name")
+// let b = prompt("What is your age")
+// let c = prompt("What is your fav color")
 // console.log(a+" "+"is"+" "+b+" "+"years old has"+" "+c+" "+"favorite color")
 
 //Asynchronous Function:Which we initiate now and they finish later...
@@ -47,25 +54,26 @@ return "Soumya"
 // console.log("End");
 
 //CallBack Function:It is a function passed into another function as an arguement,which is then invoked inside the outer function to complete an action
-const funcA = () => {
-    setTimeout(() => {
-        console.log(`Welcome funcA`)
-        funcB();
-    }, 3000);
+function funcA(system) {
+  setTimeout(() => {
+    console.log(`Welcome funcA`);
+    system();
+  }, 3000);
 }
-const funcB = () => {
-    console.log(`Welcome funcB`)
-}
-// funcA();
-
+const func = () => {
+  console.log(`Welcome funcB`);
+};
+// funcA(func);
 
 const personOne = (friend, callFriend) => {
-    console.log(`I am Busy right now.I am talking to ${friend}.i will call you back`);
-    callFriend();
-}
+  console.log(
+    `I am Busy right now.I am talking to ${friend}.i will call you back`
+  );
+  callFriend();
+};
 const personTwo = () => {
-    console.log(`hey Whats Up.I call back you dekha.`)
-}
+  console.log(`hey Whats Up.I call back you dekha.`);
+};
 
 // personOne("Thapa", personTwo);
 
@@ -78,21 +86,20 @@ const personTwo = () => {
 // console.log(b);
 //Passed By Reference:Nonprimitive Data type eg: objects,array
 const obj1 = {
-    user: "soumya",
-    pass: "password"
-}
+  user: "soumya",
+  pass: "password",
+};
 // const obj2 = obj1;
-const obj2= Object.assign({},obj1)
+const obj2 = Object.assign({}, obj1);
 
-obj2.pass = "Param" //Change the value in both objects if you dont use Object.assign({},objectname) method
-
+obj2.pass = "Param"; //Change the value in both objects if you dont use Object.assign({},objectname) method
 // console.log(obj1)
 // console.log(obj2)
 // eg2:
 const arr1 = [1, 2, 3, 4];
 // const arr2 = arr1;
 // if you want to change arr2 only then use this syntax
-const arr2=[].concat(arr1) 
+const arr2 = [].concat(arr1);
 //The concat() method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.
 arr2.push(6, 7);
 // console.log(arr1);
@@ -105,7 +112,7 @@ const hello = "Hello,";
 const greetList = ["Hello", " ", "Venkat", "!"];
 // console.log("".concat(...greetList))
 
-// const subject =["math","",sociology","science","eng"]
+const subject = ["math", " ", "sociology", " ", "science", " ", "eng"];
 // console.log("".concat(...subject))
 
 // "".concat({}); // "[object Object]"
@@ -116,88 +123,107 @@ const greetList = ["Hello", " ", "Venkat", "!"];
 
 //what is call back hell?
 //callback hell is essentilly nested callbacks stacked below one another forming a pyramid structure.
-//every calbacks depands/waits for the previous callbacks,thereby making a pyramid structure that 
+//every calbacks depands/waits for the previous callbacks,thereby making a pyramid structure that
 //affects the readability and maintainability of the code.
 //1:get student roll no after 2s
 //2:get name and age  after 2s
 //3:get gender after 2s
-const getrollno = () => {
-    setTimeout(()=>{
-        console.log("Api getting roll no")
-        let roll_no=[1,2,3,4,5];
-        console.log(roll_no)
+const studentdetail = () => {
+  setTimeout(() => {
+    console.log("Api getting roll no");
+    let roll_no = [1, 2, 3, 4, 5];
+    console.log(roll_no);
 
-        setTimeout((roll_no)=>{
-            const biodata={
-                name:"soumya",
-                age:23
-            }
-            console.log(`my roll no ${roll_no} is name is ${biodata.name} and age is ${biodata.age}`)
+    setTimeout(
+      (roll_no) => {
+        const biodata = {
+          name: "soumya",
+          age: 23,
+        };
+        console.log(
+          `my roll no ${roll_no} is name is ${biodata.name} and age is ${biodata.age}`
+        );
 
-            setTimeout((name) => {
-                biodata.gender="male";
-                console.log(`My gender is ${biodata.gender}`)
-            },2000,biodata.name);
-        },2000,roll_no[1])
-    },2000)
-}
-// getrollno();
+        setTimeout(() => {
+          biodata.gender = "male";
+          console.log(
+            `My gender is ${biodata.gender} and name ${biodata.name}`
+          );
+        }, 2000);
+      },
+      2000,
+      roll_no[1]
+    );
+  }, 2000);
+};
+// studentdetail();
 
 //Promises
 //Promises are used to handel asynchronous operation in java script .they are easy to manage when dealing with multiple asynchronus operations where call backs can creat callback hell leading to unmanagable code.
-//A promise ia an object that keep tack about wheather a certain event has happened already or not
+//A promise ia an object that keep track about wheather a certain event has happened already or not
 //Determines what happens after the events has happend.
 //Promises are 3 stages
-// 1.pending
-// 2.resolve
-// 3.reject
+// 1.pending:event when start
+// 2.resolve:fullfilled
+// 3.reject:cancel
 //executer function
 //Pomise producing
 const pob1 = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        let roll_no = [1, 2, 3, 4, 5];
-        resolve(roll_no);
-        reject('Error While Communicating')
-    }, 2000);
+  setTimeout(() => {
+    let roll_no = [1, 2, 3, 4, 5];
+    resolve(roll_no);
+    reject("Error While Communicating");
+  }, 2000);
 });
-//Promises consumes
-pob1.then((rollno) => {
-    // console.log(rollno);
-}).catch((error) => {
-    // console.log(error);
-})
+//..Promises consumes
+// pob1
+//   .then((rollno) => {
+//     console.log(rollno);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
 
 const getBiodataa = (indexdata) => {
-    return new Promise((resolve, reject) => {
-        setTimeout((indexdata) => {
-            const biodata = {
-                name: 'vinod',
-                age: 24,
-            }
-            resolve(`My roll no is ${indexdata}.my name is ${biodata.name} and I am ${biodata.age} years Old`)
-        }, 2000, indexdata);
-    })
-}
+  return new Promise((resolve, reject) => {
+    setTimeout(
+      (indexdata) => {
+        const biodata = {
+          name: "vinod",
+          age: 24,
+        };
+        resolve(
+          `My roll no is ${indexdata}.my name is ${biodata.name} and I am ${biodata.age} years Old`
+        );
+        reject("Error While Communicating");
+      },
+      2000,
+      indexdata
+    );
+  });
+};
 
-pob1.then((rollno) => {
+pob1
+  .then((rollno) => {
     // console.log(rollno);
-    getBiodataa(rollno[1]).then((kuchbhi)=>{
-        // console.log(kuchbhi);
-    })
-}).catch((error) => {
-    // console.log(error);
-})
+    getBiodataa(rollno[1]).then((kuchbhi) => {
+      // console.log(kuchbhi);
+    });
+  })
+  .catch((error) => {
+    console.log(error);
+  });
 
 //eg2
-const sum1 =new Promise((resolve, reject) => {
-    let a = 2*2;
-    if(a==4){
-        resolve("correct")
-    }
-    else{
-        reject("wrong")
-    }
-})
+const sum1 = new Promise((resolve, reject) => {
+  let a = 2 * 2;
+  if (a == 4) {
+    resolve("correct");
+  } else {
+    reject("wrong");
+  }
+});
+
 // sum1.then((message)=>{
 //     console.log("ans is:"+message)
 // }).catch((error)=>{
@@ -210,7 +236,7 @@ const sum1 =new Promise((resolve, reject) => {
 //     console.log(o1)
 // }catch (error) {
 //         console.log(error)
-// }  
+// }
 // }
 // result();
 
@@ -222,90 +248,145 @@ const sum1 =new Promise((resolve, reject) => {
 //The keywords await makes javascript wait until that promises settels and returns its result.
 
 const pobj1 = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        let roll_no = [1, 2, 3, 4, 5];
-        resolve(roll_no);
-        reject('Error While Comunicating')
-    }, 2000);
+  setTimeout(() => {
+    let roll_no = [1, 2, 3, 4, 5];
+    resolve(roll_no);
+    reject("Error While Comunicating");
+  }, 2000);
 });
-const getBiodata = (indexdata) => {
-    return new Promise((resolve, reject) => {
-        setTimeout((indexdata) => {
-            const biodata = {
-                name: 'vinod',
-                age: 24,
-            }
-            resolve(`My roll no is ${indexdata}.my name is ${biodata.name} and I am ${biodata.age} years Old`)
-            reject("data is not found")
-        }, 2000, indexdata);
-    })
-}
-async function getData(){
-    const rollnodata =await pobj1;
-    // console.log(rollnodata)
-    
-    const biodatas=await getBiodata(rollnodata[1]);
-    // console.log(biodatas);
+const getBiodata = (roll_no) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(
+      () => {
+        const biodata = {
+          name: "vinod",
+          age: 24,
+        };
+        resolve(
+          `My roll no is ${roll_no}.my name is ${biodata.name} and I am ${biodata.age} years Old`
+        );
+        reject("data is not found");
+      },
+      2000,
+      roll_no
+    );
+  });
+};
+async function getData() {
+  const rollnodata = await pobj1;
+  // console.log(rollnodata)
+
+  const biodatas = await getBiodata(rollnodata[1]);
+  // console.log(biodatas);
 }
 getData();
 
 //MAP(),FIlTER(),REDUCE()
 //foreach Loop:Array Methods:CAlls a function,once for each array element
-const a1 =[2,23,5,7,28,34]
-a1.forEach((value,index,array)=>{
-// console.log(`${index}=${value} ${array}`)
+const a1 = [2, 23, 5, 7, 28, 34];
+a1.forEach((value, index, array) => {
+  // console.log(`${index}=${value} ${array}`)
 });
+
+//raja interview
+// function factorial(item){
+//   if(item==0){
+//       return 1
+//   }
+//   return item*factorial(item-1)
+// }
+// let data =5;
+// console.log(factorial(data));
+
+// let a6=[1,2,3,4,5]
+// let keep=a6.map((value)=>{
+// return value*value;
+// })
+// console.log(keep);
+// mongodb 5 employee highest salary get
+//databasename.collectionname.sort({salary:-1}).limit(1)
+//second highest salary
+//higher order function
+//middleware next function kama
+//
+// console.log(add(33));//33
+// console.log(add(1,2,3));//6
+// console.log(add(1,2,3,4));//10
+// console.log(add());//err
+// function add(...numbers){
+//   if(numbers.length===0){
+//     console.log("Error");
+//   }
+//   return numbers.reduce((sum,num)=>
+//    sum+num,0
+// );
+//   }
+// console.log(add(33));
 
 //hence forEach() method does not return a new array, whereas the map() method returns a new array. The map() method is used to transform the elements of an array, whereas the forEach() method is used to loop through the elements of an array.
 //MAP():Creating a new array by performing some operations on each array element
-let d =a1.map((value,index,array)=>{
-    // console.log(value,index,array)
-    return value+1;
-})
+let d = a1.map((value, index, array) => {
+  // console.log(value,index,array)
+  return value + 1;
+});
 // console.log(d)
-// let arr3=[{
-//     name:"John",age:20},
-//      {name:'Jane', age:26}
-//     ]
-//    let f= arr3.map((value,index,array)=>{
-//        if(value.age === 20){
-//         return {...value,name:"rahul"}
-//        }
-//        return value;
-//     });
-    // console.log(f)
+let arr3 = [
+  {
+    name: "John",
+    age: 20,
+  },
+  { name: "Jane", age: 26 },
+];
+let f = arr3.map((value, index, array) => {
+  if (value.age === 20) {
+    return { ...value, name: "rahul" };
+  }
+  return value;
+});
+// console.log(f)
 //Filter():Filters am array with values that passes a test creat a new array
-let h =a1.filter((value)=>{
-    return value>7;
-})
+let h = a1.filter((value) => {
+  return value > 7;
+});
 // console.log(h)
 //Reduce():reduce an array to A single value
-let k = a1.reduce((h1,h2)=>{
-    return h1+h2;
-})
+let a2 = [2, 3, 4, 6];
+let k = a2.reduce((h1, h2) => {
+  return h1 + h2;
+});
+let m=a2.reduce((acc,ind)=>acc+ind,0)
+// console.log(m);
 // console.log(k)
 //From(): Used to creat an array from any other object
-let j = Array.from("Soumya Ranjan Behera")
+let j = Array.from("Soumya Ranjan Behera");
+
 // console.log(j)
 //For...of:To get values from an array
-for(let i of a1){
-    // console.log(i)
+for (let i of a1) {
+  // console.log(i)
 }
+
 //For...in:To get indexs from an array
-for(let i in a1){
-    // console.log(i) 
+for (let i in a1) {
+  // console.log(i)
 }
 
 //What is Middlewire?
 //1.it's a function that will have all the access for requesting an object and respond to an object,and moving to the next midllewire function in the application request-respose cycle.
 //2.send the response to the server before requesting.
+//next is not called within a middleware function, the request-response cycle is halted, and the response is sent back to the client.
+// Middleware function 1
+// app.use((req, res, next) => {
+//   console.log('Middleware 1');
+//   next(); // Pass control to the next middleware function
+// });
 
 //What is event Emmiter?
 // module that facilitates communication/interaction between objects in Node
 //it is pattern that listen a named event,fires a callback,then emits the event with value
 
 //What is REPL?(Read Evaluate Print Loop)
-//It's an interactive shell that processes Node.js expressions. 
+//It's an interactive shell that processes Node.js expressions.
 //The shell reads JavaScript code which the user enters, evaluates the result of interpreting the line of code, prints the result to the user, and loops continues until the user signals to quit.
 
 //What is EventLoop?
@@ -314,6 +395,20 @@ for(let i in a1){
 
 //What is Clouser?
 //A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment).
+// function outerFunction() {
+//   let outerVariable = "I am from the outer function";
+
+//   function innerFunction() {
+//     console.log(outerVariable);
+//   }
+
+//   return innerFunction;
+// }
+// // Create a closure by calling outerFunction and assigning the result to a variable
+// let closureFunction = outerFunction();
+// // Call the closure, which still has access to outerVariable
+// closureFunction(); // Output: "I am from the outer function"
+
 //What is Hoisting?
 //Hoisting is the default behaviour of javascript where all the variables and function declairation are moved to the top
 // const object=()=>{
@@ -324,98 +419,114 @@ for(let i in a1){
 //Explain “this” keyword.
 //The “this” keyword refers to the object that the function is a property of.
 var di = {
-    name:"Soumya",
-    getname: function(){
-        console.log(this.name)
-    }
-}
-// di.getname();
+  name: "Soumya",
+  getname: function () {
+    // console.log(this.name);
+  },
+};
+di.getname();
 
-// var obj3 = {
-//     name:"Soumya",
-//     getname: function(){
-//         console.log(this.name)
-//     }
-// }
-// var getname=obj3.getname;
-// var obj4={
-//     name:"Akshya",
-//     getname
-// }
-// obj4.getname()
+var obj3 = {
+  name: "Soumya",
+  getname: function () {
+    console.log(this.name);
+  },
+};
+var getname1 = obj3.getname;
+var obj4 = {
+  name: "Akshya",
+  getname1,
+};
+// obj4.getname1()
 
 //Explain call(), apply() and, bind() methods.
 //CAll():
 // It’s a predefined method in javascript.
 // This method invokes a method (function) by specifying the owner object.
 //call() method allows an object to use the method (function) of another object
-// eg:1 
-// function hey(){
-// console.log("Hello"+this.name)
-// }
-// let obj3={
-//     name:"harry"
-// } 
-// return helloharry
-// hey.call(obj3)
-// eg:2 
-var person = {
-    age: 23,
-    getAge: function(){
-    console.log(this.age);
-    }
-    }
-    var person2 = {age: 54};
-    // person.getAge.call(person2);
-// Returns 54
-//eg:3  
-// function saySomething(message){
-//     console.log(this.name + " is " + message) ;
-//     }
-//     var person4 = {name: "John"};
-    // saySomething.call(person4, "awesome");
+// eg:1
+function hey() {
+  // console.log("Hello"+" "+this.name)
+}
+let obj5 = {
+  name: "harry",
+};
+// return hey.call(obj5);
+// eg: 3;
+function saySomething(message) {
+  console.log(this.name + " is " + message) ;
+}
+var person4 = { name: "John" };
+saySomething.call(person4, "awesome"); 
 // Returns "John is awesome"
 
 //APPLY():
 //call() method takes arguments separately whereas, apply() method takes
 //arguments as an array.
-function saySomething(message){
-console.log(this.name + " is " + message) ;
+function saySomething(message) {
+  // console.log(this.name + " is " + message);
 }
-var person4 = {name: "John"};
+var person4 = { name: "John" };
 // saySomething.apply(person4, ["awesome"]);
 //BIND():
 // This method returns a new function, where the value of “this” keyword will be
 // bound to the owner object, which is provided as a parameter.
-var bikeDetails = {
-    displayDetails: function(registrationNumber,brandName){
-    return this.name+ " , "+ "bike details: "+ registrationNumber + " , " + brandName;
-    }
-    }
-    var person1 = {name: "Vivek"};
-    var detailsOfPerson1 = bikeDetails.displayDetails.bind(person1, "TS0122", "Bullet");
-    // Binds the displayDetails function to the person1 object
-    detailsOfPerson1();
-    // console.log(detailsOfPerson1())
-    // Returns Vivek, bike details: TS0452, Thunderbird
 
-//What is Curring in javascript 
+var bikeDetails = {
+  displayDetails: function (registrationNumber, brandName) {
+    return (
+      this.name +
+      " , " +
+      "bike details: " +
+      registrationNumber +
+      " , " +
+      brandName
+    );
+  },
+};
+var person1 = { name: "Vivek" };
+var detailsOfPerson1 = bikeDetails.displayDetails.bind(
+  person1,
+  "TS0122",
+  "Bullet"
+);
+// Binds the displayDetails function to the person1 object
+detailsOfPerson1();
+// console.log(detailsOfPerson1())
+// Returns Vivek, bike details: TS0452, Thunderbird
+
+//What is Curring in javascript
 //currying is an advanced technique to transform a function of arguments n, to n
 // functions of one or fewer arguments.
+//Currying in JavaScript transforms a function with multiple arguments into a nested series of functions, each taking a single argument. Currying helps you avoid passing the same variable multiple times, and it helps you create a higher order function.
+//instead of this
+function sum2(a, b, c) {
+  return a + b + c;
+}
+// sum2(1, 2, 3); // 6
+// //curring does
+// function sum2(a) {
+//   return (b) => {
+//     return (c) => {
+//       return a + b + c;
+//     };
+//   };
+// }
+// console.log(sum2(1)(2)(3)) // 6
 
-//function multiply(a,b){
-// return a*b;
-// }
-// function currying(fn){
-// return function(a){
-// return function(b){
-// return fn(a,b);
-// }
-// }
-// }
-// var curriedMultiply = currying(multiply);
-// multiply(4, 3); // Returns 12
-// curriedMultiply(4)(3); // Also returns 12
+//higher order function
+// takes one or more functions as arguments (i.e. a procedural parameter, which is a parameter of a procedure that is itself a procedure), returns a function as its result.
+// Callback function, passed as a parameter in the higher order function
+
+// higher order function
+function higherOrderFunction(func) {
+  console.log("I am higher order function");
+  func();
+}
+function callbackFunction() {
+  console.log("I am  a callback function");
+}
+// higherOrderFunction(callbackFunction);
 
 //Explain Scope and Scope Chain in javascript.
 // There are three types of scopes in JS:
@@ -446,13 +557,32 @@ var bikeDetails = {
 //Constructor functions are used to create objects in javascript.
 //If we want to create multiple objects having similar properties and methods,
 // constructor functions are used.
-// function Person(name,age,gender){
-    // this.name = name;
-    // this.age = age;
-    // this.gender = gender;
-    // }
-    // var person1 = new Person("Vivek", 76, "male");
-    // console.log(person1);
+// class Person {
+//   constructor(name, age, gender) {
+//     this.name = name;
+//     this.age = age;
+//     this.gender = gender;
+//   }
+// }
+// var person1 = new Person("Vivek", 76, "male");
+// console.log(person1);
+// function Person(name, age, gender) {
+//   this.name = name;
+//   this.age = age;
+//   this.gender = gender;
+// }
+// var person1 = new Person("Vivek", 76, "male");
+// console.log(person1);
+//object destructuring?
+//to extract properties from objects and bind them to variables
+const user = {
+  name: "Alex",
+  address: "15th Park Avenue",
+  age: 43,
+};
+
+// const { name, age } = user;
+// console.log(name, age); // Output, Alex 43
 
 //What is DOM?
 //DOM stands for Document Object Model. DOM is a programming interface for
@@ -462,20 +592,10 @@ var bikeDetails = {
 // change various elements inside the HTML document.
 
 //hoisting
-y=8;
-// console.log(y)
-var y;
+// y = 8;
+// console.log(y);
+// var y;
 
+//console.trace() by using this method we can know the function where it is derived(know the grandparent,parent,child,innerchild of the function)
 
-
-
-
-
-
-
-
-
-
-
-
-
+//
