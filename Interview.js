@@ -234,12 +234,68 @@
 // }else{
 //     console.log("number is not palindrom");
 // }
-//another way to resolve this
-let string="Madam";
-string=string.toLocaleLowerCase();
-let palindrom=string.split("").reverse().join("")
-if (string===palindrom){
- console.log("number is Palindrom");
-}else{
-    console.log("Number is not palindrom");
-}
+
+//Another way to resolve this
+// let string="Madam";
+// string=string.toLocaleLowerCase();
+// let palindrom=string.split("").reverse().join("")
+// if (string===palindrom){
+//  console.log("number is Palindrom");
+// }else{
+//     console.log("Number is not palindrom");
+// }
+
+//13//swap two variables with using third variables
+// var a =5;
+// var b =6;
+// let temp=a;
+// a=b;
+// b=temp;
+// console.log(a);
+// console.log(b);
+//without using third variable
+//by destructuring
+// var a =5;
+// var b =6;
+// [a,b]=[b,a]
+// console.log(a);
+// console.log(b);
+
+//14//Merging two array
+// let arr1=[1,3,5,4,7,89]
+// let arr2=[34,2,67,8]
+//By conact
+// let merge=arr1.concat(arr2).sort((a,b)=>a-b)
+//By spread operator
+// let merge=[...arr1,...arr2].sort((a,b)=>a-b)
+// console.log(merge);
+
+//15//finc the factors of an integer
+// let number=-15;
+// for(let i=0;i<=number;i++){
+//     if(number%i==0){
+//         console.log(`${i}`);
+//     }
+// } 
+// if(number<=0){
+//     console.log("Finding factors are not possible");
+// }
+//16//How to compare two array is equal or not.
+// var arr1=[2,9,6,8,4]
+// var arr2=[4,8,6,9,2]
+// const isarray=arr1.length===arr2.length && arr1.every((curelm)=>{
+//  if(arr2.indexOf(curelm)>-1){
+// return (curelm=[arr2.indexOf(curelm)])
+//  }
+// })
+// console.log(`Array lenth compare ${isarray}`);
+
+//17//Intersection of two array
+// let arr1=[2,9,6,8,4,4,4]
+// let arr2=[4,8,6,9,12]
+// let intersection=arr1.filter((element)=>{
+//     return arr2.includes(element)
+// })
+// console.log(intersection);
+//For removing dupliactes numbers
+// console.log([...new Set(intersection)]);
