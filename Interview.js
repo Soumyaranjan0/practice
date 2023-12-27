@@ -276,7 +276,7 @@
 //     if(number%i==0){
 //         console.log(`${i}`);
 //     }
-// } 
+// }
 // if(number<=0){
 //     console.log("Finding factors are not possible");
 // }
@@ -299,3 +299,176 @@
 // console.log(intersection);
 //For removing dupliactes numbers
 // console.log([...new Set(intersection)]);
+
+//18//find the union of two array
+// let arr1=[2,9,6,8,4,4,4]
+// let arr2=[4,8,6,9,12]
+// let union=[...arr1,...arr2]
+// console.log(...new Set(union));
+
+//ES-6=ECMAScript2015-europian Computer Manufacturers Association Script 2015
+
+//19//celecius to farenhite
+// const celcius =37;
+// let celciustofarenhite=(celcius)=>{
+// return ((9/5)*celcius)+32;
+// }
+// console.log(celciustofarenhite(celcius));
+//20//Farenhite to celcius
+// var farenhite1=103;
+// var farenhitetocelcius=5/9*(farenhite1-32)
+// console.log(farenhitetocelcius);
+
+//Conversion of km to miles
+//1k.m=0.621371miles
+//Miles=km*factor(factor=0.621371)
+// const km=5;
+// const kmtomiles=km*0.621371
+// console.log(kmtomiles);
+
+//21//To convert first letter of a string is in uppercase
+// let string="soumya is a good boy";
+// const convertfirstletter=(str)=>{
+//     var newstr=string.split(" ")
+//     const convert=newstr.map((element)=>{
+//         return element.charAt(0).toLocaleUpperCase() + element.slice(1)
+
+//     })
+//     return convert.join(" ")
+// }
+// console.log(convertfirstletter(string))
+
+//22//Fibbonacci Series
+// const FibbonacciSeries=(num)=>{
+//     let arr=[0,1]
+//     for(let i=2;i<num;i++){
+//     arr.push(arr[i-1]+arr[i-2])
+//     }
+//     return arr;
+// }
+// console.log(FibbonacciSeries(10));
+//output:[ 0, 1,  1,  2,  3, 5, 8, 13, 21, 34]
+//Another way
+// let fibbo=10;
+// var a=0;
+// var b=1;
+// for(let i=0;i<fibbo;i++){
+//     let temp=a+b;
+//     a=b;
+//     b=temp;
+//     console.log(temp);
+// }
+//output:1 2 3 5 8 13 21 34 55 89
+
+//23//Program to print star and number patters right triangle,pyramid and diamond shape in javascript.
+//right Triangle
+// function printRightAngleTriangle(height) {
+//     for (let i = 1; i <= height; i++) {
+//       let row = '';
+//       for (let j = 1; j <= i; j++) {
+//         row += '*';
+//       }
+//       console.log(row);
+//     }
+//   }
+//   // Example: Print a right-angled triangle with height 5
+//   printRightAngleTriangle(5);
+//Without Function
+// for (let i = 1; i <= 5; i++) {
+//     let row = '';
+//     for (let j = 1; j <= i; j++) {
+//       row += '*';
+//     }
+//     console.log(row);
+//   }
+
+//Pyramid
+// Set the height of the pyramid
+// const height = 5;
+// Outer loop: iterate through each row of the pyramid
+// for (let i = 1; i <= height; i++) {
+//   // Inner loop 1: add spaces before the asterisks
+//   for (let j =1; j<=5-i; j++) {
+//     process.stdout.write(' ');
+//   }
+//   // Inner loop 2: add asterisks
+//   for (let k = 1; k <= i; k++) {
+//     process.stdout.write('*'+" ");
+//   }
+//   // Move to the next line after each row
+//   console.log();
+// }
+//another way in html file
+// for (let i = 1; i <= height; i++) {
+//     // Inner loop 1: add spaces before the asterisks
+//     for (let j =1; j<=5-i; j++) {
+//       document.write("&nbsp;&nbsp;")
+//     }
+//     // Inner loop 2: add asterisks
+//     for (let k = 1; k <= i; k++) {
+//       document.write("*"+"&nbsp;&nbsp;")
+//     }
+//     // Move to the next line after each row
+//     document.write("<br>");
+//   }
+
+//Diamond
+// for (let i = 1; i <= height; i++) {
+//     // Inner loop 1: add spaces before the asterisks
+//     for (let j =1; j<=5-i; j++) {
+//       process.stdout.write(' ');
+//     }
+//     // Inner loop 2: add asterisks
+//     for (let k = 1; k <= i; k++) {
+//       process.stdout.write('*'+" ");
+//     }
+//     // Move to the next line after each row
+//     console.log();
+//   }
+// for (let i = 1; i <= height; i++) {
+//     // Inner loop 1: add spaces before the asterisks
+//     for (let j =1; j<=i; j++) {
+//       process.stdout.write(' ');
+//     }
+//     // Inner loop 2: add asterisks
+//     for (let k = 1; k <=5-i; k++) {
+//       process.stdout.write('*'+" ");
+//     }
+//     // Move to the next line after each row
+//     console.log();
+//   }
+
+
+//24//find the number of occurances of a character in a string;
+// var string="Soumya is a good boy";
+// var letter="s"
+// var count =0;
+// for(let i=0;i<=string.length;i++){
+// if(string[i]==letter){
+//     count++;
+// }
+// }
+// console.log(count);
+
+//25//print the table of any user defined number;
+// var table=(number)=>{
+// for(let i=1;i<=10;i++){
+//     var arraystoredtable=i*number;
+//     console.log(`${number}*${i}=${arraystoredtable}`);
+// }
+// }
+// table(4);
+
+//26//To find a number is Armstrong or Not;
+// let number =153;
+// let numstring=number.toString();
+// let numlength=numstring.length;
+// let sum=0;
+// for(let digit of numstring){
+//     sum+=Math.pow(digit,numlength)
+// }
+// if(number===sum){
+//     console.log("The number is an Armstrong Number");
+// }else{
+//     console.log("The is not an Armstrong Number");
+// }
