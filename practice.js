@@ -5,7 +5,7 @@
 //node js is the runtime environment of javascript used to build the scalable application and it can run in multiple os,and it is asynchoronous in nature.
 
 //function
-function myfunc(x, y) {
+function myfunc(x, y) { 
   return (x + y) / 2;
 }
 // console.log(myfunc(8,5))
@@ -15,7 +15,7 @@ function myfunc(x, y) {
 // let x=4;
 // let y=4;
 const sum = (a, b) => {
-  return a + b;
+  return a + b; 
 };
 // console.log(sum(x,y))
 

@@ -64,13 +64,36 @@ const array=[,,,]
 //     let number =arr[0];
 //     for (let a of arr){
 //         if (a>number){
+//             number=a;
+//         }
+//     }
+//     return number;
+// }
+// let d=[3,6,3,5,6,66,56]
+// console.log(largestnumber(d));
+//or
+// const numbers = [4, 7, 1, 9, 12, 5];
+// let largestNumber = numbers[0];
+
+// for (let i = 1; i < numbers.length; i++) {
+//     if (numbers[i] > largestNumber) {
+//         largestNumber = numbers[i];
+//     }
+// }
+// console.log(largestNumber);
+
+// let d=[3,6,3,5,6,66,56]
+//     let largestnumber = d[0];
+//     for(let a of d){
+//         if (a>largestnumber){
 //             largestnumber=a;
 //         }
 //     }
-//     return largestnumber;
-// }
-// let d=[3,6,3,,5,6,66,56]
-// console.log(largestnumber(d));
+// console.log(largestnumber)
+//or
+// let d=[3,6,3,5,6,66,56]
+// let largestnumber=Math.max(...d)
+// console.log(largestnumber)
 
 // let a = [1,2,3,4,5 ];
 // let b =a.reverse();
@@ -83,13 +106,11 @@ const array=[,,,]
 // check if two statements are anagrams or not
 // let a = " soumya"
 // let b = "ymauso"
-// let c = a.trim().split(" ").join("").toLowerCase()
-// let d = b.trim().split(" ").join("").toLowerCase()
-// let e = c.split("").sort().join("")
-// let f = d.split("").sort().join("")
-// console.log(e);
-// console.log(f);
-// console.log(e===f);
+// let c = a.trim().split("").sort().join("").toLowerCase()
+// let d = b.trim().split("").sort().join("").toLowerCase()
+// console.log(c);
+// console.log(d);
+// console.log(c===d);
 
 //filter method
 // let arr3 = [
@@ -102,9 +123,8 @@ const array=[,,,]
 //   let arr2=[];
 //   let f = arr3.filter((value, index, array) => {
 //     if (value.age === 20) {
-//       return arr2.push(value);
+//       arr2.push(value);
 //     }
-//     return value;
 //   });
 // console.log(arr2);
 //weakmap()
@@ -206,14 +226,14 @@ function show(){
 // },1000)
 
 //array.at() Newly added in JS2022
-// const arr =[4,2,3,4,5,8]
+const arr =[4,2,3,4,5,8]
 //Before ES2022
 // const last= arr[arr.length-1];
 //Now ES2022
-// const last =arr.at(-1)
-// const first=arr.at(0)
-// const secondlast=arr.at(-2)
-// console.log(last);
+const last =arr.at(-1)
+const first=arr.at(0)
+const secondlast=arr.at(-2)
+console.log(last);
 
 //Array methods in Modern javascript  
 //forEach()
