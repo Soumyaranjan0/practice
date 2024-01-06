@@ -226,14 +226,14 @@ function show(){
 // },1000)
 
 //array.at() Newly added in JS2022
-const arr =[4,2,3,4,5,8]
+// const arr =[4,2,3,4,5,8]
 //Before ES2022
 // const last= arr[arr.length-1];
 //Now ES2022
-const last =arr.at(-1)
-const first=arr.at(0)
-const secondlast=arr.at(-2)
-console.log(last);
+// const last =arr.at(-1)
+// const first=arr.at(0)
+// const secondlast=arr.at(-2)
+// console.log(last);
 
 //Array methods in Modern javascript  
 //forEach()
