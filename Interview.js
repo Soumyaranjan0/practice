@@ -2,6 +2,7 @@
 // const arrNumber=[1,2,8,2,9,8,5,6,9]
 // const duplicates=arrNumber.filter((ele,index,arr)=>arr.indexOf(ele)!==index)
 // console.log(duplicates);
+//indexOf() always returns the first occurance
 //Another way
 // function findDuplicates(arr) {
 //     const sortedArr = arr.sort();
@@ -57,13 +58,15 @@
 // const largestvalue=(arr)=>{
 //     const firstlargestvalue=Math.max(...arr)
 //     let index=arr.indexOf(firstlargestvalue)
+//     console.log(index)
 //     arr.splice(index,1)
 //     const secondlargestvalue=Math.max(...arr)
 
-//     return firstlargestvalue
-//     // return secondlargestvalue
+//     // return firstlargestvalue
+//     return secondlargestvalue
 // }
 // console.log(largestvalue(intArray));
+
 //Another way
 // const largest=intArray.sort((a,b)=>b-a)
 // const secondlargest=largest[1]
@@ -83,6 +86,7 @@
 // return missingelement;
 // }
 // console.log(missingNumber(array));
+
 //another Method
 // const array = [1, 3, 4, 5, 6, 8, 10];
 // // Iterate through numbers from 1 to 10
@@ -270,7 +274,7 @@
 // let merge=[...arr1,...arr2].sort((a,b)=>a-b)
 // console.log(merge);
 
-//15//finc the factors of an integer
+//15//find the factors of an integer
 // let number=-15;
 // for(let i=0;i<=number;i++){
 //     if(number%i==0){
@@ -437,7 +441,6 @@
 //     // Move to the next line after each row
 //     console.log();
 //   }
-
 
 //24//find the number of occurances of a character in a string;
 // var string="Soumya is a good boy";

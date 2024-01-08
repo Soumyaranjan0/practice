@@ -1,0 +1,78 @@
+What is SDLC?
+ SDLC stands for software development life cycle , it is a systematic process of planning,design,devloping,testing,deployement and maintaining software in a it industry.By using this methodology we can build a high quality product which will meet the customers needs and also budget constraints.
+ The phases are:
+ 1.Requirement Analysis:“What are the current problems?” This stage of the SDLC means getting input from all stakeholders, including customers, salespeople, industry experts, and programmers. Learn the strengths and weaknesses of the current system with improvement as the goal.
+ 2.planning:“What do we want?” In this stage of the SDLC, the team determines the cost and resources required for implementing the analyzed requirements. It also details the risks involved and provides sub-plans for softening those risks.
+ In other words, the team should determine the feasibility of the projectin terms of technical, operational, and economic aspects and how they can implement the project successfully with the lowest risk in mind.
+ 3.Designing:Create a detailed system design based on the requirements.Specify the architecture, components, modules, interfaces, and data for the system and also design the UI hows it looks.
+ 4.devloping(implementing):Write the code for the software according to the design specifications.
+ 5:Test: Test the code which was written by the devloper and fix those issue until the product meets the original specifications.
+ 6:Deployement:Release the software for production use.Deploy the application to the target environment.
+ 7:Maintenance and Support:Address and fix any issues identified in the live environment.Implement updates, enhancements, or patches as needed.Provide ongoing support and maintenance.
+
+ //What is Agile Methodology?
+ Iterative and Incremental: Agile is an iterative and incremental approach. It divides the project into small increments with minimal planning so we can build a high qality product and it allows for flexibility and changes throughout the development process.
+
+Iterations (Sprints):
+
+Planning: High-level planning is done, and the project is divided into iterations (sprints).
+Requirements: Detailed requirements are gathered for the specific features to be developed in the upcoming iteration.
+Coding: Development and coding take place in short iterations.
+Testing: Testing is performed during and at the end of each iteration.
+Review: A review is conducted at the end of each iteration to evaluate progress and adjust the plan for the next iteration.
+
+Client Involvement: Clients and stakeholders are involved throughout the project. Changes in requirements can be accommodated at the beginning of each iteration.
+Flexibility: Agile allows for changes and adjustments even late in the development process, making it well-suited for projects where requirements are expected to evolve.
+
+//Differences:Agile vrs Waterfall
+1:Flexibility: Agile is more flexible and adaptable to changes in requirements, while Waterfall is less accommodating to changes once the project has started.
+2:Client Involvement: Agile involves clients and stakeholders continuously throughout the project, whereas Waterfall typically involves clients mainly at the beginning and the end.
+3:Delivery: Agile delivers a potentially shippable product incrementally, while Waterfall delivers the entire product at the end of the project.
+4:Risk Management: Agile allows for early detection and correction of issues, while Waterfall identifies issues later in the process.
+
+
+const express=require("express");
+const app=express();
+const mongoose=require("mongoose")
+const url="mongodb://localhost/27017/userdb"
+const port=3000;
+
+mongoose.connect(url,{useNewUrlParser: true,useUnifiedTopology:true}).then(()={
+    console.log("Mongodb Connected successfully)
+}).catch(()=>{
+    console.log("Mongodb connection fail")
+})
+
+app.use(express.json())
+
+app.get("/",(req,res)=>{
+    res.send 
+})
+app.listen(port,()={
+console.log("Server connected successfully")
+})
+
+const axios=require("axios")
+const url="http://sagdgshj"
+axios.get(url).then((response)=>{
+console.log(response.data)
+}).catch((error)=>{
+console.log("Error")
+})
+
+//schema modules
+
+const express=require("express")
+const mongoose =require("mongoose")
+
+const userSchema =new mongoose.Schema({
+    name:{
+        type:string,
+        required:true
+    },
+    age:{
+        required:true
+    }
+})
+
+module.exports=mongoose.model("User",userSchema)

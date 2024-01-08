@@ -2,7 +2,7 @@ const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
 const citrus = fruits.sort();
 // console.log(citrus);
 
-const array=[,,,]
+const array=[,,,] 
 // console.log(array[2]);
 
 {

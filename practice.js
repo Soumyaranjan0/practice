@@ -4,6 +4,54 @@
 //what is nodejs
 //node js is the runtime environment of javascript used to build the scalable application and it can run in multiple os,and it is asynchoronous in nature.
 
+//What is the newfeatures of HTML ?
+// 1.semantic Element:
+// HTML5 introduced several new semantic elements, such as <header>, <nav>, <article>, <section>, <footer>, and <aside>, which help structure a web page more meaningfully.
+// 2.New Form Elements:
+// HTML5 introduced new form input types, including <input type="date">, <input type="email">, <input type="url">, <input type="tel">, <input type="number">, and more, making it easier to capture specific data types.
+// 3.Audio and Video Elements:
+/* <audio controls> // Syntax
+  <source src="audio.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio> */
+// HTML5 added the <audio> and <video> elements, allowing developers to embed audio and video content directly into web pages without relying on third-party plugins like Flash.
+// 4.Canvas Element:
+// The <canvas> element enables dynamic rendering of graphics and images using JavaScript, providing a powerful tool for creating interactive and visually appealing applications.
+// 5.Local Storage:
+// HTML5 introduced the localStorage and sessionStorage APIs, allowing web applications to store data locally on the user's device, persisting even after the browser is closed and reopened.
+// 6.Responsive Images:
+// HTML5 introduced the srcset attribute for the <img> element, allowing developers to provide multiple image sources based on the device's screen size and resolution, improving responsiveness.
+// 7.Drag and Drop:
+// HTML5 introduced native support for drag-and-drop functionality, making it easier for users to interact with and move elements within a web page.
+// 8.SVG (Scalable Vector Graphics):
+// HTML5 includes native support for SVG, allowing developers to embed vector graphics directly into web pages. SVG is scalable, responsive, and can be manipulated with CSS and JavaScript.
+// 9.Input Attributes: placeholder, autocomplete, and autofocus:
+// HTML5 introduced new attributes for form inputs, such as placeholder for providing hints, autocomplete for controlling autofill behavior, and autofocus for automatically focusing on an input element when a page loads.
+// 10.WebRTC (Real-Time Communications):
+// HTML5 includes APIs for WebRTC, enabling real-time communication features like video chat and peer-to-peer data exchange directly in the browser without requiring plugins.
+
+// what is the new features of Es6
+// let and const Declarations
+// Arrow Functions
+// Template Literals
+// Destructuring Assignment
+// Rest and Spread Operators
+// Promises
+// map,filter and reduce
+// Async/Await
+// array.At method
+// ternary operator
+
+//let , var and const Difference
+// 1.Scope:functionscope:var , blockscope: let and const (limited to that curly braces)
+// 2.Hoisting: Variables declared with var are hoisted to the top of their function or global scope,ariables declared with let and const are also hoisted but not initialized
+// 3.Declairation:var redeclair and reassign,let reassign not redeclair,const not redeclair and nor reassign
+// 4.Global Object Property:Variables declared with var become properties of the global object (window in browsers) when declared outside a function or block.
+// let and const declarations do not become properties of the global object.
+// 5.Default Value:Variables declared with var are automatically initialized to undefined.
+// Variables declared with let and const are not automatically initialized and will throw an error if accessed before assignment.
+
+
 //function
 function myfunc(x, y) { 
   return (x + y) / 2;
