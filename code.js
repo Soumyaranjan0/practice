@@ -12,19 +12,19 @@
 // console.log(result)
 
 //to find a prime number
-let primeno=(number)=>{
-  if (number<=1){
-    return "this is not a prime number"
-  }
-  for(i=2;i <= Math.sqrt(number);i++){
-        if (number%i===0){
-          return " This is not a prime number"
-        }
-  }
-  return "This is a prime number"
-}
-let putno=primeno(2);
-console.log(putno)
+// let primeno=(number)=>{
+//   if (number<=1){
+//     return "this is not a prime number"
+//   }
+//   for(i=2;i <= Math.sqrt(number);i++){
+//         if (number%i===0){
+//           return " This is not a prime number"
+//         }
+//   }
+//   return "This is a prime number"
+// }
+// let putno=primeno(2);
+// console.log(putno)
 //Reverse a string
 // let string = "Soumya is a good boy"
 // let reverse = [];

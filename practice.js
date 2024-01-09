@@ -44,7 +44,7 @@
 
 //let , var and const Difference
 // 1.Scope:functionscope:var , blockscope: let and const (limited to that curly braces)
-// 2.Hoisting: Variables declared with var are hoisted to the top of their function or global scope,ariables declared with let and const are also hoisted but not initialized
+// 2.Hoisting: Variables declared with var are hoisted to the top of their function or global scope,variables declared with let and const are also hoisted but not initialized
 // 3.Declairation:var redeclair and reassign,let reassign not redeclair,const not redeclair and nor reassign
 // 4.Global Object Property:Variables declared with var become properties of the global object (window in browsers) when declared outside a function or block.
 // let and const declarations do not become properties of the global object.
@@ -347,10 +347,9 @@ a1.forEach((value, index, array) => {
 // console.log(factorial(data));
 
 // let a6=[1,2,3,4,5]
-// let keep=a6.map((value)=>{
-// return value*value;
-// })
+// let keep=a6.map((value)=>value*value)
 // console.log(keep);
+
 // mongodb 5 employee highest salary get
 //databasename.collectionname.sort({salary:-1}).limit(1)
 //second highest salary
@@ -366,7 +365,7 @@ a1.forEach((value, index, array) => {
 //     console.log("Error");
 //   }
 //   return numbers.reduce((sum,num)=>
-//    sum+num,0
+//    sum+num
 // );
 //   }
 // console.log(add(33));
@@ -407,8 +406,8 @@ let m=a2.reduce((acc,ind)=>acc+ind,0)
 // console.log(k)
 //From(): Used to creat an array from any other object
 let j = Array.from("Soumya Ranjan Behera");
-
 // console.log(j)
+
 //For...of:To get values from an array
 for (let i of a1) {
   // console.log(i)
@@ -422,7 +421,7 @@ for (let i in a1) {
 //What is Middlewire?
 //1.it's a function that will have all the access for requesting an object and respond to an object,and moving to the next midllewire function in the application request-respose cycle.
 //2.send the response to the server before requesting.
-//next is not called within a middleware function, the request-response cycle is halted, and the response is sent back to the client.
+//if next is not called within a middleware function, the request-response cycle is halted, and the response is sent back to the client.
 // Middleware function 1
 // app.use((req, res, next) => {
 //   console.log('Middleware 1');
@@ -443,17 +442,17 @@ for (let i in a1) {
 
 //What is Clouser?
 //A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment).
-// function outerFunction() {
-//   let outerVariable = "I am from the outer function";
+function outerFunction() {
+  let outerVariable = "I am from the outer function";
 
-//   function innerFunction() {
-//     console.log(outerVariable);
-//   }
+  function innerFunction() {
+    console.log(outerVariable);
+  }
 
-//   return innerFunction;
-// }
+  return innerFunction;
+}
 // // Create a closure by calling outerFunction and assigning the result to a variable
-// let closureFunction = outerFunction();
+let closureFunction = outerFunction();
 // // Call the closure, which still has access to outerVariable
 // closureFunction(); // Output: "I am from the outer function"
 
@@ -513,7 +512,7 @@ saySomething.call(person4, "awesome");
 //arguments as an array.
 function saySomething(message) {
   // console.log(this.name + " is " + message);
-}
+} 
 var person4 = { name: "John" };
 // saySomething.apply(person4, ["awesome"]);
 //BIND():
@@ -581,7 +580,6 @@ function callbackFunction() {
 // Global Scope
 // Local or Function Scope
 // Block Scope
-
 // Mention some advantages of javascript.
 // There are many advantages of javascript. Some of them are
 // 1. Javascript is executed on the client-side as well as server-side also. There are a
@@ -605,14 +603,14 @@ function callbackFunction() {
 //Constructor functions are used to create objects in javascript.
 //If we want to create multiple objects having similar properties and methods,
 // constructor functions are used.
-// class Person {
-//   constructor(name, age, gender) {
-//     this.name = name;
-//     this.age = age;
-//     this.gender = gender;
-//   }
-// }
-// var person1 = new Person("Vivek", 76, "male");
+class Person {
+  constructor(name, age, gender) {
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+  }
+}
+var person1 = new Person("Vivek", 76, "male");
 // console.log(person1);
 // function Person(name, age, gender) {
 //   this.name = name;
@@ -623,11 +621,11 @@ function callbackFunction() {
 // console.log(person1);
 //object destructuring?
 //to extract properties from objects and bind them to variables
-const user = {
-  name: "Alex",
-  address: "15th Park Avenue",
-  age: 43,
-};
+// const user = {
+//   name: "Alex",
+//   address: "15th Park Avenue",
+//   age: 43,
+// };
 
 // const { name, age } = user;
 // console.log(name, age); // Output, Alex 43

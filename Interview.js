@@ -20,18 +20,18 @@
 //   console.log(findDuplicates(arrNumber));
 
 //2//How to find maximum and minimum array in javascript
-// const arrNumber = [1, 3, 5, 5, 55, 63, 1, 67, 89, 4];
-// const max = () => {
-//   return arrNumber.reduce((pre, cur) => {
-//     return pre > cur ? pre : cur;
-//   });
-// };
-// const min = () => {
-//   return arrNumber.reduce((pre, cur) => {
-//     return pre < cur ? pre : cur;
-//   });
-// };
-// console.log(max(arrNumber));
+const arrNumber = [1, 3, 5, 5, 55, 63, 1, 67, 89, 4];
+const max = () => {
+  return arrNumber.reduce((pre, cur) => {
+    return pre > cur ? pre : cur;
+  });
+};
+const min = () => {
+  return arrNumber.reduce((pre, cur) => {
+    return pre < cur ? pre : cur;
+  });
+};
+console.log(max(arrNumber));
 
 //another method
 // const maxNumber = Math.max(...arrNumber);
@@ -351,6 +351,7 @@
 //     return arr;
 // }
 // console.log(FibbonacciSeries(10));
+
 //output:[ 0, 1,  1,  2,  3, 5, 8, 13, 21, 34]
 //Another way
 // let fibbo=10;
