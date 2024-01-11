@@ -95,11 +95,11 @@ const helloa = () => {
 //Instructions in asynchronous code can execute in parallel.
 //Next operation can occur while the previous operation is still getting processed.
 
-// console.log("Start`")
-// setTimeout(() => {
-//     console.log("Hey I am Good")
-// }, 3000);
-// console.log("End");
+console.log("Start`")
+setTimeout(() => {
+    console.log("Hey I am Good")
+}, 3000);
+console.log("End");
 
 //CallBack Function:It is a function passed into another function as an arguement,which is then invoked inside the outer function to complete an action
 function funcA(system) {
@@ -493,18 +493,20 @@ var obj4 = {
 //call() method allows an object to use the method (function) of another object
 // eg:1
 function hey() {
-  // console.log("Hello"+" "+this.name)
+  console.log("Hello"+" "+this.name)
 }
 let obj5 = {
   name: "harry",
 };
 // return hey.call(obj5);
 // eg: 3;
+
 function saySomething(message) {
   console.log(this.name + " is " + message) ;
 }
-var person4 = { name: "John" };
-saySomething.call(person4, "awesome"); 
+let person6 = { name: "John" };
+saySomething.call(person6, "awesome");
+
 // Returns "John is awesome"
 
 //APPLY():
@@ -640,7 +642,7 @@ var person1 = new Person("Vivek", 76, "male");
 //hoisting
 // y = 8;
 // console.log(y);
-// var y;
+// var y; 
 
 //console.trace() by using this method we can know the function where it is derived(know the grandparent,parent,child,innerchild of the function)
 

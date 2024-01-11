@@ -2,6 +2,10 @@
 // const arrNumber=[1,2,8,2,9,8,5,6,9]
 // const duplicates=arrNumber.filter((ele,index,arr)=>arr.indexOf(ele)!==index)
 // console.log(duplicates);
+//remove the duplicate element;
+// const duplicates=arrNumber.filter((ele,index,arr)=>arr.indexOf(ele)==index)
+// console.log(duplicates);
+
 //indexOf() always returns the first occurance
 //Another way
 // function findDuplicates(arr) {
@@ -14,24 +18,23 @@
 //         duplicates.push(sortedArr[i]);
 //       }
 //     }
-
 //     return duplicates;
 //   }
 //   console.log(findDuplicates(arrNumber));
 
 //2//How to find maximum and minimum array in javascript
-const arrNumber = [1, 3, 5, 5, 55, 63, 1, 67, 89, 4];
-const max = () => {
-  return arrNumber.reduce((pre, cur) => {
-    return pre > cur ? pre : cur;
-  });
-};
-const min = () => {
-  return arrNumber.reduce((pre, cur) => {
-    return pre < cur ? pre : cur;
-  });
-};
-console.log(max(arrNumber));
+// const arrNumber = [1, 3, 5, 5, 55, 63, 1, 67, 89, 4];
+// const max = () => {
+//     return arrNumber.reduce((pre, cur) => {
+//       return pre > cur ? pre : cur;
+//     });
+//   };
+//   const min = () => {
+//     return arrNumber.reduce((pre, cur) => {
+//       return pre < cur ? pre : cur;
+//     });
+//   };
+//   console.log(max(arrNumber));  
 
 //another method
 // const maxNumber = Math.max(...arrNumber);
@@ -288,9 +291,12 @@ console.log(max(arrNumber));
 // var arr1=[2,9,6,8,4]
 // var arr2=[4,8,6,9,2]
 // const isarray=arr1.length===arr2.length && arr1.every((curelm)=>{
-//  if(arr2.indexOf(curelm)>-1){
-// return (curelm=[arr2.indexOf(curelm)])
-//  }
+// //  if(arr2.indexOf(curelm)>-1){
+// // return (curelm=[arr2.indexOf(curelm)])
+// //or
+// if(arr2.includes(curelm)){
+//     return true;
+// }
 // })
 // console.log(`Array lenth compare ${isarray}`);
 
@@ -306,9 +312,9 @@ console.log(max(arrNumber));
 
 //18//find the union of two array
 // let arr1=[2,9,6,8,4,4,4]
-// let arr2=[4,8,6,9,12]
+// let arr2=[4,8,6,9,12] 
 // let union=[...arr1,...arr2]
-// console.log(...new Set(union));
+// console.log([...new Set(union)]);
 
 //ES-6=ECMAScript2015-europian Computer Manufacturers Association Script 2015
 
@@ -335,7 +341,7 @@ console.log(max(arrNumber));
 // const convertfirstletter=(str)=>{
 //     var newstr=string.split(" ")
 //     const convert=newstr.map((element)=>{
-//         return element.charAt(0).toLocaleUpperCase() + element.slice(1)
+//         return element.charAt(0).toUpperCase() + element.slice(1)
 
 //     })
 //     return convert.join(" ")
@@ -476,3 +482,31 @@ console.log(max(arrNumber));
 // }else{
 //     console.log("The is not an Armstrong Number");
 // }
+
+
+//27// 
+// const inputString = "s3b4c2";
+// let result = "";
+// for (let i = 0; i < inputString.length; i ++) {
+//   const char = inputString[i];
+//   const count = parseInt(inputString[i+1]);
+//   // Append the character to the result string 'count' times
+//   result += char.repeat(count);
+// }
+// console.log(result)
+
+//28// 
+// let input = [2, 3, 4, 5, 3, 5, 3, 4, 5, 3];
+// // Count the frequency of each element using an object
+// const frequencyMap = {};
+// for (const num of input) {
+//   frequencyMap[num] = (frequencyMap[num] || 0) + 1;
+// }
+// console.log(frequencyMap)
+// // Sort the array based on frequency and value
+// const sortedArray = input.sort((a, b) => {
+//   const freqComparison = frequencyMap[b] - frequencyMap[a];
+// //   return freqComparison === 0 ? a - b : freqComparison;
+// });
+// console.log(sortedArray)
+
