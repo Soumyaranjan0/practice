@@ -96,7 +96,7 @@ const Memo = () => {
 
   // subscribe to thapa technical
     const checkData=countNumber(myNum)//previously and processing slow
-    //by using uememo hook you load it faster
+    //by using usememo hook you load it faster
   const checkData = useMemo(() => {
     return countNumber(myNum);
   }, [myNum]);

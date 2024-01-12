@@ -510,3 +510,45 @@
 // });
 // console.log(sortedArray)
 
+//29//
+// let string="    Soumya is a good boy"
+// let array=string.trim().split("")
+// // console.log(array);
+// let freq={}
+// for(let char of array){
+//     freq[char]=(freq[char] || 0) +1
+// }
+// // console.log(freq);
+// let maxchar=""
+// let maxcount=0;
+// for (let i in freq){
+// if (freq[i]>maxcount){
+//     maxchar=i;
+//     maxcount=freq[i]
+// }
+// }
+// console.log(maxchar,maxcount);
+
+//30//fing duplicate key value pair
+// const input1={a:2,b:89,e:55,d:67,f:78,s:7}
+// const input2={b:89,e:56,d:67,f:9,s:7}
+// let obj={}
+// for(let i in input1){
+//     if (input1[i]==input2[i]){
+//         obj[i]=input1[i]
+//     }
+// }
+// console.log(obj)
+
+//31//rotate the array two time
+// let array=[2,56,-3,5,7,9]
+// output=[-3,5,7,9,2,56]
+
+// for (let i=0;i<2;i++){
+//     let temp=array[0]
+//     for(let j=0;j<array.length;j++){
+//         array[j]=array[j+1]
+//     }
+//     array[array.length-1]=temp
+// }
+// console.log(array)
