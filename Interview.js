@@ -289,7 +289,7 @@
 // }
 //16//How to compare two array is equal or not.
 // var arr1=[2,9,6,8,4]
-// var arr2=[4,8,6,9,2]
+// var arr2=[4,8,6,9,2] 
 // const isarray=arr1.length===arr2.length && arr1.every((curelm)=>{
 // //  if(arr2.indexOf(curelm)>-1){
 // // return (curelm=[arr2.indexOf(curelm)])
@@ -343,10 +343,10 @@
 //     const convert=newstr.map((element)=>{
 //         return element.charAt(0).toUpperCase() + element.slice(1)
 
-//     })
+//     })  
 //     return convert.join(" ")
 // }
-// console.log(convertfirstletter(string))
+// console.log(convertfirstletter(string))s
 
 //22//Fibbonacci Series
 // const FibbonacciSeries=(num)=>{
@@ -359,6 +359,7 @@
 // console.log(FibbonacciSeries(10));
 
 //output:[ 0, 1,  1,  2,  3, 5, 8, 13, 21, 34]
+
 //Another way
 // let fibbo=10;
 // var a=0;
@@ -400,7 +401,7 @@
 // for (let i = 1; i <= height; i++) {
 //   // Inner loop 1: add spaces before the asterisks
 //   for (let j =1; j<=5-i; j++) {
-//     process.stdout.write(' ');
+    // process.stdout.write(' ');   
 //   }
 //   // Inner loop 2: add asterisks
 //   for (let k = 1; k <= i; k++) {
@@ -476,7 +477,7 @@
 // let sum=0;
 // for(let digit of numstring){
 //     sum+=Math.pow(digit,numlength)
-// }
+// }    
 // if(number===sum){
 //     console.log("The number is an Armstrong Number");
 // }else{
@@ -552,3 +553,43 @@
 //     array[array.length-1]=temp
 // }
 // console.log(array)
+
+//Another method
+// let array=[2,56,-3,5,7,9]
+// function arrayRotation(arr,rotation){
+//     for(let j=0;j<rotation;j++){
+//        let ele= arr.pop()
+//         arr.unshift(ele)
+//     }
+// return arr
+// }
+// console.log(arrayRotation(array,2))
+
+//Remove a word from an array
+// let string="soumya is a soumya good boy";
+// let remove="soumya"
+// let newstring=(string,remove)=>{
+// return string.split(" ").filter((ele)=>ele!==remove).join(" ") 
+// }
+// console.log(newstring(string,remove))
+
+//convert a array to object
+// const arr=["a","b","c"]
+// let object=arr.reduce((acc,curr,index)=>({...acc,[index]:curr}))
+// console.log(object)
+
+//Sorting an Array using for loop
+// let array=[2,56,3,5,7,9]
+// let sorted=(array)=>{
+// for(let i=0;i<array.length-1;i++){
+//     for(let  j=0;j<array.length-1;j++){
+//         if(array[j]>array[j+1]){
+//             let temp =array[j];
+//             array[j]=array[j+1];
+//             array[j+1]=temp
+//         }
+//     }
+// } 
+// return array;
+// }
+// console.log(sorted(array))

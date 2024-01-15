@@ -290,7 +290,7 @@ const sum1 = new Promise((resolve, reject) => {
 
 //Async and Await
 //There's is  special syntax to work with promises in a more comfortable fashion,call "Async/await". it is surprisingly easy to understand and use.
-//The Word 'async' before a function means one simple thing: a function always returns a promise.
+//The Word 'async' before a function means one simple thing: a function  always returns a promise.
 //so the async keyword is added to functions to tell them to return a promise rather than directly returning the value.
 //we can use await when calling any function that returns a promise,including webAPI functions.
 //The keywords await makes javascript wait until that promises settels and returns its result.
@@ -333,22 +333,8 @@ getData();
 //foreach Loop:Array Methods:CAlls a function,once for each array element
 const a1 = [2, 23, 5, 7, 28, 34];
 a1.forEach((value, index, array) => {
-  // console.log(`${index}=${value} ${array}`)
+  console.log(`${index}=${value} ${array}`)
 });
-
-//raja interview
-// function factorial(item){
-//   if(item==0){
-//       return 1
-//   }
-//   return item*factorial(item-1)
-// }
-// let data =5;
-// console.log(factorial(data));
-
-// let a6=[1,2,3,4,5]
-// let keep=a6.map((value)=>value*value)
-// console.log(keep);
 
 // mongodb 5 employee highest salary get
 //databasename.collectionname.sort({salary:-1}).limit(1)
@@ -605,14 +591,14 @@ function callbackFunction() {
 //Constructor functions are used to create objects in javascript.
 //If we want to create multiple objects having similar properties and methods,
 // constructor functions are used.
-class Person {
-  constructor(name, age, gender) {
-    this.name = name;
-    this.age = age;
-    this.gender = gender;
-  }
-}
-var person1 = new Person("Vivek", 76, "male");
+// class Person {
+//   constructor(name, age, gender) {
+//     this.name = name;
+//     this.age = age;
+//     this.gender = gender;
+//   }
+// }
+// var person1 = new Person("Vivek", 76, "male");
 // console.log(person1);
 // function Person(name, age, gender) {
 //   this.name = name;
@@ -646,4 +632,8 @@ var person1 = new Person("Vivek", 76, "male");
 
 //console.trace() by using this method we can know the function where it is derived(know the grandparent,parent,child,innerchild of the function)
 
-//
+//single threaded//multithread
+//cluster
+//eventdriven
+//eventloop
+// MongoDB is a NoSQL database, which means it is a non-relational database
