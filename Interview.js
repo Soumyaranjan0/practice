@@ -73,7 +73,7 @@
 //Another way
 // const largest=intArray.sort((a,b)=>b-a)
 // const secondlargest=largest[1]
-// console.log(secondlargest);
+// console.log(secondlargest);  
 
 //4//Find the missing number between 1 to 10
 // const array=[1,3,4,5,6,8,10]
@@ -185,6 +185,7 @@
 // }
 // var vowelsInHelloWorld = findVowels("Hello World");
 // console.log(vowelsInHelloWorld);
+
 
 //find no of vowel
 // const vowels = "aeiouAEIOU";
@@ -496,6 +497,26 @@
 // }
 // console.log(result)
 
+//reverse of upper question
+// const inputString = "sssbbbbcc"; //output:s3b4c2
+// let compressedString = "";
+
+// let currentChar = inputString[0];
+// let charCount = 1;
+
+// for (let i = 1; i < inputString.length; i++) {
+//   if (inputString[i] === currentChar) {
+//     charCount++;
+//   } else {
+//     compressedString += currentChar + charCount;
+//     currentChar = inputString[i];
+//     charCount = 1;
+//   }
+// }
+// compressedString += currentChar + charCount;
+// console.log(compressedString);
+
+
 //28// 
 // let input = [2, 3, 4, 5, 3, 5, 3, 4, 5, 3];
 // // Count the frequency of each element using an object
@@ -504,11 +525,12 @@
 //   frequencyMap[num] = (frequencyMap[num] || 0) + 1;
 // }
 // console.log(frequencyMap)
+
 // // Sort the array based on frequency and value
 // const sortedArray = input.sort((a, b) => {
 //   const freqComparison = frequencyMap[b] - frequencyMap[a];
 // //   return freqComparison === 0 ? a - b : freqComparison;
-// });
+// });xx    
 // console.log(sortedArray)
 
 //29//
@@ -593,3 +615,73 @@
 // return array;
 // }
 // console.log(sorted(array))
+
+// function findCharsAndNumbers(inputString) {
+//     let characters = [];
+//     let numbers = [];
+    
+//     for (let char of inputString) {
+//       if (/[a-zA-Z]/.test(char)) {
+//         characters.push(char);
+//       } else if (/\d/.test(char)) {
+//         numbers.push(char);
+//       }
+//     }
+  
+//     return {characters,numbers};
+//   }
+//   console.log(findCharsAndNumbers("a1b2c3d4")) //{ characters: [ 'a', 'b', 'c', 'd' ], numbers: [ '1', '2', '3', '4' ] }
+
+// function findCharsAndNumbers(inputString) {
+//     // Find characters
+//     let characters = inputString.match(/[a-zA-Z]/g) || [];
+  
+//     // Find numbers
+//     let numbers =inputString.match(/\d+/g) || [];
+
+//     let sum=numbers.reduce((acc,cur)=>acc+parseInt(cur),0);
+  
+//     return (characters.join("")+sum)
+//   }
+//   console.log(findCharsAndNumbers("a1b2c3d4")) //output:abcd10
+
+
+//Count the Number of char in a string
+// let string="Soumya Ranjan Behera"
+// let result=[]
+// let array=string.split(" ")
+// for (let char of array){
+//     let count=char.length
+//     result.push(count)
+// }
+// console.log(result.join(""))
+
+// Replace a char in a string
+// let string="Soumya is a good boy"
+// let replace="bad";
+// let updatedstring=""
+// let array=string.split(" ")
+// for (let char of array){
+//     if(char==="good"){
+//         array[array.indexOf(char)]=replace
+//     }
+// }
+// console.log(array.join(" "))
+
+//inbuilt - Anotherway
+// let newstring=string.replace("good","bad")
+
+//Anotherway
+// let inputString = "Soumya is a good boy";
+// let replacedString = "bad";
+// let words = inputString.split(' ');
+// for (let i = 0; i < words.length; i++) {
+//     if (words[i] === "good") {
+//         words[i] = replacedString;
+//     }
+// }
+// let updatedString = words.join(' ');
+// console.log("Original String:", inputString);
+// console.log("Updated String:", updatedString);
+
+//s="a4k3b2" output="aeknbd"
