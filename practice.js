@@ -41,7 +41,7 @@
 // Async/Await
 // array.At method
 // ternary operator
-
+ 
 //let , var and const Difference
 // 1.Scope:functionscope:var , blockscope: let and const (limited to that curly braces)
 // 2.Hoisting: Variables declared with var are hoisted to the top of their function or global scope,variables declared with let and const are also hoisted but not initialized
@@ -207,7 +207,7 @@ const studentdetail = () => {
 // studentdetail();
 
 //Promises
-//Promises are used to handel asynchronous operation in java script .they are easy to manage when dealing with multiple asynchronus operations where call backs can creat callback hell leading to unmanagable code.
+//Promises are used to handel asynchronous operation in java script .they are easy to manage when dealing with multiple asynchronus operations where call backs can crete callback hell leading to unmanagable code.
 //A promise ia an object that keep track about wheather a certain event has happened already or not
 //Determines what happens after the events has happend.
 //Promises are 3 stages
@@ -619,7 +619,7 @@ function callbackFunction() {
 // console.log(name, age); // Output, Alex 43
 
 //What is DOM?
-//DOM stands for Document Object Model. DOM is a programming interface for
+// DOM stands for Document Object Model. DOM is a programming interface for
 // HTML and XML documents.
 // When the browser tries to render an HTML document, it creates an object based
 // on the HTML document called DOM. Using this DOM, we can manipulate or
@@ -637,3 +637,5 @@ function callbackFunction() {
 //eventdriven
 //eventloop
 // MongoDB is a NoSQL database, which means it is a non-relational database
+
+//what is array prototype?

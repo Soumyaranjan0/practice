@@ -22,4 +22,8 @@
 // let Nnumber=number.toFixed(2)
 // console.log(Nnumber);
 
-//
+//Array constructor fill method
+//const length = 5;  
+// const value = 5; 
+// const filledArray = new Array(length).fill(value); 
+// console.log(filledArray); 

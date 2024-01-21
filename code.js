@@ -11,14 +11,14 @@
 // const result = getoddno(1, 50);
 // console.log(result)
 
-//to find a prime number
+//To find a prime number
 // let primeno=(number)=>{
 //   if (number<=1){
 //     return "this is not a prime number"
 //   }
 //   for(i=2;i <= Math.sqrt(number);i++){
 //         if (number%i===0){
-//           return " This is not a prime number"
+//           return "This is not a prime number"
 //         }
 //   }
 //   return "This is a prime number"
@@ -37,8 +37,8 @@
 // const reversedstring = ReverseString(string);
 // console.log(reversedstring)
 
-const a = "Soumya";
-const b = a.split("").reverse().join("");
+// const a = "Soumya";
+// const b = a.split("").reverse().join("");
 // console.log(b)
 
 //node js server using express

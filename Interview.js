@@ -530,7 +530,7 @@
 // const sortedArray = input.sort((a, b) => {
 //   const freqComparison = frequencyMap[b] - frequencyMap[a];
 // //   return freqComparison === 0 ? a - b : freqComparison;
-// });xx    
+// }); 
 // console.log(sortedArray)
 
 //29//
@@ -659,7 +659,6 @@
 // Replace a char in a string
 // let string="Soumya is a good boy"
 // let replace="bad";
-// let updatedstring=""
 // let array=string.split(" ")
 // for (let char of array){
 //     if(char==="good"){
@@ -684,4 +683,19 @@
 // console.log("Original String:", inputString);
 // console.log("Updated String:", updatedString);
 
-//s="a4k3b2" output="aeknbd"
+//[3,4,"ty",null,67]
+// let array = [3, 4, "ty", null, 67];
+// let numbersOnly = array.filter(item => typeof item === 'number');
+// console.log(numbersOnly);
+
+// let arr = [2, 8, 4, 5, 6, 5, 7, 0]; //output:[[2, 8], [4, 6], [5, 5]]
+// let targetSum = 10;
+// let result = [];
+//   for (let i = 0; i < arr.length - 1; i++) {
+//     for (let j = i + 1; j < arr.length; j++) {
+//       if (arr[i] + arr[j] === targetSum) {
+//         result.push([arr[i], arr[j]]);
+//       }
+//     }
+//   }
+// console.log(result);
