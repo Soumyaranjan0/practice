@@ -489,13 +489,22 @@
 //27// 
 // const inputString = "s3b4c2";
 // let result = "";
-// for (let i = 0; i < inputString.length; i ++) {
+// for (let i = 0; i < inputString.length; i++) {
 //   const char = inputString[i];
 //   const count = parseInt(inputString[i+1]);
 //   // Append the character to the result string 'count' times
 //   result += char.repeat(count);
 // }
 // console.log(result)
+
+// let string="2s3b3c" //output=ssbbbccc
+// let newstring=""
+// for(let i=0;i<string.length;i+=2){
+//     let digit=parseInt(string[i])
+//     let char=string[i+1]
+//     newstring+=char.repeat(digit)
+// }
+// console.log(newstring)
 
 //reverse of upper question
 // const inputString = "sssbbbbcc"; //output:s3b4c2
@@ -518,7 +527,7 @@
 
 
 //28// 
-// let input = [2, 3, 4, 5, 3, 5, 3, 4, 5, 3];
+// let input = [2, 3, 4, 5, 3, 5, 3, 4, 5, 3];  
 // // Count the frequency of each element using an object
 // const frequencyMap = {};
 // for (const num of input) {
@@ -573,6 +582,17 @@
 //         array[j]=array[j+1]
 //     }
 //     array[array.length-1]=temp
+// }
+// console.log(array)
+
+//Anti-clockwise rotate the array
+// let array=[2,56,-3,5,7,9]
+// for(let i=0;i<2;i++){
+//     let temp=array[array.length-1]
+//     for(let j=array.length-1;j>=0;j--){
+//         array[j]=array[j-1]
+//     }
+//     array[0]=temp
 // }
 // console.log(array)
 
@@ -635,12 +655,9 @@
 // function findCharsAndNumbers(inputString) {
 //     // Find characters
 //     let characters = inputString.match(/[a-zA-Z]/g) || [];
-  
 //     // Find numbers
 //     let numbers =inputString.match(/\d+/g) || [];
-
 //     let sum=numbers.reduce((acc,cur)=>acc+parseInt(cur),0);
-  
 //     return (characters.join("")+sum)
 //   }
 //   console.log(findCharsAndNumbers("a1b2c3d4")) //output:abcd10
@@ -683,7 +700,7 @@
 // console.log("Original String:", inputString);
 // console.log("Updated String:", updatedString);
 
-//[3,4,"ty",null,67]
+// [3,4,"ty",null,67]
 // let array = [3, 4, "ty", null, 67];
 // let numbersOnly = array.filter(item => typeof item === 'number');
 // console.log(numbersOnly);
@@ -699,3 +716,17 @@
 //     }
 //   }
 // console.log(result);
+
+//Remove even index
+// let array = ["soumya", "ranjan", "behera", "is", "a", "good", "boy"];
+// // Create a new array with only elements at even indices
+// let newArray = array.filter((_, index) => index % 2 == 0);
+// console.log(newArray);
+
+//Reverse even index
+// let array = ["soumya", "ranjan", "behera", "is", "a", "good", "boy"];
+// for (let i = 1; i < array.length; i += 2) {
+//     array[i] = array[i].split("").reverse().join("");
+// }
+// console.log(array);
+

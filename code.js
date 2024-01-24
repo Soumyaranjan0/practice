@@ -83,9 +83,9 @@
 // }
 // }
 
-let number = 8;
-let result = Math.sqrt(number);
-console.log(result);
+// let number = 8;
+// let result = Math.sqrt(number);
+// console.log(result);
 
 //to print start
 // function printingstar(row){

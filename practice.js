@@ -95,11 +95,11 @@ const helloa = () => {
 //Instructions in asynchronous code can execute in parallel.
 //Next operation can occur while the previous operation is still getting processed.
 
-console.log("Start`")
-setTimeout(() => {
-    console.log("Hey I am Good")
-}, 3000);
-console.log("End");
+// console.log("Start`")
+// setTimeout(() => {
+//     console.log("Hey I am Good")
+// }, 3000);
+// console.log("End");
 
 //CallBack Function:It is a function passed into another function as an arguement,which is then invoked inside the outer function to complete an action
 function funcA(system) {
@@ -333,7 +333,7 @@ getData();
 //foreach Loop:Array Methods:CAlls a function,once for each array element
 const a1 = [2, 23, 5, 7, 28, 34];
 a1.forEach((value, index, array) => {
-  console.log(`${index}=${value} ${array}`)
+  // console.log(`${index}=${value} ${array}`)
 });
 
 // mongodb 5 employee highest salary get
@@ -556,7 +556,7 @@ function sum2(a, b, c) {
 // higher order function
 function higherOrderFunction(func) {
   console.log("I am higher order function");
-  func();
+  func();;
 }
 function callbackFunction() {
   console.log("I am  a callback function");
@@ -628,14 +628,13 @@ function callbackFunction() {
 //hoisting
 // y = 8;
 // console.log(y);
-// var y; 
+// var y;
 
 //console.trace() by using this method we can know the function where it is derived(know the grandparent,parent,child,innerchild of the function)
 
 //single threaded//multithread
 //cluster
 //eventdriven
-//eventloop
-// MongoDB is a NoSQL database, which means it is a non-relational database
+//MongoDB is a NoSQL database, which means it is a non-relational database
 
 //what is array prototype?
