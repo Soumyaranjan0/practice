@@ -39,7 +39,7 @@
 // Promises
 // map,filter and reduce
 // Async/Await
-// array.At method
+// array.at method
 // ternary operator
  
 //let , var and const Difference
@@ -97,9 +97,23 @@ const helloa = () => {
 
 // console.log("Start`")
 // setTimeout(() => {
-//     console.log("Hey I am Good")
+//     console.log("middle")
 // }, 3000);
 // console.log("End");
+
+//Handel code line by line
+// async function handel() {
+//   console.log("start")
+//       await new Promise((resolve)=>{
+//           setTimeout(()=>{
+//               console.log("middle")
+//               resolve()
+//           },2000)
+//       })
+//   console.log("end")
+//   }
+//   handel();
+
 
 //CallBack Function:It is a function passed into another function as an arguement,which is then invoked inside the outer function to complete an action
 function funcA(system) {
@@ -363,19 +377,19 @@ let d = a1.map((value, index, array) => {
   return value + 1;
 });
 // console.log(d)
-let arr3 = [
-  {
-    name: "John",
-    age: 20,
-  },
-  { name: "Jane", age: 26 },
-];
-let f = arr3.map((value, index, array) => {
-  if (value.age === 20) {
-    return { ...value, name: "rahul" };
-  }
-  return value;
-});
+// let arr3 = [
+//   {
+//     name: "John",
+//     age: 20,
+//   },
+//   { name: "Jane", age: 26 },
+// ];
+// let f = arr3.map((value, index, array) => {
+//   if (value.age === 20) {
+//     return { ...value, name: "rahul" };
+//   }
+//   return value;
+// });
 // console.log(f)
 //Filter():Filters am array with values that passes a test creat a new array
 let h = a1.filter((value) => {
@@ -568,6 +582,7 @@ function callbackFunction() {
 // Global Scope
 // Local or Function Scope
 // Block Scope
+
 // Mention some advantages of javascript.
 // There are many advantages of javascript. Some of them are
 // 1. Javascript is executed on the client-side as well as server-side also. There are a
@@ -591,6 +606,7 @@ function callbackFunction() {
 //Constructor functions are used to create objects in javascript.
 //If we want to create multiple objects having similar properties and methods,
 // constructor functions are used.
+
 // class Person {
 //   constructor(name, age, gender) {
 //     this.name = name;
@@ -600,6 +616,7 @@ function callbackFunction() {
 // }
 // var person1 = new Person("Vivek", 76, "male");
 // console.log(person1);
+
 // function Person(name, age, gender) {
 //   this.name = name;
 //   this.age = age;
@@ -607,6 +624,7 @@ function callbackFunction() {
 // }
 // var person1 = new Person("Vivek", 76, "male");
 // console.log(person1);
+
 //object destructuring?
 //to extract properties from objects and bind them to variables
 // const user = {

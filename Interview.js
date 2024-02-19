@@ -23,7 +23,7 @@
 //   console.log(findDuplicates(arrNumber));
 
 //2//How to find maximum and minimum array in javascript
-// const arrNumber = [1, 3, 5, 5, 55, 63, 1, 67, 89, 4];
+const arrNumber = [1, 3, 5, 5, 55, 63, 1, 67, 89, 4];
 // const max = () => {
 //     return arrNumber.reduce((pre, cur) => {
 //       return pre > cur ? pre : cur;
@@ -455,7 +455,7 @@
 // var string="Soumya is a good boy";
 // var letter="s"
 // var count =0;
-// for(let i=0;i<=string.length;i++){
+// for(let i=0;i<string.length;i++){
 // if(string[i]==letter){
 //     count++;
 // }
@@ -538,19 +538,19 @@
 // // Sort the array based on frequency and value
 // const sortedArray = input.sort((a, b) => {
 //   const freqComparison = frequencyMap[b] - frequencyMap[a];
-// //   return freqComparison === 0 ? a - b : freqComparison;
+//   return freqComparison === 0 ? a - b : freqComparison;
 // }); 
 // console.log(sortedArray)
 
-//29//
-// let string="    Soumya is a good boy"
+// 29//
+// let string="Soumya is a good boy"
 // let array=string.trim().split("")
 // // console.log(array);
 // let freq={}
 // for(let char of array){
 //     freq[char]=(freq[char] || 0) +1
 // }
-// // console.log(freq);
+// console.log(freq);
 // let maxchar=""
 // let maxcount=0;
 // for (let i in freq){
@@ -636,6 +636,7 @@
 // }
 // console.log(sorted(array))
 
+
 // function findCharsAndNumbers(inputString) {
 //     let characters = [];
 //     let numbers = [];
@@ -653,7 +654,7 @@
 //   console.log(findCharsAndNumbers("a1b2c3d4")) //{ characters: [ 'a', 'b', 'c', 'd' ], numbers: [ '1', '2', '3', '4' ] }
 
 // function findCharsAndNumbers(inputString) {
-//     // Find characters
+// //     // Find characters
 //     let characters = inputString.match(/[a-zA-Z]/g) || [];
 //     // Find numbers
 //     let numbers =inputString.match(/\d+/g) || [];
@@ -705,11 +706,11 @@
 // let numbersOnly = array.filter(item => typeof item === 'number');
 // console.log(numbersOnly);
 
-// let arr = [2, 8, 4, 5, 6, 5, 7, 0]; //output:[[2, 8], [4, 6], [5, 5]]
+// let arr = [2, 8, 4, 5, 6, 5, 7, 3]; //output:[[2, 8], [4, 6], [5, 5]]
 // let targetSum = 10;
 // let result = [];
-//   for (let i = 0; i < arr.length - 1; i++) {
-//     for (let j = i + 1; j < arr.length; j++) {
+//   for (let i = 0; i < arr.length; i++) {
+//     for (let j = i+1; j < arr.length; j++) {
 //       if (arr[i] + arr[j] === targetSum) {
 //         result.push([arr[i], arr[j]]);
 //       }
@@ -718,10 +719,10 @@
 // console.log(result);
 
 //Remove even index
-// let array = ["soumya", "ranjan", "behera", "is", "a", "good", "boy"];
-// // Create a new array with only elements at even indices
-// let newArray = array.filter((_, index) => index % 2 == 0);
-// console.log(newArray);
+let array = ["soumya", "ranjan", "behera", "is", "a", "good", "boy"];
+// Create a new array with only elements at even indices
+let newArray = array.filter((_, index) => index % 2 == 0);
+console.log(newArray);
 
 //Reverse even index
 // let array = ["soumya", "ranjan", "behera", "is", "a", "good", "boy"];
