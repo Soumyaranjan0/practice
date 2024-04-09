@@ -2,12 +2,12 @@
 // const arrNumber=[1,2,8,2,9,8,5,6,9]
 // const duplicates=arrNumber.filter((ele,index,arr)=>arr.indexOf(ele)!==index)
 // console.log(duplicates);
-//remove the duplicate element;
+// remove the duplicate element;
 // const duplicates=arrNumber.filter((ele,index,arr)=>arr.indexOf(ele)==index)
 // console.log(duplicates);
-
 //indexOf() always returns the first occurance
 //Another way
+
 // function findDuplicates(arr) {
 //     const sortedArr = arr.sort();
 //     // console.log(sortedArr);
@@ -23,7 +23,7 @@
 //   console.log(findDuplicates(arrNumber));
 
 //2//How to find maximum and minimum array in javascript
-const arrNumber = [1, 3, 5, 5, 55, 63, 1, 67, 89, 4];
+// const arrNumber = [1, 3, 5, 5, 55, 63, 1, 67, 89, 4];
 // const max = () => {
 //     return arrNumber.reduce((pre, cur) => {
 //       return pre > cur ? pre : cur;
@@ -34,7 +34,7 @@ const arrNumber = [1, 3, 5, 5, 55, 63, 1, 67, 89, 4];
 //       return pre < cur ? pre : cur;
 //     });
 //   };
-//   console.log(max(arrNumber));  
+//   console.log(max(arrNumber));
 
 //another method
 // const maxNumber = Math.max(...arrNumber);
@@ -73,7 +73,7 @@ const arrNumber = [1, 3, 5, 5, 55, 63, 1, 67, 89, 4];
 //Another way
 // const largest=intArray.sort((a,b)=>b-a)
 // const secondlargest=largest[1]
-// console.log(secondlargest);  
+// console.log(secondlargest);
 
 //4//Find the missing number between 1 to 10
 // const array=[1,3,4,5,6,8,10]
@@ -128,14 +128,14 @@ const arrNumber = [1, 3, 5, 5, 55, 63, 1, 67, 89, 4];
 // })
 // console.log(odd);
 
-//6//Find the sum of all element in array
+// 6//Find the sum of all element in array
 // const arrNumber=[2,4,5,7,5,2]
 // const result=(items)=>{
 // return items.reduce((pre,current)=>{return pre+current})
 // }
 // console.log(result(arrNumber));
 
-//7//find the factorial of a given number
+// 7//find the factorial of a given number
 // const factorial=(item)=>{
 //     if(item<=0){
 //         return 1
@@ -185,7 +185,6 @@ const arrNumber = [1, 3, 5, 5, 55, 63, 1, 67, 89, 4];
 // }
 // var vowelsInHelloWorld = findVowels("Hello World");
 // console.log(vowelsInHelloWorld);
-
 
 //find no of vowel
 // const vowels = "aeiouAEIOU";
@@ -290,7 +289,7 @@ const arrNumber = [1, 3, 5, 5, 55, 63, 1, 67, 89, 4];
 // }
 //16//How to compare two array is equal or not.
 // var arr1=[2,9,6,8,4]
-// var arr2=[4,8,6,9,2] 
+// var arr2=[4,8,6,9,2]
 // const isarray=arr1.length===arr2.length && arr1.every((curelm)=>{
 // //  if(arr2.indexOf(curelm)>-1){
 // // return (curelm=[arr2.indexOf(curelm)])
@@ -313,7 +312,7 @@ const arrNumber = [1, 3, 5, 5, 55, 63, 1, 67, 89, 4];
 
 //18//find the union of two array
 // let arr1=[2,9,6,8,4,4,4]
-// let arr2=[4,8,6,9,12] 
+// let arr2=[4,8,6,9,12]
 // let union=[...arr1,...arr2]
 // console.log([...new Set(union)]);
 
@@ -344,7 +343,7 @@ const arrNumber = [1, 3, 5, 5, 55, 63, 1, 67, 89, 4];
 //     const convert=newstr.map((element)=>{
 //         return element.charAt(0).toUpperCase() + element.slice(1)
 
-//     })  
+//     })
 //     return convert.join(" ")
 // }
 // console.log(convertfirstletter(string))s
@@ -402,7 +401,7 @@ const arrNumber = [1, 3, 5, 5, 55, 63, 1, 67, 89, 4];
 // for (let i = 1; i <= height; i++) {
 //   // Inner loop 1: add spaces before the asterisks
 //   for (let j =1; j<=5-i; j++) {
-    // process.stdout.write(' ');   
+// process.stdout.write(' ');
 //   }
 //   // Inner loop 2: add asterisks
 //   for (let k = 1; k <= i; k++) {
@@ -411,6 +410,7 @@ const arrNumber = [1, 3, 5, 5, 55, 63, 1, 67, 89, 4];
 //   // Move to the next line after each row
 //   console.log();
 // }
+
 //another way in html file
 // for (let i = 1; i <= height; i++) {
 //     // Inner loop 1: add spaces before the asterisks
@@ -478,16 +478,15 @@ const arrNumber = [1, 3, 5, 5, 55, 63, 1, 67, 89, 4];
 // let sum=0;
 // for(let digit of numstring){
 //     sum+=Math.pow(digit,numlength)
-// }    
+// }
 // if(number===sum){
 //     console.log("The number is an Armstrong Number");
 // }else{
 //     console.log("The is not an Armstrong Number");
 // }
 
-
-//27// 
-// const inputString = "s3b4c2";
+//27//
+// const inputString = "s3b4c2";    
 // let result = "";
 // for (let i = 0; i < inputString.length; i++) {
 //   const char = inputString[i];
@@ -525,9 +524,8 @@ const arrNumber = [1, 3, 5, 5, 55, 63, 1, 67, 89, 4];
 // compressedString += currentChar + charCount;
 // console.log(compressedString);
 
-
-//28// 
-// let input = [2, 3, 4, 5, 3, 5, 3, 4, 5, 3];  
+//28//
+// let input = [2, 3, 4, 5, 3, 5, 3, 4, 5, 3];
 // // Count the frequency of each element using an object
 // const frequencyMap = {};
 // for (const num of input) {
@@ -539,7 +537,7 @@ const arrNumber = [1, 3, 5, 5, 55, 63, 1, 67, 89, 4];
 // const sortedArray = input.sort((a, b) => {
 //   const freqComparison = frequencyMap[b] - frequencyMap[a];
 //   return freqComparison === 0 ? a - b : freqComparison;
-// }); 
+// });
 // console.log(sortedArray)
 
 // 29//
@@ -561,7 +559,7 @@ const arrNumber = [1, 3, 5, 5, 55, 63, 1, 67, 89, 4];
 // }
 // console.log(maxchar,maxcount);
 
-//30//fing duplicate key value pair
+//30// find duplicate key value pair
 // const input1={a:2,b:89,e:55,d:67,f:78,s:7}
 // const input2={b:89,e:56,d:67,f:9,s:7}
 // let obj={}
@@ -572,7 +570,7 @@ const arrNumber = [1, 3, 5, 5, 55, 63, 1, 67, 89, 4];
 // }
 // console.log(obj)
 
-//31//rotate the array two time
+//31// rotate the array two time
 // let array=[2,56,-3,5,7,9]
 // output=[-3,5,7,9,2,56]
 
@@ -597,7 +595,7 @@ const arrNumber = [1, 3, 5, 5, 55, 63, 1, 67, 89, 4];
 // console.log(array)
 
 //Another method
-// let array=[2,56,-3,5,7,9]
+//let array=[2,56,-3,5,7,9]
 // function arrayRotation(arr,rotation){
 //     for(let j=0;j<rotation;j++){
 //        let ele= arr.pop()
@@ -605,13 +603,13 @@ const arrNumber = [1, 3, 5, 5, 55, 63, 1, 67, 89, 4];
 //     }
 // return arr
 // }
-// console.log(arrayRotation(array,2))
+//console.log(arrayRotation(array,2))
 
 //Remove a word from an array
 // let string="soumya is a soumya good boy";
-// let remove="soumya"
+// let remove="soumya";
 // let newstring=(string,remove)=>{
-// return string.split(" ").filter((ele)=>ele!==remove).join(" ") 
+// return string.split(" ").filter((ele)=>ele!==remove).join(" ")
 // }
 // console.log(newstring(string,remove))
 
@@ -631,16 +629,15 @@ const arrNumber = [1, 3, 5, 5, 55, 63, 1, 67, 89, 4];
 //             array[j+1]=temp
 //         }
 //     }
-// } 
+// }
 // return array;
 // }
 // console.log(sorted(array))
 
-
 // function findCharsAndNumbers(inputString) {
 //     let characters = [];
 //     let numbers = [];
-    
+
 //     for (let char of inputString) {
 //       if (/[a-zA-Z]/.test(char)) {
 //         characters.push(char);
@@ -648,7 +645,7 @@ const arrNumber = [1, 3, 5, 5, 55, 63, 1, 67, 89, 4];
 //         numbers.push(char);
 //       }
 //     }
-  
+
 //     return {characters,numbers};
 //   }
 //   console.log(findCharsAndNumbers("a1b2c3d4")) //{ characters: [ 'a', 'b', 'c', 'd' ], numbers: [ '1', '2', '3', '4' ] }
@@ -662,7 +659,6 @@ const arrNumber = [1, 3, 5, 5, 55, 63, 1, 67, 89, 4];
 //     return (characters.join("")+sum)
 //   }
 //   console.log(findCharsAndNumbers("a1b2c3d4")) //output:abcd10
-
 
 //Count the Number of char in a string
 // let string="Soumya Ranjan Behera"
@@ -722,7 +718,7 @@ const arrNumber = [1, 3, 5, 5, 55, 63, 1, 67, 89, 4];
 let array = ["soumya", "ranjan", "behera", "is", "a", "good", "boy"];
 // Create a new array with only elements at even indices
 let newArray = array.filter((_, index) => index % 2 == 0);
-console.log(newArray);
+// console.log(newArray);
 
 //Reverse even index
 // let array = ["soumya", "ranjan", "behera", "is", "a", "good", "boy"];
@@ -730,4 +726,20 @@ console.log(newArray);
 //     array[i] = array[i].split("").reverse().join("");
 // }
 // console.log(array);
+
+//find missing number in an array series
+// const arr = [7,9,11,15,17,19]
+// for(let i=0;i<arr.length;i++){
+// let start=arr[i]
+// let end =start+2
+// if(arr[i+1]!==end){
+//   console.log(end);
+//   break;
+// }
+
+//reverse an array using reduce
+// let arr = [7,9,11,15,17,19]
+// let reverse=arr.reduce((acc,cur)=>[cur,...acc],[])
+// console.log(reverse)
+
 

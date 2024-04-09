@@ -21,11 +21,13 @@ const array=[,,,]
 // (function (value) {
 //     console.log("Hello"+ " "+value );
 // }("Soumya"));
+
 //Reduce Method in javascript
+
 //syntax:array.reduce(callback,initialvalue)
 //in call back you may be take accumulator,current value,current index,array as parameter
 //array.reduce((acc,curval,curind,array)=>{},(initial value))
-//
+
 // let c =[24,50,20]
 // function verifylen(arr){
 //  let combinelength=arr.reduce((acc,crrentvalue)=>acc+crrentvalue,0)//Here acc is the initial value which is set to 0 and current value is the element which is add to the initialvalue/acc value on each iteration.
@@ -34,6 +36,7 @@ const array=[,,,]
 // console.log(verifylen(c));
 
 // finding second largest number of array
+
 // let a = [20, 67, 56, 39, 57, 37];
 // for(let i=0;i<a.length;i++){
 //     for(let j=0;j<a.length;j++){
@@ -90,7 +93,9 @@ const array=[,,,]
 //         }
 //     }
 // console.log(largestnumber)
+
 //or
+
 // let d=[3,6,3,5,6,66,56]
 // let largestnumber=Math.max(...d)
 // console.log(largestnumber)
@@ -113,6 +118,7 @@ const array=[,,,]
 // console.log(c===d);
 
 //filter method
+
 // let arr3 = [
 //     {
 //       name: "John",
@@ -127,6 +133,7 @@ const array=[,,,]
 //     }
 //   });
 // console.log(arr2);
+
 //weakmap()
 //  let a =  new WeakMap();
 //  let user={
@@ -205,6 +212,7 @@ const array=[,,,]
 function show(){
     console.log("wow");
 }
+
 // show(); //Not Allowed
 // console.log(window.show); //1st way
 // const functionname= "show"; //2nd way
@@ -235,7 +243,8 @@ function show(){
 // const secondlast=arr.at(-2)
 // console.log(last);
 
-//Array methods in Modern javascript  
+//Array methods in Modern javascript 
+
 //forEach()
 // array.forEach(function(currentValue, index, array,extraparameter) {
     // code to be executed for each element
@@ -244,6 +253,7 @@ function show(){
 // number.forEach(function(element){
 //     console.log(element)
 // })
+
 //map():returns a new array
 // const number =[1,2,3,4,5]  
 // const numbers =number.map((element)=>{

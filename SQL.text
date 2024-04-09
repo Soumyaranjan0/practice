@@ -1,0 +1,6 @@
+select * from tablename {
+    rollno int primarykey,
+    stream varchar(50),
+    subject varchar()
+}
+

@@ -16,7 +16,6 @@
 // [myArray[1], myArray[2]] = [myArray[2], myArray[1]];
 // console.log(myArray); // Output: [1, 3, 2, 4]
 
-
 //number into exact decimanl point on it right
 // let number=34.4432434763
 // let Nnumber=number.toFixed(2)
@@ -24,6 +23,6 @@
 
 //Array constructor fill method
 //const length = 5;  
-// const value = 5; 
+// const value = 5;
 // const filledArray = new Array(length).fill(value); 
-// console.log(filledArray); 
+// console.log(filledArray);

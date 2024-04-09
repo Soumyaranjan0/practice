@@ -41,7 +41,7 @@
 // Async/Await
 // array.at method
 // ternary operator
- 
+
 //let , var and const Difference
 // 1.Scope:functionscope:var , blockscope: let and const (limited to that curly braces)
 // 2.Hoisting: Variables declared with var are hoisted to the top of their function or global scope,variables declared with let and const are also hoisted but not initialized
@@ -51,9 +51,8 @@
 // 5.Default Value:Variables declared with var are automatically initialized to undefined.
 // Variables declared with let and const are not automatically initialized and will throw an error if accessed before assignment.
 
-
 //function
-function myfunc(x, y) { 
+function myfunc(x, y) {
   return (x + y) / 2;
 }
 // console.log(myfunc(8,5))
@@ -63,7 +62,7 @@ function myfunc(x, y) {
 // let x=4;
 // let y=4;
 const sum = (a, b) => {
-  return a + b; 
+  return a + b;
 };
 // console.log(sum(x,y))
 
@@ -75,11 +74,11 @@ const sum = (a, b) => {
 // Function return value is the value returned by the function when it is executed.
 
 const helloa = () => {
-  console.log("Hey how are you?");
+  // console.log("Hey how are you?");
   return "Soumya";
-};
+}; 
 // helloa();
-// const e = helloa();
+const e = helloa();
 // console.log(e)
 
 // Synchronous Programming
@@ -114,7 +113,6 @@ const helloa = () => {
 //   }
 //   handel();
 
-
 //CallBack Function:It is a function passed into another function as an arguement,which is then invoked inside the outer function to complete an action
 function funcA(system) {
   setTimeout(() => {
@@ -146,6 +144,7 @@ const personTwo = () => {
 // let b = a;
 // b = b + 5;
 // console.log(b);
+
 //Passed By Reference:Nonprimitive Data type eg: objects,array
 const obj1 = {
   user: "soumya",
@@ -346,9 +345,9 @@ getData();
 //MAP(),FIlTER(),REDUCE()
 //foreach Loop:Array Methods:CAlls a function,once for each array element
 const a1 = [2, 23, 5, 7, 28, 34];
-a1.forEach((value, index, array) => {
-  // console.log(`${index}=${value} ${array}`)
-});
+// a1.forEach((value, index, array) => {
+// console.log(`${index}=${value} ${array}`)
+// });
 
 // mongodb 5 employee highest salary get
 //databasename.collectionname.sort({salary:-1}).limit(1)
@@ -370,7 +369,7 @@ a1.forEach((value, index, array) => {
 //   }
 // console.log(add(33));
 
-//hence forEach() method does not return a new array, whereas the map() method returns a new array. The map() method is used to transform the elements of an array, whereas the forEach() method is used to loop through the elements of an array.
+//Hence forEach() method does not return a new array, whereas the map() method returns a new array. The map() method is used to transform the elements of an array, whereas the forEach() method is used to loop through the elements of an array.
 //MAP():Creating a new array by performing some operations on each array element
 let d = a1.map((value, index, array) => {
   // console.log(value,index,array)
@@ -397,11 +396,11 @@ let h = a1.filter((value) => {
 });
 // console.log(h)
 //Reduce():reduce an array to A single value
-let a2 = [2, 3, 4, 6];
-let k = a2.reduce((h1, h2) => {
-  return h1 + h2;
-});
-let m=a2.reduce((acc,ind)=>acc+ind,0)
+// let a2 = [2, 3, 4, 6];
+// let k = a2.reduce((h1, h2) => {
+//   return h1 + h2;
+// });
+// let m=a2.reduce((acc,ind)=>acc+ind,0)
 // console.log(m);
 // console.log(k)
 //From(): Used to creat an array from any other object
@@ -435,6 +434,22 @@ for (let i in a1) {
 //What is REPL?(Read Evaluate Print Loop)
 //It's an interactive shell that processes Node.js expressions.
 //The shell reads JavaScript code which the user enters, evaluates the result of interpreting the line of code, prints the result to the user, and loops continues until the user signals to quit.
+
+//bubbling and capture
+//In bubbling the innermost elements event is handeles first and then outer.
+//In capturing the outernost elements event is handeles first and then inner.
+//addEventListener(event,function,useCapture)
+//the default value is false which is for bubbling propagation,when the value is set to true the event use the capturing propagation
+
+//ex:
+// let box1=document.getElementById("box-1")
+// box1.addEventListener("click",()=>{
+// console.log('Box1 is clocked')
+// })
+// let container=document.getElementById("container-1")
+// container.addEventListener("click",()=>{
+// console.log('Box1 is clocked')
+// },true)
 
 //What is EventLoop?
 //JavaScript has a runtime model based on an event loop, which is responsible for executing the code, collecting and processing events, and executing queued sub-tasks.
@@ -493,7 +508,7 @@ var obj4 = {
 //call() method allows an object to use the method (function) of another object
 // eg:1
 function hey() {
-  console.log("Hello"+" "+this.name)
+  console.log("Hello" + " " + this.name);
 }
 let obj5 = {
   name: "harry",
@@ -502,7 +517,7 @@ let obj5 = {
 // eg: 3;
 
 function saySomething(message) {
-  console.log(this.name + " is " + message) ;
+  console.log(this.name + " is " + message);
 }
 let person6 = { name: "John" };
 saySomething.call(person6, "awesome");
@@ -514,7 +529,7 @@ saySomething.call(person6, "awesome");
 //arguments as an array.
 function saySomething(message) {
   // console.log(this.name + " is " + message);
-} 
+}
 var person4 = { name: "John" };
 // saySomething.apply(person4, ["awesome"]);
 //BIND():
@@ -570,7 +585,7 @@ function sum2(a, b, c) {
 // higher order function
 function higherOrderFunction(func) {
   console.log("I am higher order function");
-  func();;
+  func();
 }
 function callbackFunction() {
   console.log("I am  a callback function");
@@ -602,10 +617,10 @@ function callbackFunction() {
 // However, the output findings are inaccurate. These are sometimes more difficult
 // to correct than
 
-//What is the use of a constructor function in javascript?
-//Constructor functions are used to create objects in javascript.
-//If we want to create multiple objects having similar properties and methods,
-// constructor functions are used.
+// What is the use of a constructor function in javascript?
+// Constructor functions are used to create objects in javascript.
+// If we want to create multiple objects having similar properties and methods,
+// Constructor functions are used.
 
 // class Person {
 //   constructor(name, age, gender) {
@@ -625,23 +640,23 @@ function callbackFunction() {
 // var person1 = new Person("Vivek", 76, "male");
 // console.log(person1);
 
-//object destructuring?
-//to extract properties from objects and bind them to variables
+// object destructuring?
+// to extract properties from objects and bind them to variables
 // const user = {
 //   name: "Alex",
 //   address: "15th Park Avenue",
-//   age: 43,
+//   age: 43
 // };
 
 // const { name, age } = user;
-// console.log(name, age); // Output, Alex 43
+// console.log(name, age);  //Output, Alex 43
 
-//What is DOM?
+// What is DOM?
 // DOM stands for Document Object Model. DOM is a programming interface for
 // HTML and XML documents.
 // When the browser tries to render an HTML document, it creates an object based
-// on the HTML document called DOM. Using this DOM, we can manipulate or
-// change various elements inside the HTML document.
+// On the HTML document called DOM. Using this DOM, we can manipulate or
+// Change various elements inside the HTML document.
 
 //hoisting
 // y = 8;
@@ -650,9 +665,12 @@ function callbackFunction() {
 
 //console.trace() by using this method we can know the function where it is derived(know the grandparent,parent,child,innerchild of the function)
 
-//single threaded//multithread
-//cluster
-//eventdriven
-//MongoDB is a NoSQL database, which means it is a non-relational database
+//Single threaded-eventloop
 
-//what is array prototype?
+//Multithread - it provides an API for creating additional threads through Worker Threads module for CPU-intensive  tasks.These additional threads can execute code concurrently, leveraging multi-core systems.
+
+//Cluster - Cluster is used to make the application scalable,and can create child processes that share same server  port.
+
+//Eventdriven - "event-driven" means that much of the functionality is based on events and event handling.
+
+//Array prototype - Array prototype provides methods and properties that are available for manipulating all arrays  in JavaScript

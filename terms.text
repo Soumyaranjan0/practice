@@ -1,17 +1,17 @@
 What is SDLC?
  SDLC stands for software development life cycle , it is a systematic process of planning,design,devloping,testing,deployement and maintaining software in a it industry.By using this methodology we can build a high quality product which will meet the customers needs and also budget constraints.
  The phases are:
- 1.Requirement Analysis:“What are the current problems?” This stage of the SDLC means getting input from all stakeholders, including customers, salespeople, industry experts, and programmers. Learn the strengths and weaknesses of the current system with improvement as the goal.
- 2.planning:“What do we want?” In this stage of the SDLC, the team determines the cost and resources required for implementing the analyzed requirements. It also details the risks involved and provides sub-plans for softening those risks.
- In other words, the team should determine the feasibility of the projectin terms of technical, operational, and economic aspects and how they can implement the project successfully with the lowest risk in mind.
- 3.Designing:Create a detailed system design based on the requirements.Specify the architecture, components, modules, interfaces, and data for the system and also design the UI hows it looks.
- 4.devloping(implementing):Write the code for the software according to the design specifications.
+ 1.Requirement Analysis: “What are the current problems?” This stage of the SDLC means getting input from all stakeholders, including customers, salespeople, industry experts, and programmers. Learn the strengths and weaknesses of the current system with improvement as the goal.
+ 2.planning: “What do we want?” In this stage of the SDLC, the team determines the cost and resources required for implementing the analyzed requirements. It also details the risks involved and provides sub-plans for softening those risks.
+ In other words, the team should determine the feasibility of the project in terms of technical, operational, and economic aspects and how they can implement the project successfully with the lowest risk in mind.
+ 3.Designing: Create a detailed system design based on the requirements. Specify the architecture, components, modules, interfaces, and data for the system and also design the UI hows it looks.
+ 4.devloping(implementing): Write the code for the software according to the design specifications.
  5:Test: Test the code which was written by the devloper and fix those issue until the product meets the original specifications.
- 6:Deployement:Release the software for production use.Deploy the application to the target environment.
+ 6:Deployement: Release the software for production use.Deploy the application to the target environment.
  7:Maintenance and Support:Address and fix any issues identified in the live environment.Implement updates, enhancements, or patches as needed.Provide ongoing support and maintenance.
 
  //What is Agile Methodology?
- Iterative and Incremental: Agile is an iterative and incremental approach. It divides the project into small increments with minimal planning so we can build a high qality product and it allows for flexibility and changes throughout the development process.
+ Iterative and Increment al: Agile is an iterative and incremental approach. It divides the project into small increments with minimal planning so we can build a high qality product and it allows for flexibility and changes throughout the development process.
 
 Iterations (Sprints):
 Planning: High-level planning is done, and the project is divided into iterations (sprints).
@@ -122,7 +122,7 @@ Key characteristics of microservices include:
 
 Modularity: Each microservice is a self-contained module, focusing on a specific business capability.
 
-Independence: Microservices can be developed, deployed, and scaled independently. Changes to one microservice do not necessarily affect others.
+Independence: Microservices can be developed, deployed, and scaled independently. Changes to one microservice do not necessarily affect others. 
 
 Resilience: If one microservice fails, it doesn't necessarily bring down the entire application. The rest of the system can continue to function.
 
