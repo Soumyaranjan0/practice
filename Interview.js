@@ -287,6 +287,7 @@
 // if(number<=0){
 //     console.log("Finding factors are not possible");
 // }
+
 //16//How to compare two array is equal or not.
 // var arr1=[2,9,6,8,4]
 // var arr2=[4,8,6,9,2]
@@ -486,7 +487,7 @@
 // }
 
 //27//
-// const inputString = "s3b4c2";    
+// const inputString = "s3b4c2"; 
 // let result = "";
 // for (let i = 0; i < inputString.length; i++) {
 //   const char = inputString[i];
@@ -606,7 +607,7 @@
 //console.log(arrayRotation(array,2))
 
 //Remove a word from an array
-// let string="soumya is a soumya good boy";
+// let string="soumya is a soumya good boy";   
 // let remove="soumya";
 // let newstring=(string,remove)=>{
 // return string.split(" ").filter((ele)=>ele!==remove).join(" ")

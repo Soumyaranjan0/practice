@@ -1,7 +1,7 @@
 //what is javascript
 //it is a scripting language that enables you to creat a dynamically updated content,control multimedia,animated images etc... and not only it uses in browser but also you can use it in server.
 
-//what is nodejs
+//what is nodejs  
 //node js is the runtime environment of javascript used to build the scalable application and it can run in multiple os,and it is asynchoronous in nature.
 
 //What is the newfeatures of HTML ?
@@ -76,8 +76,8 @@ const sum = (a, b) => {
 const helloa = () => {
   // console.log("Hey how are you?");
   return "Soumya";
-}; 
-// helloa();
+};
+// helloa(); 
 const e = helloa();
 // console.log(e)
 
@@ -101,17 +101,17 @@ const e = helloa();
 // console.log("End");
 
 //Handel code line by line
-// async function handel() {
-//   console.log("start")
-//       await new Promise((resolve)=>{
-//           setTimeout(()=>{
-//               console.log("middle")
-//               resolve()
-//           },2000)
-//       })
-//   console.log("end")
-//   }
-//   handel();
+async function handel() {
+  console.log("start")
+      await new Promise((resolve)=>{
+          setTimeout(()=>{
+              console.log("middle")
+              resolve()
+          },2000)
+      })
+  console.log("end")
+  }
+  handel();
 
 //CallBack Function:It is a function passed into another function as an arguement,which is then invoked inside the outer function to complete an action
 function funcA(system) {

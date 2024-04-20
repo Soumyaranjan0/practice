@@ -3,7 +3,7 @@ const citrus = fruits.sort();
 // console.log(citrus);
 
 const array=[,,,]
-// console.log(array[2]);
+console.log(array[2]);
 
 {
 // b=4
