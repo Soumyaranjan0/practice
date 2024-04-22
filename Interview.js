@@ -596,12 +596,12 @@
 // console.log(array)
 
 //Another method
-//let array=[2,56,-3,5,7,9]
+// let array=[2,56,-3,5,7,9]
 // function arrayRotation(arr,rotation){
-//     for(let j=0;j<rotation;j++){
-//        let ele= arr.pop()
-//         arr.unshift(ele)
-//     }
+    // for(let j=0;j<rotation;j++){
+    //    let ele= arr.pop()
+    //     arr.unshift(ele)
+    // }
 // return arr
 // }
 //console.log(arrayRotation(array,2))

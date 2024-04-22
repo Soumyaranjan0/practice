@@ -101,17 +101,17 @@ const e = helloa();
 // console.log("End");
 
 //Handel code line by line
-async function handel() {
-  console.log("start")
-      await new Promise((resolve)=>{
-          setTimeout(()=>{
-              console.log("middle")
-              resolve()
-          },2000)
-      })
-  console.log("end")
-  }
-  handel();
+// async function handel() {
+//   console.log("start")
+//       await new Promise((resolve)=>{
+//           setTimeout(()=>{
+//               console.log("middle")
+//               resolve()
+//           },2000)
+//       })
+//   console.log("end")
+//   }
+//   handel();
 
 //CallBack Function:It is a function passed into another function as an arguement,which is then invoked inside the outer function to complete an action
 function funcA(system) {
@@ -437,7 +437,7 @@ for (let i in a1) {
 
 //bubbling and capture
 //In bubbling the innermost elements event is handeles first and then outer.
-//In capturing the outernost elements event is handeles first and then inner.
+//In capturing the outermost elements event is handeles first and then inner.
 //addEventListener(event,function,useCapture)
 //the default value is false which is for bubbling propagation,when the value is set to true the event use the capturing propagation
 
@@ -489,17 +489,17 @@ var di = {
 di.getname();
 
 var obj3 = {
-  name: "Soumya",
+  name:"Soumya",
   getname: function () {
     console.log(this.name);
   },
 };
 var getname1 = obj3.getname;
 var obj4 = {
-  name: "Akshya",
+  name:"Akshya",
   getname1,
 };
-// obj4.getname1()
+//obj4.getname1()
 
 //Explain call(), apply() and, bind() methods.
 //CAll():
@@ -579,7 +579,7 @@ function sum2(a, b, c) {
 // console.log(sum2(1)(2)(3)) // 6
 
 //higher order function
-// takes one or more functions as arguments (i.e. a procedural parameter, which is a parameter of a procedure that is itself a procedure), returns a function as its result.
+// takes one or more functions as arguments (i.e. a procedural parameter, which is a parameter of a procedure that  is itself a procedure), returns a function as its result.
 // Callback function, passed as a parameter in the higher order function
 
 // higher order function
@@ -674,3 +674,9 @@ function callbackFunction() {
 //Eventdriven - "event-driven" means that much of the functionality is based on events and event handling.
 
 //Array prototype - Array prototype provides methods and properties that are available for manipulating all arrays  in JavaScript
+// Array.prototype.sum = function() {
+//   return this.reduce((acc, curr) => acc + curr, 0);
+// };
+
+// const numbers = [1, 2, 3, 4, 5];
+// console.log(numbers.sum()); // Output: 15
