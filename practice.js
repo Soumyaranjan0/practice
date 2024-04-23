@@ -451,9 +451,6 @@ for (let i in a1) {
 // console.log('Box1 is clocked')
 // },true)
 
-//What is EventLoop?
-//JavaScript has a runtime model based on an event loop, which is responsible for executing the code, collecting and processing events, and executing queued sub-tasks.
-//This model is quite different from models in other languages like C and Java.
 
 //What is Clouser?
 //A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment).
@@ -665,11 +662,41 @@ function callbackFunction() {
 
 //console.trace() by using this method we can know the function where it is derived(know the grandparent,parent,child,innerchild of the function)
 
-//Single threaded-eventloop
+//What is EventLoop?
+//Event loop is basically the runtime model of javascript, which is responsible for executing the code, collecting and processing events, and executing queued sub-tasks.
+//This model is quite different from models in other languages like C and Java.
 
-//Multithread - it provides an API for creating additional threads through Worker Threads module for CPU-intensive  tasks.These additional threads can execute code concurrently, leveraging multi-core systems.
+//Single threaded-Single task execution,no parallel execution,simplycity,eventloop
 
-//Cluster - Cluster is used to make the application scalable,and can create child processes that share same server  port.
+//Multithread - it provides an API for creating additional threads through Worker Threads module for CPU-intensive  tasks.These additional threads can execute code concurrently, leveraging multi-core systems.Node.js is inherently single-threaded. However, it does support asynchronous programming, which allows it to handle many concurrent operations efficiently without needing to spawn multiple threads.
+
+//Cluster - Cluster is used to make the application scalable,and can create child processes that share same server  port., enabling your Node.js application to take advantage of multi-core systems.By distributing the workload across multiple worker processes.
+
+// const cluster = require('cluster');
+// const http = require('http');
+// const numCPUs = require('os').cpus().length;
+
+// if (cluster.isMaster) {
+//   console.log(`Master ${process.pid} is running`);
+
+//   // Fork worker processes
+//   for (let i = 0; i < numCPUs; i++) {
+//     cluster.fork();
+//   }
+
+//   cluster.on('exit', (worker, code, signal) => {
+//     console.log(`Worker ${worker.process.pid} died`);
+//   });
+// } else {
+//   // Worker process, run your Node.js application here
+//   http.createServer((req, res) => {
+//     res.writeHead(200);
+//     res.end('Hello, World!\n');
+//   }).listen(8000);
+
+//   console.log(`Worker ${process.pid} started`);
+// }
+
 
 //Eventdriven - "event-driven" means that much of the functionality is based on events and event handling.
 
