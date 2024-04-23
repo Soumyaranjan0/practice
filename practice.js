@@ -101,17 +101,17 @@ const e = helloa();
 // console.log("End");
 
 //Handel code line by line
-async function handel() {
-  console.log("start")
-      await new Promise((resolve)=>{
-          setTimeout(()=>{
-              console.log("middle")
-              resolve()
-          },2000)
-      })
-  console.log("end")
-  }
-  handel();
+// async function handel() {
+//   console.log("start")
+//       await new Promise((resolve)=>{
+//           setTimeout(()=>{
+//               console.log("middle")
+//               resolve()
+//           },2000)
+//       })
+//   console.log("end")
+//   }
+//   handel();
 
 //CallBack Function:It is a function passed into another function as an arguement,which is then invoked inside the outer function to complete an action
 function funcA(system) {
@@ -437,7 +437,7 @@ for (let i in a1) {
 
 //bubbling and capture
 //In bubbling the innermost elements event is handeles first and then outer.
-//In capturing the outernost elements event is handeles first and then inner.
+//In capturing the outermost elements event is handeles first and then inner.
 //addEventListener(event,function,useCapture)
 //the default value is false which is for bubbling propagation,when the value is set to true the event use the capturing propagation
 
@@ -451,9 +451,6 @@ for (let i in a1) {
 // console.log('Box1 is clocked')
 // },true)
 
-//What is EventLoop?
-//JavaScript has a runtime model based on an event loop, which is responsible for executing the code, collecting and processing events, and executing queued sub-tasks.
-//This model is quite different from models in other languages like C and Java.
 
 //What is Clouser?
 //A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment).
@@ -489,17 +486,17 @@ var di = {
 di.getname();
 
 var obj3 = {
-  name: "Soumya",
+  name:"Soumya",
   getname: function () {
     console.log(this.name);
   },
 };
 var getname1 = obj3.getname;
 var obj4 = {
-  name: "Akshya",
+  name:"Akshya",
   getname1,
 };
-// obj4.getname1()
+//obj4.getname1()
 
 //Explain call(), apply() and, bind() methods.
 //CAll():
@@ -579,7 +576,7 @@ function sum2(a, b, c) {
 // console.log(sum2(1)(2)(3)) // 6
 
 //higher order function
-// takes one or more functions as arguments (i.e. a procedural parameter, which is a parameter of a procedure that is itself a procedure), returns a function as its result.
+// takes one or more functions as arguments (i.e. a procedural parameter, which is a parameter of a procedure that  is itself a procedure), returns a function as its result.
 // Callback function, passed as a parameter in the higher order function
 
 // higher order function
@@ -665,12 +662,48 @@ function callbackFunction() {
 
 //console.trace() by using this method we can know the function where it is derived(know the grandparent,parent,child,innerchild of the function)
 
-//Single threaded-eventloop
+//What is EventLoop?
+//Event loop is basically the runtime model of javascript, which is responsible for executing the code, collecting and processing events, and executing queued sub-tasks.
+//This model is quite different from models in other languages like C and Java.
 
-//Multithread - it provides an API for creating additional threads through Worker Threads module for CPU-intensive  tasks.These additional threads can execute code concurrently, leveraging multi-core systems.
+//Single threaded-Single task execution,no parallel execution,simplycity,eventloop
 
-//Cluster - Cluster is used to make the application scalable,and can create child processes that share same server  port.
+//Multithread - it provides an API for creating additional threads through Worker Threads module for CPU-intensive  tasks.These additional threads can execute code concurrently, leveraging multi-core systems.Node.js is inherently single-threaded. However, it does support asynchronous programming, which allows it to handle many concurrent operations efficiently without needing to spawn multiple threads.
+
+//Cluster - Cluster is used to make the application scalable,and can create child processes that share same server  port., enabling your Node.js application to take advantage of multi-core systems.By distributing the workload across multiple worker processes.
+
+// const cluster = require('cluster');
+// const http = require('http');
+// const numCPUs = require('os').cpus().length;
+
+// if (cluster.isMaster) {
+//   console.log(`Master ${process.pid} is running`);
+
+//   // Fork worker processes
+//   for (let i = 0; i < numCPUs; i++) {
+//     cluster.fork();
+//   }
+
+//   cluster.on('exit', (worker, code, signal) => {
+//     console.log(`Worker ${worker.process.pid} died`);
+//   });
+// } else {
+//   // Worker process, run your Node.js application here
+//   http.createServer((req, res) => {
+//     res.writeHead(200);
+//     res.end('Hello, World!\n');
+//   }).listen(8000);
+
+//   console.log(`Worker ${process.pid} started`);
+// }
+
 
 //Eventdriven - "event-driven" means that much of the functionality is based on events and event handling.
 
 //Array prototype - Array prototype provides methods and properties that are available for manipulating all arrays  in JavaScript
+// Array.prototype.sum = function() {
+//   return this.reduce((acc, curr) => acc + curr, 0);
+// };
+
+// const numbers = [1, 2, 3, 4, 5];
+// console.log(numbers.sum()); // Output: 15
