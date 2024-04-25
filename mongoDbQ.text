@@ -33,3 +33,6 @@ d.Index Management:
 MongoDB allows you to manage indexes by creating, dropping, and listing indexes using various methods provided by the MongoDB shell or drivers.
      Proper indexing can significantly improve the speed of query execution, especially for large collections or frequently accessed data.
 
+8.Pagination:
+Pagination is a technique used to divide a large dataset into smaller, more manageable chunks or pages for displaying to users.
+

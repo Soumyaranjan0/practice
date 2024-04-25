@@ -526,7 +526,7 @@
 // console.log(compressedString);
 
 //28//
-// let input = [2, 3, 4, 5, 3, 5, 3, 4, 5, 3];
+// let input = [2, 3, 4, 5, 3, 5, 3, 4, 5, 3]; 
 // // Count the frequency of each element using an object
 // const frequencyMap = {};
 // for (const num of input) {
@@ -550,12 +550,12 @@
 //     freq[char]=(freq[char] || 0) +1
 // }
 // console.log(freq);
-// let maxchar=""
+// let maxchar="";
 // let maxcount=0;
 // for (let i in freq){
 // if (freq[i]>maxcount){
 //     maxchar=i;
-//     maxcount=freq[i]
+//     maxcount=freq[i];
 // }
 // }
 // console.log(maxchar,maxcount);
@@ -635,22 +635,7 @@
 // }
 // console.log(sorted(array))
 
-// function findCharsAndNumbers(inputString) {
-//     let characters = [];
-//     let numbers = [];
-
-//     for (let char of inputString) {
-//       if (/[a-zA-Z]/.test(char)) {
-//         characters.push(char);
-//       } else if (/\d/.test(char)) {
-//         numbers.push(char);
-//       }
-//     }
-
-//     return {characters,numbers};
-//   }
-//   console.log(findCharsAndNumbers("a1b2c3d4")) //{ characters: [ 'a', 'b', 'c', 'd' ], numbers: [ '1', '2', '3', '4' ] }
-
+ 
 // function findCharsAndNumbers(inputString) {
 // //     // Find characters
 //     let characters = inputString.match(/[a-zA-Z]/g) || [];
