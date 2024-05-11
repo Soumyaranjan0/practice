@@ -76,7 +76,7 @@
 // console.log(secondlargest);
 
 //4//Find the missing number between 1 to 10
-// const array=[1,3,4,5,6,8,10]
+// const array=[1,3,4,5,6,8,10] 
 // const missingelement=[];
 // const missingNumber=(item)=>{
 // const min=Math.min(...array)
@@ -637,7 +637,7 @@
 
  
 // function findCharsAndNumbers(inputString) {
-// //     // Find characters
+// // Find characters
 //     let characters = inputString.match(/[a-zA-Z]/g) || [];
 //     // Find numbers
 //     let numbers =inputString.match(/\d+/g) || [];
@@ -649,8 +649,8 @@
 //Count the Number of char in a string
 // let string="Soumya Ranjan Behera"
 // let result=[]
-// let array=string.split(" ")
-// for (let char of array){
+// let array1=string.split(" ")
+// for (let char of array1){
 //     let count=char.length
 //     result.push(count)
 // }

@@ -4,7 +4,7 @@
 //what is nodejs  
 //node js is the runtime environment of javascript used to build the scalable application and it can run in multiple os,and it is asynchoronous in nature.
 
-//What is the newfeatures of HTML ?
+//What is the newfeatures of HTML5 ?
 // 1.semantic Element:
 // HTML5 introduced several new semantic elements, such as <header>, <nav>, <article>, <section>, <footer>, and <aside>, which help structure a web page more meaningfully.
 // 2.New Form Elements:
@@ -352,9 +352,9 @@ const a1 = [2, 23, 5, 7, 28, 34];
 // mongodb 5 employee highest salary get
 //databasename.collectionname.sort({salary:-1}).limit(1)
 //second highest salary
-//higher order function
-//middleware next function kama
-//
+//db.employees.find().sort({ salary: -1 }).limit(2).skip(1)
+
+
 // console.log(add(33));//33
 // console.log(add(1,2,3));//6
 // console.log(add(1,2,3,4));//10
@@ -680,7 +680,7 @@ function callbackFunction() {
 //   console.log(`Master ${process.pid} is running`);
 
 //   // Fork worker processes
-//   for (let i = 0; i < numCPUs; i++) {
+//   for (let i = 0; i < numCPUs; i++){
 //     cluster.fork();
 //   }
 
