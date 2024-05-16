@@ -36,3 +36,5 @@ MongoDB allows you to manage indexes by creating, dropping, and listing indexes 
 8.Pagination:
 Pagination is a technique used to divide a large dataset into smaller, more manageable chunks or pages for displaying to users.
 
+
+
