@@ -707,3 +707,114 @@ function callbackFunction() {
 
 // const numbers = [1, 2, 3, 4, 5];
 // console.log(numbers.sum()); // Output: 15
+
+
+//How can i push the value to an array even after i can declair it through const
+// const arr=[]
+// arr[0]=2
+// console.log(arr)
+// In JavaScript, declaring a variable as const means that the variable cannot be reassigned to a different value. However, it does not mean that the value itself is immutable.
+
+// When you declare an array using const, you're saying that the variable arr will always reference the same array. You can't reassign arr to point to a different array. But you can still modify the array itself, like adding or removing elements.
+
+//console.log(x); // ReferenceError: Cannot access 'x' before initialization
+// const x = 6;
+//in case of var it will show undefined and in case of let and const it will show reference error you cannot access  x before initialize.
+
+//console.log(x())
+// function x(){
+//   return 30;
+// } //it will return 30
+
+// console.log(x);
+// var x=()=>{
+//     return 30;
+// } //undefined
+
+// console.log(x);
+// const x=function y(){
+//     return 30;
+// } //Cannot access 'x' before initialization
+
+//HTTP methods
+// 1. GET:
+// Purpose: Retrieves data from a specified resource.
+// Usage: Typically used for reading or fetching data.
+// Safety: Considered safe because it should not modify any resources on the server.
+// Idempotent: Multiple identical requests should produce the same result each time.
+// Example: Fetching a user's profile information from a server.
+// 2. POST:
+// Purpose: Submits data to be processed to a specified resource.
+// Usage: Commonly used when creating new resources or submitting form data.
+// Safety: Not considered safe as it may modify or create resources on the server.
+// Example: Submitting a registration form to create a new user account.
+// 3. PUT:
+// Purpose: Updates data on a server.
+// Usage: Typically used to replace the entire resource with the new data provided.
+// Idempotent: Multiple identical requests should have the same effect as a single request.
+// Example: Updating a user's profile information with new data.
+// 4. DELETE:
+// Purpose: Deletes a specified resource from the server.
+// Usage: Used to remove resources from the server.
+// Idempotent: Multiple identical requests should have the same effect as a single request.
+// Example: Deleting a user account from the server.
+// 5. PATCH:
+// Purpose: Applies partial modifications to a resource.
+// Usage: Used when you want to apply a partial update to a resource rather than replacing the entire resource.
+// Example: Updating only the email address of a user's profile without affecting other fields.
+// 6. HEAD:
+// Purpose: Retrieves only the headers of the response, not the body.
+// Usage: Useful for checking the status of a resource without downloading the entire content.
+// Example: Checking if a file has been modified on the server without downloading the entire file.
+// 7. OPTIONS:
+// Purpose: Describes the communication options for the target resource.
+// Usage: Typically used to determine the allowed methods and other capabilities supported by a web server.
+// Example: Checking which HTTP methods are allowed on a particular endpoint. 
+// OPTIONS /api/users HTTP/1.1
+// Host: example.com 
+// inResponse
+//  HTTP/1.1 200 OK
+// Allow: GET, POST, PUT, DELETE
+// 8. TRACE:
+// Purpose: Echoes the received request so that a client can see what changes or additions have been made by intermediate servers.
+// Usage: Primarily used for diagnostic purposes.
+// Example: Debugging and tracing the route of an HTTP request through various proxies or servers.
+// 9. CONNECT:
+// Purpose: Establishes a connection to the server, typically for SSL tunneling.
+// Usage: Used when a client needs to establish a secure tunnel through which it can communicate securely with the server.
+// Example: Establishing a secure connection to a proxy server for secure communication
+
+
+//what is the difference between normal function and arraow function in javascript?
+
+//Lexical this Binding:Normal function support this binding but arrow function doesn't support.
+//new keyword:
+// Normal Function:
+// Can be used as constructor functions with the new keyword to create new objects.
+// Arrow Function:
+// Cannot be used as constructor functions; attempting to use new with an arrow function will result in an error.
+// prototype Property:
+// Normal Function:
+// Has a prototype property, which can be used to add properties and methods to all instances created with that constructor function.
+// Arrow Function:
+// Does not have a prototype property because they cannot be used as constructor functions.
+
+// 3. Arguments Object:
+
+// Normal Function:
+// Has access to the arguments object, which is an array-like object containing all the arguments passed to the function.
+// function myFunction() {
+//   console.log(arguments); // Outputs: [1, 2, 3]
+// }
+// myFunction(1, 2, 3);
+
+// Arrow Function:
+// Does not have its own arguments object. If you need to access arguments, you can use rest parameters ...args instead.
+//const myArrowFunction = (...args) => {
+//   console.log(args); // Outputs: [1, 2, 3]
+// };
+// myArrowFunction(1, 2, 3);
+
+
+//Cors
+//CORS, or Cross-Origin Resource Sharing, is a security feature in web browsers that allows a website to request resources from another domain. It uses HTTP headers to let a server specify which domains are permitted to access its resources, enabling safe communication between different websites.

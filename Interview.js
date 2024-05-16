@@ -76,7 +76,7 @@
 // console.log(secondlargest);
 
 //4//Find the missing number between 1 to 10
-// const array=[1,3,4,5,6,8,10] 
+// const array=[1,3,4,5,6,8,10]
 // const missingelement=[];
 // const missingNumber=(item)=>{
 // const min=Math.min(...array)
@@ -386,8 +386,8 @@
 //   }
 //   // Example: Print a right-angled triangle with height 5
 //   printRightAngleTriangle(5);
-//Without Function
-// for (let i = 1; i <= 5; i++) {
+//   Without Function
+//   for (let i = 1; i <= 5; i++) {
 //     let row = '';
 //     for (let j = 1; j <= i; j++) {
 //       row += '*';
@@ -487,7 +487,7 @@
 // }
 
 //27//
-// const inputString = "s3b4c2"; 
+// const inputString = "s3b4c2";
 // let result = "";
 // for (let i = 0; i < inputString.length; i++) {
 //   const char = inputString[i];
@@ -526,7 +526,7 @@
 // console.log(compressedString);
 
 //28//
-// let input = [2, 3, 4, 5, 3, 5, 3, 4, 5, 3]; 
+// let input = [2, 3, 4, 5, 3, 5, 3, 4, 5, 3];
 // // Count the frequency of each element using an object
 // const frequencyMap = {};
 // for (const num of input) {
@@ -598,16 +598,16 @@
 //Another method
 // let array=[2,56,-3,5,7,9]
 // function arrayRotation(arr,rotation){
-    // for(let j=0;j<rotation;j++){
-    //    let ele= arr.pop()
-    //     arr.unshift(ele)
-    // }
+// for(let j=0;j<rotation;j++){
+//    let ele= arr.pop()
+//     arr.unshift(ele)
+// }
 // return arr
 // }
 //console.log(arrayRotation(array,2))
 
 //Remove a word from an array
-// let string="soumya is a soumya good boy";   
+// let string="soumya is a soumya good boy";
 // let remove="soumya";
 // let newstring=(string,remove)=>{
 // return string.split(" ").filter((ele)=>ele!==remove).join(" ")
@@ -635,7 +635,6 @@
 // }
 // console.log(sorted(array))
 
- 
 // function findCharsAndNumbers(inputString) {
 // // Find characters
 //     let characters = inputString.match(/[a-zA-Z]/g) || [];
@@ -727,5 +726,3 @@ let newArray = array.filter((_, index) => index % 2 == 0);
 // let arr = [7,9,11,15,17,19]
 // let reverse=arr.reduce((acc,cur)=>[cur,...acc],[])
 // console.log(reverse)
-
-
