@@ -10,10 +10,10 @@
 // 2.New Form Elements:
 // HTML5 introduced new form input types, including <input type="date">, <input type="email">, <input type="url">, <input type="tel">, <input type="number">, and more, making it easier to capture specific data types.
 // 3.Audio and Video Elements:
-/* <audio controls> // Syntax
+/*<audio controls> // Syntax
   <source src="audio.mp3" type="audio/mp3">
   Your browser does not support the audio element.
-</audio> */
+</audio>  */
 // HTML5 added the <audio> and <video> elements, allowing developers to embed audio and video content directly into web pages without relying on third-party plugins like Flash.
 // 4.Canvas Element:
 // The <canvas> element enables dynamic rendering of graphics and images using JavaScript, providing a powerful tool for creating interactive and visually appealing applications.
@@ -408,9 +408,9 @@ let j = Array.from("Soumya Ranjan Behera");
 // console.log(j)
 
 //For...of:To get values from an array
-for (let i of a1) {
+for (let i of a1) { 
   // console.log(i)
-}
+} 
 
 //For...in:To get indexs from an array
 for (let i in a1) {
@@ -766,7 +766,7 @@ function callbackFunction() {
 // Purpose: Retrieves only the headers of the response, not the body.
 // Usage: Useful for checking the status of a resource without downloading the entire content.
 // Example: Checking if a file has been modified on the server without downloading the entire file.
-// 7. OPTIONS:
+// 7. OPTIONS:  
 // Purpose: Describes the communication options for the target resource.
 // Usage: Typically used to determine the allowed methods and other capabilities supported by a web server.
 // Example: Checking which HTTP methods are allowed on a particular endpoint. 
@@ -815,6 +815,20 @@ function callbackFunction() {
 // };
 // myArrowFunction(1, 2, 3);
 
-
 //Cors
 //CORS, or Cross-Origin Resource Sharing, is a security feature in web browsers that allows a website to request resources from another domain. It uses HTTP headers to let a server specify which domains are permitted to access its resources, enabling safe communication between different websites.
+
+//Difference between promises and async/await
+// Key Differences
+// Syntax and Readability:
+
+// Promises use .then() and .catch(), which can result in more nested and less readable code, especially with multiple asynchronous operations.
+// async/await provides a more synchronous-looking code structure, which can be easier to read and maintain.
+// Error Handling:
+
+// Promises handle errors using .catch().
+// async/await handles errors using try/catch blocks, which is similar to synchronous error handling.
+
+// Chaining:
+// Promises allow easy chaining of multiple asynchronous operations using .then() and .catch().
+// async/await handles chaining by simply using multiple await expressions in a sequential manner.

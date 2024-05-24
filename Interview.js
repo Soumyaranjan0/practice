@@ -338,7 +338,7 @@
 // console.log(kmtomiles);
 
 //21//To convert first letter of a string is in uppercase
-// let string="soumya is a good boy";
+let string="soumya is a good boy";
 // const convertfirstletter=(str)=>{
 //     var newstr=string.split(" ")
 //     const convert=newstr.map((element)=>{
@@ -395,7 +395,7 @@
 //     console.log(row);
 //   }
 
-//Pyramid
+//Pyramid   
 // Set the height of the pyramid
 // const height = 5;
 // Outer loop: iterate through each row of the pyramid
@@ -489,7 +489,7 @@
 //27//
 // const inputString = "s3b4c2";
 // let result = "";
-// for (let i = 0; i < inputString.length; i++) {
+// for (let i = 0; i < inputString.length; i+=2) {
 //   const char = inputString[i];
 //   const count = parseInt(inputString[i+1]);
 //   // Append the character to the result string 'count' times
