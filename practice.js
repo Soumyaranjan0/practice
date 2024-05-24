@@ -4,16 +4,16 @@
 //what is nodejs  
 //node js is the runtime environment of javascript used to build the scalable application and it can run in multiple os,and it is asynchoronous in nature.
 
-//What is the newfeatures of HTML ?
+//What is the newfeatures of HTML5 ?
 // 1.semantic Element:
 // HTML5 introduced several new semantic elements, such as <header>, <nav>, <article>, <section>, <footer>, and <aside>, which help structure a web page more meaningfully.
 // 2.New Form Elements:
 // HTML5 introduced new form input types, including <input type="date">, <input type="email">, <input type="url">, <input type="tel">, <input type="number">, and more, making it easier to capture specific data types.
 // 3.Audio and Video Elements:
-/* <audio controls> // Syntax
+/*<audio controls> // Syntax
   <source src="audio.mp3" type="audio/mp3">
   Your browser does not support the audio element.
-</audio> */
+</audio>  */
 // HTML5 added the <audio> and <video> elements, allowing developers to embed audio and video content directly into web pages without relying on third-party plugins like Flash.
 // 4.Canvas Element:
 // The <canvas> element enables dynamic rendering of graphics and images using JavaScript, providing a powerful tool for creating interactive and visually appealing applications.
@@ -101,17 +101,17 @@ const e = helloa();
 // console.log("End");
 
 //Handel code line by line
-async function handel() {
-  console.log("start")
-      await new Promise((resolve)=>{
-          setTimeout(()=>{
-              console.log("middle")
-              resolve()
-          },2000)
-      })
-  console.log("end")
-  }
-  handel();
+// async function handel() {
+//   console.log("start")
+//       await new Promise((resolve)=>{
+//           setTimeout(()=>{
+//               console.log("middle")
+//               resolve()
+//           },2000)
+//       })
+//   console.log("end")
+//   }
+//   handel();
 
 //CallBack Function:It is a function passed into another function as an arguement,which is then invoked inside the outer function to complete an action
 function funcA(system) {
@@ -352,9 +352,9 @@ const a1 = [2, 23, 5, 7, 28, 34];
 // mongodb 5 employee highest salary get
 //databasename.collectionname.sort({salary:-1}).limit(1)
 //second highest salary
-//higher order function
-//middleware next function kama
-//
+//db.employees.find().sort({ salary: -1 }).limit(2).skip(1)
+
+
 // console.log(add(33));//33
 // console.log(add(1,2,3));//6
 // console.log(add(1,2,3,4));//10
@@ -408,9 +408,9 @@ let j = Array.from("Soumya Ranjan Behera");
 // console.log(j)
 
 //For...of:To get values from an array
-for (let i of a1) {
+for (let i of a1) { 
   // console.log(i)
-}
+} 
 
 //For...in:To get indexs from an array
 for (let i in a1) {
@@ -437,7 +437,7 @@ for (let i in a1) {
 
 //bubbling and capture
 //In bubbling the innermost elements event is handeles first and then outer.
-//In capturing the outernost elements event is handeles first and then inner.
+//In capturing the outermost elements event is handeles first and then inner.
 //addEventListener(event,function,useCapture)
 //the default value is false which is for bubbling propagation,when the value is set to true the event use the capturing propagation
 
@@ -451,9 +451,6 @@ for (let i in a1) {
 // console.log('Box1 is clocked')
 // },true)
 
-//What is EventLoop?
-//JavaScript has a runtime model based on an event loop, which is responsible for executing the code, collecting and processing events, and executing queued sub-tasks.
-//This model is quite different from models in other languages like C and Java.
 
 //What is Clouser?
 //A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment).
@@ -489,17 +486,17 @@ var di = {
 di.getname();
 
 var obj3 = {
-  name: "Soumya",
+  name:"Soumya",
   getname: function () {
     console.log(this.name);
   },
 };
 var getname1 = obj3.getname;
 var obj4 = {
-  name: "Akshya",
+  name:"Akshya",
   getname1,
 };
-// obj4.getname1()
+//obj4.getname1()
 
 //Explain call(), apply() and, bind() methods.
 //CAll():
@@ -579,7 +576,7 @@ function sum2(a, b, c) {
 // console.log(sum2(1)(2)(3)) // 6
 
 //higher order function
-// takes one or more functions as arguments (i.e. a procedural parameter, which is a parameter of a procedure that is itself a procedure), returns a function as its result.
+// takes one or more functions as arguments (i.e. a procedural parameter, which is a parameter of a procedure that  is itself a procedure), returns a function as its result.
 // Callback function, passed as a parameter in the higher order function
 
 // higher order function
@@ -665,12 +662,173 @@ function callbackFunction() {
 
 //console.trace() by using this method we can know the function where it is derived(know the grandparent,parent,child,innerchild of the function)
 
-//Single threaded-eventloop
+//What is EventLoop?
+//Event loop is basically the runtime model of javascript, which is responsible for executing the code, collecting and processing events, and executing queued sub-tasks.
+//This model is quite different from models in other languages like C and Java.
 
-//Multithread - it provides an API for creating additional threads through Worker Threads module for CPU-intensive  tasks.These additional threads can execute code concurrently, leveraging multi-core systems.
+//Single threaded-Single task execution,no parallel execution,simplycity,eventloop
 
-//Cluster - Cluster is used to make the application scalable,and can create child processes that share same server  port.
+//Multithread - it provides an API for creating additional threads through Worker Threads module for CPU-intensive  tasks.These additional threads can execute code concurrently, leveraging multi-core systems.Node.js is inherently single-threaded. However, it does support asynchronous programming, which allows it to handle many concurrent operations efficiently without needing to spawn multiple threads.
+
+//Cluster - Cluster is used to make the application scalable,and can create child processes that share same server  port., enabling your Node.js application to take advantage of multi-core systems.By distributing the workload across multiple worker processes.
+
+// const cluster = require('cluster');
+// const http = require('http');
+// const numCPUs = require('os').cpus().length;
+
+// if (cluster.isMaster) {
+//   console.log(`Master ${process.pid} is running`);
+
+//   // Fork worker processes
+//   for (let i = 0; i < numCPUs; i++){
+//     cluster.fork();
+//   }
+
+//   cluster.on('exit', (worker, code, signal) => {
+//     console.log(`Worker ${worker.process.pid} died`);
+//   });
+// } else {
+//   // Worker process, run your Node.js application here
+//   http.createServer((req, res) => {
+//     res.writeHead(200);
+//     res.end('Hello, World!\n');
+//   }).listen(8000);
+
+//   console.log(`Worker ${process.pid} started`);
+// }
+
 
 //Eventdriven - "event-driven" means that much of the functionality is based on events and event handling.
 
 //Array prototype - Array prototype provides methods and properties that are available for manipulating all arrays  in JavaScript
+// Array.prototype.sum = function() {
+//   return this.reduce((acc, curr) => acc + curr, 0);
+// };
+
+// const numbers = [1, 2, 3, 4, 5];
+// console.log(numbers.sum()); // Output: 15
+
+
+//How can i push the value to an array even after i can declair it through const
+// const arr=[]
+// arr[0]=2
+// console.log(arr)
+// In JavaScript, declaring a variable as const means that the variable cannot be reassigned to a different value. However, it does not mean that the value itself is immutable.
+
+// When you declare an array using const, you're saying that the variable arr will always reference the same array. You can't reassign arr to point to a different array. But you can still modify the array itself, like adding or removing elements.
+
+//console.log(x); // ReferenceError: Cannot access 'x' before initialization
+// const x = 6;
+//in case of var it will show undefined and in case of let and const it will show reference error you cannot access  x before initialize.
+
+//console.log(x())
+// function x(){
+//   return 30;
+// } //it will return 30
+
+// console.log(x);
+// var x=()=>{
+//     return 30;
+// } //undefined
+
+// console.log(x);
+// const x=function y(){
+//     return 30;
+// } //Cannot access 'x' before initialization
+
+//HTTP methods
+// 1. GET:
+// Purpose: Retrieves data from a specified resource.
+// Usage: Typically used for reading or fetching data.
+// Safety: Considered safe because it should not modify any resources on the server.
+// Idempotent: Multiple identical requests should produce the same result each time.
+// Example: Fetching a user's profile information from a server.
+// 2. POST:
+// Purpose: Submits data to be processed to a specified resource.
+// Usage: Commonly used when creating new resources or submitting form data.
+// Safety: Not considered safe as it may modify or create resources on the server.
+// Example: Submitting a registration form to create a new user account.
+// 3. PUT:
+// Purpose: Updates data on a server.
+// Usage: Typically used to replace the entire resource with the new data provided.
+// Idempotent: Multiple identical requests should have the same effect as a single request.
+// Example: Updating a user's profile information with new data.
+// 4. DELETE:
+// Purpose: Deletes a specified resource from the server.
+// Usage: Used to remove resources from the server.
+// Idempotent: Multiple identical requests should have the same effect as a single request.
+// Example: Deleting a user account from the server.
+// 5. PATCH:
+// Purpose: Applies partial modifications to a resource.
+// Usage: Used when you want to apply a partial update to a resource rather than replacing the entire resource.
+// Example: Updating only the email address of a user's profile without affecting other fields.
+// 6. HEAD:
+// Purpose: Retrieves only the headers of the response, not the body.
+// Usage: Useful for checking the status of a resource without downloading the entire content.
+// Example: Checking if a file has been modified on the server without downloading the entire file.
+// 7. OPTIONS:  
+// Purpose: Describes the communication options for the target resource.
+// Usage: Typically used to determine the allowed methods and other capabilities supported by a web server.
+// Example: Checking which HTTP methods are allowed on a particular endpoint. 
+// OPTIONS /api/users HTTP/1.1
+// Host: example.com 
+// inResponse
+//  HTTP/1.1 200 OK
+// Allow: GET, POST, PUT, DELETE
+// 8. TRACE:
+// Purpose: Echoes the received request so that a client can see what changes or additions have been made by intermediate servers.
+// Usage: Primarily used for diagnostic purposes.
+// Example: Debugging and tracing the route of an HTTP request through various proxies or servers.
+// 9. CONNECT:
+// Purpose: Establishes a connection to the server, typically for SSL tunneling.
+// Usage: Used when a client needs to establish a secure tunnel through which it can communicate securely with the server.
+// Example: Establishing a secure connection to a proxy server for secure communication
+
+
+//what is the difference between normal function and arraow function in javascript?
+
+//Lexical this Binding:Normal function support this binding but arrow function doesn't support.
+//new keyword:
+// Normal Function:
+// Can be used as constructor functions with the new keyword to create new objects.
+// Arrow Function:
+// Cannot be used as constructor functions; attempting to use new with an arrow function will result in an error.
+// prototype Property:
+// Normal Function:
+// Has a prototype property, which can be used to add properties and methods to all instances created with that constructor function.
+// Arrow Function:
+// Does not have a prototype property because they cannot be used as constructor functions.
+
+// 3. Arguments Object:
+
+// Normal Function:
+// Has access to the arguments object, which is an array-like object containing all the arguments passed to the function.
+// function myFunction() {
+//   console.log(arguments); // Outputs: [1, 2, 3]
+// }
+// myFunction(1, 2, 3);
+
+// Arrow Function:
+// Does not have its own arguments object. If you need to access arguments, you can use rest parameters ...args instead.
+//const myArrowFunction = (...args) => {
+//   console.log(args); // Outputs: [1, 2, 3]
+// };
+// myArrowFunction(1, 2, 3);
+
+//Cors
+//CORS, or Cross-Origin Resource Sharing, is a security feature in web browsers that allows a website to request resources from another domain. It uses HTTP headers to let a server specify which domains are permitted to access its resources, enabling safe communication between different websites.
+
+//Difference between promises and async/await
+// Key Differences
+// Syntax and Readability:
+
+// Promises use .then() and .catch(), which can result in more nested and less readable code, especially with multiple asynchronous operations.
+// async/await provides a more synchronous-looking code structure, which can be easier to read and maintain.
+// Error Handling:
+
+// Promises handle errors using .catch().
+// async/await handles errors using try/catch blocks, which is similar to synchronous error handling.
+
+// Chaining:
+// Promises allow easy chaining of multiple asynchronous operations using .then() and .catch().
+// async/await handles chaining by simply using multiple await expressions in a sequential manner.

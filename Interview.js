@@ -338,7 +338,7 @@
 // console.log(kmtomiles);
 
 //21//To convert first letter of a string is in uppercase
-// let string="soumya is a good boy";
+let string="soumya is a good boy";
 // const convertfirstletter=(str)=>{
 //     var newstr=string.split(" ")
 //     const convert=newstr.map((element)=>{
@@ -386,8 +386,8 @@
 //   }
 //   // Example: Print a right-angled triangle with height 5
 //   printRightAngleTriangle(5);
-//Without Function
-// for (let i = 1; i <= 5; i++) {
+//   Without Function
+//   for (let i = 1; i <= 5; i++) {
 //     let row = '';
 //     for (let j = 1; j <= i; j++) {
 //       row += '*';
@@ -395,7 +395,7 @@
 //     console.log(row);
 //   }
 
-//Pyramid
+//Pyramid   
 // Set the height of the pyramid
 // const height = 5;
 // Outer loop: iterate through each row of the pyramid
@@ -487,9 +487,9 @@
 // }
 
 //27//
-// const inputString = "s3b4c2"; 
+// const inputString = "s3b4c2";
 // let result = "";
-// for (let i = 0; i < inputString.length; i++) {
+// for (let i = 0; i < inputString.length; i+=2) {
 //   const char = inputString[i];
 //   const count = parseInt(inputString[i+1]);
 //   // Append the character to the result string 'count' times
@@ -550,12 +550,12 @@
 //     freq[char]=(freq[char] || 0) +1
 // }
 // console.log(freq);
-// let maxchar=""
+// let maxchar="";
 // let maxcount=0;
 // for (let i in freq){
 // if (freq[i]>maxcount){
 //     maxchar=i;
-//     maxcount=freq[i]
+//     maxcount=freq[i];
 // }
 // }
 // console.log(maxchar,maxcount);
@@ -596,18 +596,18 @@
 // console.log(array)
 
 //Another method
-//let array=[2,56,-3,5,7,9]
+// let array=[2,56,-3,5,7,9]
 // function arrayRotation(arr,rotation){
-//     for(let j=0;j<rotation;j++){
-//        let ele= arr.pop()
-//         arr.unshift(ele)
-//     }
+// for(let j=0;j<rotation;j++){
+//    let ele= arr.pop()
+//     arr.unshift(ele)
+// }
 // return arr
 // }
 //console.log(arrayRotation(array,2))
 
 //Remove a word from an array
-// let string="soumya is a soumya good boy";   
+// let string="soumya is a soumya good boy";
 // let remove="soumya";
 // let newstring=(string,remove)=>{
 // return string.split(" ").filter((ele)=>ele!==remove).join(" ")
@@ -636,23 +636,7 @@
 // console.log(sorted(array))
 
 // function findCharsAndNumbers(inputString) {
-//     let characters = [];
-//     let numbers = [];
-
-//     for (let char of inputString) {
-//       if (/[a-zA-Z]/.test(char)) {
-//         characters.push(char);
-//       } else if (/\d/.test(char)) {
-//         numbers.push(char);
-//       }
-//     }
-
-//     return {characters,numbers};
-//   }
-//   console.log(findCharsAndNumbers("a1b2c3d4")) //{ characters: [ 'a', 'b', 'c', 'd' ], numbers: [ '1', '2', '3', '4' ] }
-
-// function findCharsAndNumbers(inputString) {
-// //     // Find characters
+// // Find characters
 //     let characters = inputString.match(/[a-zA-Z]/g) || [];
 //     // Find numbers
 //     let numbers =inputString.match(/\d+/g) || [];
@@ -664,8 +648,8 @@
 //Count the Number of char in a string
 // let string="Soumya Ranjan Behera"
 // let result=[]
-// let array=string.split(" ")
-// for (let char of array){
+// let array1=string.split(" ")
+// for (let char of array1){
 //     let count=char.length
 //     result.push(count)
 // }
@@ -742,5 +726,3 @@ let newArray = array.filter((_, index) => index % 2 == 0);
 // let arr = [7,9,11,15,17,19]
 // let reverse=arr.reduce((acc,cur)=>[cur,...acc],[])
 // console.log(reverse)
-
-
