@@ -3,4 +3,3 @@ select * from tablename {
     stream varchar(50),
     subject varchar()
 }
-

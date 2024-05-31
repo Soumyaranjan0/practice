@@ -2,8 +2,8 @@ const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
 const citrus = fruits.sort();
 // console.log(citrus);
 
-const array=[,,,]
-console.log(array[2]);
+// const array=[,,,]
+// console.log(array[2]);
 
 {
 // b=4
@@ -19,7 +19,7 @@ console.log(array[2]);
 
 //IIFE
 // (function (value) {
-//     console.log("Hello"+ " "+value );
+//     console.log("Hello"+ " "+value);
 // }("Soumya"));
 
 //Reduce Method in javascript
@@ -209,9 +209,9 @@ console.log(array[2]);
 // });
 // // console.log(result);
 
-function show(){
-    console.log("wow");
-}
+// function show(){
+//     console.log("wow");
+// }
 
 // show(); //Not Allowed
 // console.log(window.show); //1st way
@@ -279,3 +279,14 @@ function show(){
 // const  arr=["e","t","t","y","u"]
 // const hasdata=arr.includes("y")
 // console.log(hasdata);
+
+
+//OTP generator
+// function generateOtp(length){
+//     let otp=""
+//     for(let i=0;i<length;i++){
+//         otp+=Math.floor(Math.random()*10)
+//     }
+//     return otp
+// }
+// console.log(generateOtp(6))
