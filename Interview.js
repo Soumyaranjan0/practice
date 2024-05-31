@@ -726,3 +726,17 @@ let newArray = array.filter((_, index) => index % 2 == 0);
 // let arr = [7,9,11,15,17,19]
 // let reverse=arr.reduce((acc,cur)=>[cur,...acc],[])
 // console.log(reverse)
+
+
+// const names = [{id : 1, name:'mwb'},{id : 2, name:'yug'}]
+// const ages = [{id : 1, age : 22},{id : 2, age: 11}]
+
+// const output = [{id : 1, name:'mwb', age : 22},{id : 2, name:'yug', age:11}] in javascript solve this problem
+// const names = [{id: 1, name: 'mwb'}, {id: 2, name: 'yug'}];
+// const ages = [{id: 1, age: 22}, {id: 2, age: 11}];
+
+// const output = names.map((nameObj)=>{
+//     const ageObj=ages.find((ageObj)=>ageObj.id==nameObj.id)
+//     return {...nameObj,age:ageObj.age}
+// })
+// console.log(output);
