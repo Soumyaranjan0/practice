@@ -785,9 +785,8 @@ function callbackFunction() {
 // Example: Establishing a secure connection to a proxy server for secure communication
 
 
-//what is the difference between normal function and arraow function in javascript?
-
-//Lexical this Binding:Normal function support this binding but arrow function doesn't support.
+//what is the difference between normal function and arrow function 
+// this Binding:Normal function support this binding but arrow function doesn't support.
 //new keyword:
 // Normal Function:
 // Can be used as constructor functions with the new keyword to create new objects.
@@ -807,7 +806,6 @@ function callbackFunction() {
 //   console.log(arguments); // Outputs: [1, 2, 3]
 // }
 // myFunction(1, 2, 3);
-
 // Arrow Function:
 // Does not have its own arguments object. If you need to access arguments, you can use rest parameters ...args instead.
 //const myArrowFunction = (...args) => {
