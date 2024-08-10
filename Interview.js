@@ -7,7 +7,6 @@
 // console.log(duplicates);
 //indexOf() always returns the first occurance
 //Another way
-
 // function findDuplicates(arr) {
 //     const sortedArr = arr.sort();
 //     // console.log(sortedArr);
@@ -96,7 +95,7 @@
 // for (let i = 1; i <= 10; i++) {
 //   // Check if the current number is missing in the array
 //   if (!array.includes(i)) {
-//     console.log("Missing Number:", i);
+    // console.log("Missing Number:", i);
 //  // Stop the loop once the missing number is found
 //   }
 // }
@@ -507,7 +506,7 @@ let string="soumya is a good boy";
 // console.log(newstring)
 
 //reverse of upper question
-// const inputString = "sssbbbbcc"; //output:s3b4c2
+// const inputString = "sssbbbbcc";  //output:s3b4c2
 // let compressedString = "";
 
 // let currentChar = inputString[0];
@@ -556,7 +555,7 @@ let string="soumya is a good boy";
 // if (freq[i]>maxcount){
 //     maxchar=i;
 //     maxcount=freq[i];
-// }
+//   }
 // }
 // console.log(maxchar,maxcount);
 
@@ -688,19 +687,19 @@ let string="soumya is a good boy";
 // console.log(numbersOnly);
 
 // let arr = [2, 8, 4, 5, 6, 5, 7, 3]; //output:[[2, 8], [4, 6], [5, 5]]
-// let targetSum = 10;
-// let result = [];
-//   for (let i = 0; i < arr.length; i++) {
-//     for (let j = i+1; j < arr.length; j++) {
-//       if (arr[i] + arr[j] === targetSum) {
-//         result.push([arr[i], arr[j]]);
-//       }
-//     }
-//   }
+let targetSum = 10;
+let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = i+1; j < arr.length; j++) {
+      if (arr[i] + arr[j] === targetSum) {
+        result.push([arr[i], arr[j]]);
+      }
+    }
+  }
 // console.log(result);
 
 //Remove even index
-let array = ["soumya", "ranjan", "behera", "is", "a", "good", "boy"];
+// let array = ["soumya", "ranjan", "behera", "is", "a", "good", "boy"];
 // Create a new array with only elements at even indices
 let newArray = array.filter((_, index) => index % 2 == 0);
 // console.log(newArray);
@@ -715,7 +714,7 @@ let newArray = array.filter((_, index) => index % 2 == 0);
 //find missing number in an array series
 // const arr = [7,9,11,15,17,19]
 // for(let i=0;i<arr.length;i++){
-// let start=arr[i]
+// let start=arr[i] 
 // let end =start+2
 // if(arr[i+1]!==end){
 //   console.log(end);
@@ -730,10 +729,7 @@ let newArray = array.filter((_, index) => index % 2 == 0);
 
 // const names = [{id : 1, name:'mwb'},{id : 2, name:'yug'}]
 // const ages = [{id : 1, age : 22},{id : 2, age: 11}]
-
-// const output = [{id : 1, name:'mwb', age : 22},{id : 2, name:'yug', age:11}] in javascript solve this problem
-// const names = [{id: 1, name: 'mwb'}, {id: 2, name: 'yug'}];
-// const ages = [{id: 1, age: 22}, {id: 2, age: 11}];
+// output = [{id : 1, name:'mwb', age : 22},{id : 2, name:'yug', age:11}] in javascript solve this problem
 
 // const output = names.map((nameObj)=>{
 //     const ageObj=ages.find((ageObj)=>ageObj.id==nameObj.id)
