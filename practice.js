@@ -344,7 +344,7 @@ getData();
 
 //MAP(),FIlTER(),REDUCE()
 //foreach Loop:Array Methods:CAlls a function,once for each array element
-const a1 = [2, 23, 5, 7, 28, 34];
+const a1 = [2, 23, 5, 7, 28, 34]; 
 // a1.forEach((value, index, array) => {
 // console.log(`${index}=${value} ${array}`)
 // });
@@ -409,7 +409,7 @@ let j = Array.from("Soumya Ranjan Behera");
 
 //For...of:To get values from an array
 for (let i of a1) { 
-  // console.log(i)
+  // console.log(i) 
 } 
 
 //For...in:To get indexs from an array
@@ -707,7 +707,7 @@ function callbackFunction() {
 
 // const numbers = [1, 2, 3, 4, 5];
 // console.log(numbers.sum()); // Output: 15
-
+ 
 
 //How can i push the value to an array even after i can declair it through const
 // const arr=[]
@@ -830,4 +830,3 @@ function callbackFunction() {
 // Chaining:
 // Promises allow easy chaining of multiple asynchronous operations using .then() and .catch().
 // async/await handles chaining by simply using multiple await expressions in a sequential manner.
-console.log("soumya ranjan ebehra")
