@@ -37,8 +37,27 @@
     </select>
     <!-- used to input controls,it prevents any interaction to the input control,if present,the input control can not be edited -->
     <input type="text" value="This is readonly" readonly>
+    <p>You should <i>definitely</i> attend the meeting.</p>
 
+    <h2>File Upload Progress</h2>
+    <label for="file">File upload progress:</label>
+    <progress id="file" value="70" max="100">
+        70%
+    </progress>
+    <p>The file upload is 70% complete.</p>
 
+    <label for="search">Search for a city:</label>
+    <input list="city-list" id="search" name="city">
+
+    <datalist id="city-list">
+        <option value="New York">
+        <option value="Los Angeles">
+        <option value="Chicago">
+        <option value="Houston">
+        <option value="Miami">
+    </datalist>
+
+    <input type="submit" value="Search">
     </script> -->
 </body>
 <!-- <script src="./practice.js"></script> -->

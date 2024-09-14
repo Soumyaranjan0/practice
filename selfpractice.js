@@ -1,12 +1,12 @@
-let array=[2,56,3,5,7,9]
-let sorted=(array)=>{
-    for(let  j=0;j<array.length-1;j++){
-        if(array[j]>array[j+1]){
-            let temp =array[j];
-            array[j]=array[j+1];
-            array[j+1]=temp
-        }
-    }
-return array;
+let a = "soumya";
+let b = "dibya 5638";
+
+let result=""
+for(let i=0;i<a.length || i<b.length ;i++){
+  if(i<a.length){
+    result+=a[i]
+  }if(i<b.length){
+    result+=b[i]
+  }
 }
-console.log(sorted(array))
+console.log(result);
