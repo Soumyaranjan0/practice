@@ -161,12 +161,40 @@
 //lifecyle method in react is used in classbased component where we are using useeffect hook in function based components.useeffect basically handel the side effect.
 
 //Differenece between context-api and redux
-//redux is used in big project whilw contextapi is used in samll to medium project
+//redux is used in big project while contextapi is used in samll to medium project
 
 //custom hooks
 //diiference between usecallback and usememo hooks
+// When to Use:
+// useCallback: When you need to memoize a function and want to avoid unnecessary re-creation of that function on each render (often for performance reasons when passing functions as props).
+// useMemo: When you need to memoize the result of an expensive calculation to avoid recomputing it unless necessary.
+// In short:
+// useCallback is for functions.
+// useMemo is for values or results of functions (including objects, arrays, etc.).
+
 //html vrs xhtml
+
+// HTML and XHTML are both markup languages used to structure and present content on the web, but they differ in several ways, particularly in their syntax and adherence to standards. Below are the key differences between the two:
+
+// 1. Definition
+// HTML (HyperText Markup Language): A standard markup language used for creating web pages. It's flexible with rules and doesn't strictly enforce syntax requirements.
+// XHTML (eXtensible HyperText Markup Language): A stricter and more structured version of HTML, based on XML (eXtensible Markup Language). It is designed to enforce cleaner and more consistent code.
+// 2. Syntax Rules
+// HTML: More lenient with syntax errors. Browsers can usually interpret and display HTML code even if there are some mistakes or inconsistencies.
+// E.g., Tag names are case-insensitive (<div> or <DIV>).
+// Self-closing tags (like <br>, <img>) do not need a closing slash.
+// XHTML: Stricter syntax that adheres to XML rules.
+// Tag names are case-sensitive (must be lowercase, e.g., <div>).
+// All tags must be properly closed, including self-closing tags, which require a trailing slash (e.g., <br />, <img />).
+// All attribute values must be quoted (e.g., <input type="text" />).
+// All elements must be properly nested.
+// 3. Error Handling
+// HTML: Tolerant of mistakes. Browsers are forgiving and will try to render the content even with malformed HTML.
+// XHTML: Less forgiving. Browsers will not render the page if there is an XML parsing error, making it essential that XHTML documents are well-formed.
+
 //em tag vrs i tag
+// Use <em> when you want to emphasize a word or phrase to add meaning or stress.
+// Use <i> when you need to italicize text for stylistic purposes
 
 // var a =12;
 // console.log(a*12)
@@ -326,25 +354,65 @@
 // sum(2,4) //6
 // sum((2),(4)) 6
 
-// what is fragment in react?
-
-//lifecycle method in react?
 
 //diff between axois and fetch?
+// Axios is more feature-rich, easier to use, and generally preferred when building larger applications that need things like interceptors, automatic error handling, and request cancellation.Automatically parses JSON responses.
+// Fetch is a native browser API, lightweight, and great for simple use cases, but it requires more manual work and lacks some advanced features.
+
 //difference between strong and bold tag?
+//emphasize the word and it is using for bold the element for styling purpose.
+
 //diff. between metertag and progress tag in html?
+// progress battery bar meter-colourprogress and progress-grey progress 
+
 //use of required attribute in html?
+//basically,you cant be empty that field.
+
 //what is data list?
-//diff between em tag and i tag?
+//It enhances form usability by providing autocomplete suggestions, while still allowing users to enter their own custom input.
+//<datalist id="city-list">
+{/* <option value="New York">
+<option value="Los Angeles">
+<option value="Chicago">
+<option value="Houston">
+<option value="Miami">
+</datalist> */}
+
 //what is empty tag? which not closing tag like br ,hr etc
-//specificity of css
-//how can we add gradient in css
+
+// how can we add gradient in css?
+// background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+
 //diff flexbox in grid?
-//what id and 2d?
+//flex box is 1d and grid is 2d
+//align item in one axis and align item in both the axis
+//simpler syntax and complex syntax
+//support by all the browser and it cantnot
+
 //what is css overflow?
-//property for image reflection?
+// overflow:
+// visible: Content is visible outside the container, no scrollbars.
+// hidden: Overflowing content is clipped, no scrollbars.
+// scroll: Always shows scrollbars.
+// auto: Shows scrollbars only when necessary.
+
+// property for image reflection?
+//Using the ::after pseudo-element to mirror and position the reflection.
+// Applying linear-gradient and opacity to achieve a fade-out effect.
+// Using transform: scaleY(-1) to flip the reflection vertically.
+
 //attribute selectors?
-//psedo element in css?
+// input[type="text"] {
+//     border: 1px solid #000;
+// }
+
+//pseudo element in css?
+// ::before: Adds content before an element’s content.
+// ::after: Adds content after an element’s content.
+// ::first-line: Styles the first line of a block-level element.
+// ::first-letter: Styles the first letter of a block-level element.
+// ::selection: Styles the portion of an element that is selected by the user.
+// Pseudo-elements provide a powerful way to enhance the presentation of content without altering the HTML structure.
 
 // function abc(){
 //     console.log(abc.timeout)
@@ -393,7 +461,6 @@
 // console.log(a); //undefined
 // console.log(b); //ReferenceError: b is not defined
 // var a=b=6
-
 
 
 
