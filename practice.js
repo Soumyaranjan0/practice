@@ -344,7 +344,7 @@ getData();
 
 //MAP(),FIlTER(),REDUCE()
 //foreach Loop:Array Methods:CAlls a function,once for each array element
-const a1 = [2, 23, 5, 7, 28, 34];
+const a1 = [2, 23, 5, 7, 28, 34]; 
 // a1.forEach((value, index, array) => {
 // console.log(`${index}=${value} ${array}`)
 // });
@@ -409,7 +409,7 @@ let j = Array.from("Soumya Ranjan Behera");
 
 //For...of:To get values from an array
 for (let i of a1) { 
-  // console.log(i)
+  // console.log(i) 
 } 
 
 //For...in:To get indexs from an array
@@ -707,7 +707,7 @@ function callbackFunction() {
 
 // const numbers = [1, 2, 3, 4, 5];
 // console.log(numbers.sum()); // Output: 15
-
+ 
 
 //How can i push the value to an array even after i can declair it through const
 // const arr=[]
@@ -785,9 +785,8 @@ function callbackFunction() {
 // Example: Establishing a secure connection to a proxy server for secure communication
 
 
-//what is the difference between normal function and arraow function in javascript?
-
-//Lexical this Binding:Normal function support this binding but arrow function doesn't support.
+//what is the difference between normal function and arrow function 
+// this Binding:Normal function support this binding but arrow function doesn't support.
 //new keyword:
 // Normal Function:
 // Can be used as constructor functions with the new keyword to create new objects.
@@ -807,7 +806,6 @@ function callbackFunction() {
 //   console.log(arguments); // Outputs: [1, 2, 3]
 // }
 // myFunction(1, 2, 3);
-
 // Arrow Function:
 // Does not have its own arguments object. If you need to access arguments, you can use rest parameters ...args instead.
 //const myArrowFunction = (...args) => {

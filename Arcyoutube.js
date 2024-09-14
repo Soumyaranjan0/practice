@@ -12,7 +12,7 @@
 
 //Another Method
 // let myArray = [1, 2, 3, 4];
-// // Swap elements at positions 1 and 2 using destructuring assignment
+// Swap elements at positions 1 and 2 using destructuring assignment
 // [myArray[1], myArray[2]] = [myArray[2], myArray[1]];
 // console.log(myArray); // Output: [1, 3, 2, 4]
 

@@ -1,5 +1,5 @@
 //1//find the duplicate element of an array.
-// const arrNumber=[1,2,8,2,9,8,5,6,9]
+const arrNumber=[1,2,8,2,9,8,5,6,9]
 // const duplicates=arrNumber.filter((ele,index,arr)=>arr.indexOf(ele)!==index)
 // console.log(duplicates);
 // remove the duplicate element;
@@ -7,7 +7,6 @@
 // console.log(duplicates);
 //indexOf() always returns the first occurance
 //Another way
-
 // function findDuplicates(arr) {
 //     const sortedArr = arr.sort();
 //     // console.log(sortedArr);
@@ -96,7 +95,7 @@
 // for (let i = 1; i <= 10; i++) {
 //   // Check if the current number is missing in the array
 //   if (!array.includes(i)) {
-//     console.log("Missing Number:", i);
+    // console.log("Missing Number:", i);
 //  // Stop the loop once the missing number is found
 //   }
 // }
@@ -507,7 +506,7 @@ let string="soumya is a good boy";
 // console.log(newstring)
 
 //reverse of upper question
-// const inputString = "sssbbbbcc"; //output:s3b4c2
+// const inputString = "sssbbbbcc";  //output:s3b4c2
 // let compressedString = "";
 
 // let currentChar = inputString[0];
@@ -526,7 +525,7 @@ let string="soumya is a good boy";
 // console.log(compressedString);
 
 //28//
-// let input = [2, 3, 4, 5, 3, 5, 3, 4, 5, 3];
+let input = [2, 3, 4, 5, 3, 5, 3, 4, 5, 3];
 // // Count the frequency of each element using an object
 // const frequencyMap = {};
 // for (const num of input) {
@@ -556,7 +555,7 @@ let string="soumya is a good boy";
 // if (freq[i]>maxcount){
 //     maxchar=i;
 //     maxcount=freq[i];
-// }
+//   }
 // }
 // console.log(maxchar,maxcount);
 
@@ -593,7 +592,7 @@ let string="soumya is a good boy";
 //     }
 //     array[0]=temp
 // }
-// console.log(array)
+// console.log(array)   
 
 //Another method
 // let array=[2,56,-3,5,7,9]
@@ -700,9 +699,9 @@ let string="soumya is a good boy";
 // console.log(result);
 
 //Remove even index
-let array = ["soumya", "ranjan", "behera", "is", "a", "good", "boy"];
+// let array = ["soumya", "ranjan", "behera", "is", "a", "good", "boy"];
 // Create a new array with only elements at even indices
-let newArray = array.filter((_, index) => index % 2 == 0);
+// let newArray = array.filter((_, index) => index % 2 == 0);
 // console.log(newArray);
 
 //Reverse even index
@@ -715,7 +714,7 @@ let newArray = array.filter((_, index) => index % 2 == 0);
 //find missing number in an array series
 // const arr = [7,9,11,15,17,19]
 // for(let i=0;i<arr.length;i++){
-// let start=arr[i]
+// let start=arr[i] 
 // let end =start+2
 // if(arr[i+1]!==end){
 //   console.log(end);
@@ -726,3 +725,27 @@ let newArray = array.filter((_, index) => index % 2 == 0);
 // let arr = [7,9,11,15,17,19]
 // let reverse=arr.reduce((acc,cur)=>[cur,...acc],[])
 // console.log(reverse)
+
+
+// const names = [{id : 1, name:'mwb'},{id : 2, name:'yug'}]
+// const ages = [{id : 1, age : 22},{id : 2, age: 11}]
+// output = [{id : 1, name:'mwb', age : 22},{id : 2, name:'yug', age:11}] in javascript solve this problem
+
+// const output = names.map((nameObj)=>{
+//     const ageObj=ages.find((ageObj)=>ageObj.id==nameObj.id)
+//     return {...nameObj,age:ageObj.age}
+// })
+// console.log(output);
+
+// let a = "soumya";
+// let b = "dibya 5638"; //output:sdoiubmyyaa 5638
+
+// let result=""
+// for(let i=0;i<a.length || i<b.length ;i++){
+//   if(i<a.length){
+//     result+=a[i]
+//   }if(i<b.length){
+//     result+=b[i]
+//   }
+// }
+// console.log(result);
