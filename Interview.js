@@ -1,5 +1,5 @@
 //1//find the duplicate element of an array.
-// const arrNumber=[1,2,8,2,9,8,5,6,9]
+const arrNumber=[1,2,8,2,9,8,5,6,9]
 // const duplicates=arrNumber.filter((ele,index,arr)=>arr.indexOf(ele)!==index)
 // console.log(duplicates);
 // remove the duplicate element;
@@ -525,7 +525,7 @@ let string="soumya is a good boy";
 // console.log(compressedString);
 
 //28//
-// let input = [2, 3, 4, 5, 3, 5, 3, 4, 5, 3];
+let input = [2, 3, 4, 5, 3, 5, 3, 4, 5, 3];
 // // Count the frequency of each element using an object
 // const frequencyMap = {};
 // for (const num of input) {
@@ -592,7 +592,7 @@ let string="soumya is a good boy";
 //     }
 //     array[0]=temp
 // }
-// console.log(array)
+// console.log(array)   
 
 //Another method
 // let array=[2,56,-3,5,7,9]
@@ -687,21 +687,21 @@ let string="soumya is a good boy";
 // console.log(numbersOnly);
 
 // let arr = [2, 8, 4, 5, 6, 5, 7, 3]; //output:[[2, 8], [4, 6], [5, 5]]
-let targetSum = 10;
-let result = [];
-  for (let i = 0; i < arr.length; i++) {
-    for (let j = i+1; j < arr.length; j++) {
-      if (arr[i] + arr[j] === targetSum) {
-        result.push([arr[i], arr[j]]);
-      }
-    }
-  }
+// let targetSum = 10;
+// let result = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     for (let j = i+1; j < arr.length; j++) {
+//       if (arr[i] + arr[j] === targetSum) {
+//         result.push([arr[i], arr[j]]);
+//       }
+//     }
+//   }
 // console.log(result);
 
 //Remove even index
 // let array = ["soumya", "ranjan", "behera", "is", "a", "good", "boy"];
 // Create a new array with only elements at even indices
-let newArray = array.filter((_, index) => index % 2 == 0);
+// let newArray = array.filter((_, index) => index % 2 == 0);
 // console.log(newArray);
 
 //Reverse even index
@@ -736,3 +736,16 @@ let newArray = array.filter((_, index) => index % 2 == 0);
 //     return {...nameObj,age:ageObj.age}
 // })
 // console.log(output);
+
+// let a = "soumya";
+// let b = "dibya 5638"; //output:sdoiubmyyaa 5638
+
+// let result=""
+// for(let i=0;i<a.length || i<b.length ;i++){
+//   if(i<a.length){
+//     result+=a[i]
+//   }if(i<b.length){
+//     result+=b[i]
+//   }
+// }
+// console.log(result);
