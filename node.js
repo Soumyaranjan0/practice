@@ -4,8 +4,7 @@
 
 //What is bcrypt?
 //bcrypt is a password hashing function specifically designed to securely hash passwords.
-//Hashing is different from encryption in that it is a one-way process, meaning you cannot reverse it back to the original data.
-//bcrypt is widely used for securely storing passwords in a database.
+//Hashing is different from encryption in that it is a one-way process, meaning you cannot reverse it back to the original data.bcrypt is widely used for securely storing passwords in a database.
 
 // example:
 // const bcrypt = require('bcrypt');
@@ -86,3 +85,5 @@ console.log('Decoded payload:', decoded);
 
 //Authorization
 //Authorization is the process of determining whether a user has the right to access a specific resource or perform a particular action. It happens after authentication and is about permissions and access control.
+
+

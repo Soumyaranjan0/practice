@@ -27,7 +27,7 @@
 // }
 // console.log(flatarr(arr,1));
 
-//let arr = [[1, 2], [3, 4], [5, 6]];
+// let arr = [[1, 2], [3, 4], [5, 6]];
 // let flattened = [];
 
 // arr.forEach(subArray => {
@@ -323,7 +323,6 @@
 // console.log(+true); //1
 // console.log(!"xyz"); //false
 
-
 // Example of currying
 // function curry(a){
 //     return function (b){
@@ -333,7 +332,6 @@
 //     }
 // }
 // console.log(curry(7)(6)(2));
-
 
 // const str1="hello"
 // const str2="world1234"
@@ -354,7 +352,6 @@
 // sum(2,4) //6
 // sum((2),(4)) 6
 
-
 //diff between axois and fetch?
 // Axios is more feature-rich, easier to use, and generally preferred when building larger applications that need things like interceptors, automatic error handling, and request cancellation.Automatically parses JSON responses.
 // Fetch is a native browser API, lightweight, and great for simple use cases, but it requires more manual work and lacks some advanced features.
@@ -363,7 +360,7 @@
 //emphasize the word and it is using for bold the element for styling purpose.
 
 //diff. between metertag and progress tag in html?
-// progress battery bar meter-colourprogress and progress-grey progress 
+// progress battery bar meter-colour progress and progress-grey progress
 
 //use of required attribute in html?
 //basically,you cant be empty that field.
@@ -371,12 +368,14 @@
 //what is data list?
 //It enhances form usability by providing autocomplete suggestions, while still allowing users to enter their own custom input.
 //<datalist id="city-list">
-{/* <option value="New York">
+{
+  /* <option value="New York">
 <option value="Los Angeles">
 <option value="Chicago">
 <option value="Houston">
 <option value="Miami">
-</datalist> */}
+</datalist> */
+}
 
 //what is empty tag? which not closing tag like br ,hr etc
 
@@ -462,9 +461,208 @@
 // console.log(b); //ReferenceError: b is not defined
 // var a=b=6
 
+// console.log([]==[]) //false
+// console.log([]===[]) //false
 
+// let a = [];
+// let b = [];
+// let c = a;
 
+// console.log(a == b); // false: different memory references
+// console.log(a === b); // false: different references
 
+// console.log(a == c); // true: same reference
+// console.log(a === c); // true: same reference
 
+//immediate invoke function
+// (function imf(){
+// console.log("immediate invoke function")
+// })()
 
+// {
+//     var a =1 //global scope you can retrive it also outside the scope
+// }
+// console.log(a);
 
+// function v(){
+//     var a = 10;
+//     let b=10
+// }
+// console.log(a) //reference error
+// console.log(b) //reference error
+
+// const z=[{
+//     name:"soumya",
+//     gender:"M",
+//     age:67},{
+//     name:"dibya",
+//     gender:"F",
+//     age:67},{
+//     name:"ranjan",
+//     gender:"M",
+//     age:67}
+// ]
+// z.map((ele)=>{
+//     if(ele.gender=="F"){
+//         console.log(ele)
+//     }
+// })
+
+//First class function?
+//Assigned to variables.
+// let fun1=()=>{
+//     console.log("func1");
+// }
+// fun1()
+//Passed as arguments to other functions.
+// let fun1 = (func2) => {
+//   return func2();
+// };
+// function func2() {
+//     console.log("func2");
+// }
+// fun1(func2)
+//Returned from other functions.
+// function createGreeting() {
+//     return function() {
+//       console.log('Hello from the returned function!');
+//     };
+//   }
+//   const greet = createGreeting();
+//   greet();  // Output: Hello from the returned function!
+
+// console.log("abc"/2) //NaN
+// console.log(NaN==NaN); //false
+// console.log(NaN===NaN); //false
+
+// let a = "a" * 2;
+// let b = "string" / 2;
+// console.log(a==b) //false
+
+// console.log(1=="1"); //true
+
+// function curr(a){
+//     return function (b){
+//         let res=a*b
+//         return function (c){
+//             return res*c
+//         }
+//     }
+// }
+// console.log(curr(2)(3)(4));
+
+// coverting object into array
+
+// 1. Convert Object to Array of Keys:
+// Use Object.keys() to get an array of the object's keys.
+// const obj = { a: 1, b: 2, c: 3 };
+// const keysArray = Object.keys(obj);
+// console.log(keysArray);  // Output: ['a', 'b', 'c']
+
+// 2. Convert Object to Array of Values:
+// Use Object.values() to get an array of the object's values.
+// const obj = { a: 1, b: 2, c: 3 };
+// const valuesArray = Object.values(obj);
+// console.log(valuesArray);  // Output: [1, 2, 3]
+
+// 3. Convert Object to Array of Key-Value Pairs:
+// Use Object.entries() to get an array of key-value pairs (arrays of 2 elements, with key and value).
+// const obj = { a: 1, b: 2, c: 3 };
+// const entriesArray = Object.entries(obj);
+// console.log(entriesArray);  // Output: [['a', 1], ['b', 2], ['c', 3]]
+
+// 4. Custom Conversion (Flatten or Modify Object Structure):
+// You can also manually iterate over the object and build a custom array format.
+// const obj = { a: 1, b: 2, c: 3 };
+// const customArray = [];
+// for (let key in obj) {
+//     customArray.push([key, obj[key]]);
+// }
+// console.log(customArray);  // Output: [['a', 1], ['b', 2], ['c', 3]]
+
+// you can combine (or merge) rows and columns using the rowspan and colspan attributes.
+
+// div {
+//     border: 2px solid red; /* Border inside the box model */
+//     outline: 2px solid blue; /* Outline outside the border */
+//   }
+
+// Specificity Calculation:
+// Specificity is usually calculated using four values (A, B, C, D) where:
+// A (inline styles): Points from inline styles (added directly in the element’s style attribute).
+// B (ID selectors): Points from #id selectors.
+// C (class, attribute, and pseudo-class selectors): Points from .class, [attribute], and :pseudo-class selectors.
+// D (element and pseudo-element selectors): Points from element and ::pseudo-element selectors.
+
+// function fn (){
+//     console.log("soumya")
+// }
+// console.log(fn.name); //fn
+
+// console.log(abc); //reference errpr: abc is not defined
+// abc="soumya"
+
+// const arr=[200,100,330,70]
+// arr.sort()
+// console.log(arr) //[ 100, 200, 330, 70 ]
+// console.log((a,b)=>a-b); //[ 70, 100, 200, 330 ]
+
+// function abc(xyz){
+// console.log(~~xyz);
+// }
+// abc(1.87) //1
+
+// console.log([]==[]); //false
+// console.log([]=="") //true //because of type coercion .JavaScript will try to convert one or both values to a common type i.e string.
+// console.log(""==""); //true
+
+// function abc(a,b,c=0){
+// }
+// console.log(abc.length); //2 because of two parameter and c is default
+// function abc(a,b=0,c){
+// }
+// console.log(abc.length); //1 because before default b there is one parameter ,c also doesnot count because this is after b.
+
+// let string="soumya"
+// let reverse=""
+// let length=string.length
+// for(let i=length-1;i>=0;i--){
+//     reverse+=string[i]
+// }
+// console.log(reverse);
+
+//pure function: it will give the same value even how much time you are calling
+//impure function //always return different output even you calling the same again
+//also you can use Math.random() method
+// let count=10;
+// function impure(){
+//      return count++;
+// }
+// console.log(impure(count));
+// console.log(impure(count));
+
+// let a = 10 * "hello";
+// let b = 10 - "he";
+
+// console.log(NaN == NaN); //False beacause of having different value
+
+// const arr=[1,2,3,4,5]
+// arr.splice(2,1) //length: 4
+// delete arr[2]  //length:5
+// console.log(arr.length);
+
+//Difference between framework and library
+// Control	You control when and how to call the library.	The framework controls the flow; you write code within its structure.
+// Focus	Focused on solving specific tasks.	Provides a complete architecture for the application.
+// Flexibility	More flexible, can be integrated with other tools.	Less flexible, follows strict guidelines and structure.
+// Learning curve	Easier to learn, depending on the library's purpose.	Can be more complex, as you need to learn the framework’s entire ecosystem.
+// Scope	Typically smaller and focused on specific functionalities.	Larger, more comprehensive solutions covering multiple aspects of development.
+// In short:
+
+// Library: You call it when needed.
+// Framework: It calls your code and dictates the architecture of the application.
+
+//add a space after string
+// var name="ilovejavascript"
+// var space=name+" "
+// console.log(space.length);
