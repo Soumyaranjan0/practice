@@ -377,6 +377,10 @@
 </datalist> */
 }
 
+//which property we are use for image refelection?
+// The box-reflect property is currently only supported in WebKit-based browsers (e.g., Chrome, Safari). It is not supported in Firefox or Edge.
+// Always use the -webkit- prefix for compatibility.
+
 //what is empty tag? which not closing tag like br ,hr etc
 
 // how can we add gradient in css?
@@ -666,3 +670,15 @@
 // var name="ilovejavascript"
 // var space=name+" "
 // console.log(space.length);
+
+//Lazyloading in react
+//Lazy loading in React helps optimize performance by loading components only when they are needed.
+// You use React.lazy() to dynamically import components and Suspense to show a fallback UI while loading.
+// Lazy loading is especially beneficial for large apps and can also be applied to routes in React using React Router.
+
+//lists in css
+// Ordered List	<ol>	Use when the order matters.
+// Unordered List	<ul>	Use when the order doesn’t matter.
+// Description List	<dl>	Use for term-description pairs.
+// Nested Lists	<ol>, <ul>	Use for hierarchical lists.
+
