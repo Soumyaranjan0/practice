@@ -360,7 +360,7 @@
 //emphasize the word and it is using for bold the element for styling purpose.
 
 //diff. between metertag and progress tag in html?
-// progress battery bar meter-colour progress and progress-grey progress
+// progress battery bar meter-colour progress and progress-grey progress.
 
 //use of required attribute in html?
 //basically,you cant be empty that field.
@@ -681,4 +681,115 @@
 // Unordered List	<ul>	Use when the order doesn’t matter.
 // Description List	<dl>	Use for term-description pairs.
 // Nested Lists	<ol>, <ul>	Use for hierarchical lists.
+
+// const arr=[100,200,2,3,5]
+// arr.sort() //[ 100, 2, 200, 3, 5 ] it will sort accoring to 1st position
+// console.log(arr);
+
+// function abc(a,b,...args){
+
+// }
+// console.log(abc.length); //2
+
+//hasownproperty
+// const obj = {
+//   name: "Alice",
+//   age: 25
+// };
+
+// console.log(obj.hasOwnProperty("name")); // true
+// console.log(obj.hasOwnProperty("age"));  // true
+// console.log(obj.hasOwnProperty("toString")); // false (inherited from Object.prototype)
+
+//  let data={name:"soumya"}
+//  console.log(delete data.name); //true
+//  console.log(data); //false
+// console.log(delete data); //false // the delete operator is used to remove a property from an object. It cannot delete variables or non-configurable properties like those declared with let, const, or var
+
+// let data = [1, 2, 3, 4, 5, 6];
+// console.log(delete data); //false
+// console.log(delete data[1]); //true
+
+//destructure an array
+// let arr=[1,2,3,4,5,6]
+// let [a,b,c,d,e,f]=arr
+// console.log(a);
+
+// let a = false || {} || null;
+// console.log(a); //{} //pick first true value
+
+//reverse a number
+// let a=123
+// let b=a.toString()
+// console.log(b);
+// let c=a.split("").reverse().join("")
+// console.log(c);
+
+// console.log('3'+12*5); //160
+// console.log('3'+12+5); //3125
+// console.log('3'+"12"+5); //3125
+
+//mount unmount and update in react.js
+//In function-based components in React, the lifecycle concepts of mounting, updating, and unmounting are handled using the useEffect hook. Since function components don't have class-based lifecycle methods like componentDidMount, componentDidUpdate, or componentWillUnmount, useEffect provides a way to manage side effects across these lifecycle stages.
+
+// mounting
+// import React, { useEffect } from 'react';
+
+// function MyComponent() {
+//   useEffect(() => {
+//     console.log('Component mounted');
+//     // Code that runs when the component is first rendered
+//   }, []); // Empty dependency array means it runs only on mount
+
+//   return <div>Hello, World!</div>;
+// }
+// The effect with an empty dependency array ([]) runs only once after the initial render, which simulates the mounting phase.
+
+// unmount
+// import React, { useEffect } from 'react';
+
+// function MyComponent() {
+//   useEffect(() => {
+//     // Mounting logic
+//     console.log('Component mounted');
+
+//     // Cleanup function for unmounting
+//     return () => {
+//       console.log('Component unmounted');
+//       // Cleanup code here (e.g., clearInterval, unsubscribe from events)
+//     };
+//   }, []); // Empty dependency array ensures this effect runs only once on mount/unmount
+
+//   return <div>Goodbye, World!</div>;
+// }
+//The cleanup function runs before the component is unmounted. It's useful for cleaning up resources like subscriptions, timers, or event listeners.
+
+//update
+//import React, { useState, useEffect } from 'react';
+
+// function MyComponent({ count }) {
+//   useEffect(() => {
+//     console.log('Component updated with count:', count);
+//     // Runs whenever `count` prop changes
+//   }, [count]); // Runs the effect when `count` changes
+
+//   return <div>Count: {count}</div>;
+// }
+// The effect runs every time the count prop changes. If there are multiple dependencies, the effect will run whenever any of those dependencies change.
+
+
+//useeffect parameter
+// The useEffect hook in React is used to handle side effects in function components. It takes two parameters:
+// Effect Callback Function: A function that contains the side effect logic you want to run.
+// Dependency Array (optional): An array that specifies the values that the effect depends on. React will re-run the effect only if any of the values in this array change.
+//syntax
+// useEffect(() => {
+//   // Your side effect logic here
+//   return () => {
+//     // Optional cleanup logic here
+//   };
+// }, [dependencies]);
+
+//useReducer hook
+// The useReducer hook in React is a powerful alternative to useState for managing complex state logic in function components. It is especially useful when you need to manage state that involves multiple sub-values or when the next state depends on the previous one.
 
