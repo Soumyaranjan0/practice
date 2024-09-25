@@ -793,3 +793,145 @@
 //useReducer hook
 // The useReducer hook in React is a powerful alternative to useState for managing complex state logic in function components. It is especially useful when you need to manage state that involves multiple sub-values or when the next state depends on the previous one.
 
+// const arr=[1,2,3,4,5,66,7,8,9]
+// const result=arr.map((ele)=>ele>4)
+// console.log(result) //  [
+//   false, false, false,
+//   false, true,  true,
+//   true,  true,  true
+// ]
+
+// 1. find() Method
+// // The find() method is used to search for a specific element in an array based on a condition (callback function). It returns the first element that satisfies the provided testing function. If no elements satisfy the condition, it returns undefined.
+// const numbers = [1, 2, 3, 4, 5];
+// const found = numbers.find(element => element > 3);
+// console.log(found); // Output: 4
+// find() returns the first number greater than 3, which is 4.
+
+// 2. some() Method
+// The some() method checks if at least one element in the array satisfies a given condition (callback function). It returns a boolean (true or false).
+// const numbers = [1, 2, 3, 4, 5];
+// const hasLargeNumber = numbers.some(element => element > 3);
+// console.log(hasLargeNumber); // Output: true
+// some() checks if there is any number greater than 3 in the array. Since there are such numbers, it returns true.
+
+// 3. every() Method Overview:
+// Returns true if every element in the array passes the test (i.e., if the callback function returns true for every element).
+// Returns false if at least one element fails the test (i.e., the callback function returns false for at least one element).
+// const numbers = [2, 4, 6, 8];
+// const allEven = numbers.every(element => element % 2 === 0);
+// console.log(allEven); // Output: true
+
+// const numbers = [2, 3, 6, 8];
+// const allEven = numbers.every(element => element % 2 === 0);
+// console.log(allEven); // Output: false
+// In this case, not all elements in the array are even (since 3 is odd), so every() returns false.
+
+// Common API error codes are typically defined using HTTP status codes, which indicate the outcome of an API request. These status codes are divided into categories based on the first digit:
+
+// 1xx: Informational
+// 2xx: Success
+// 3xx: Redirection
+// 4xx: Client Errors
+// 5xx: Server Errors
+
+// 2xx: Success Codes
+// 200 OK: The request was successful, and the server returned the requested data.
+// 201 Created: The request was successful, and a new resource was created (commonly used for POST requests).
+// 204 No Content: The request was successful, but no content is returned (commonly used for DELETE operations).
+
+// 4xx: Client Error Codes
+// These codes indicate that there was a problem with the request, usually due to something the client (user) did wrong.
+
+// 400 Bad Request: The server could not understand the request due to invalid syntax or missing parameters.
+
+// Example: Missing required fields in a JSON body.
+// 401 Unauthorized: The request requires user authentication, and the provided authentication credentials are either missing or invalid.
+
+// Example: Invalid API token or missing Authorization header.
+// 403 Forbidden: The server understood the request but refuses to authorize it. This often happens when the user doesn't have permission to perform an action.
+
+// Example: Trying to access an admin-only endpoint as a regular user.
+// 404 Not Found: The requested resource could not be found on the server.
+
+// Example: Accessing a non-existent API endpoint or requesting data for a resource that doesn't exist.
+// 405 Method Not Allowed: The HTTP method used in the request is not allowed for the specific resource.
+
+// Example: Sending a POST request to an endpoint that only supports GET.
+// 406 Not Acceptable: The server can’t generate a response that matches the client’s Accept headers.
+
+// Example: The client requests a response in a format (like XML) that the API cannot return.
+// 408 Request Timeout: The client took too long to send the request, and the server timed out waiting for it.
+
+// 409 Conflict: The request could not be completed due to a conflict with the current state of the target resource.
+
+// Example: Trying to create a resource that already exists (duplicate entry).
+// 410 Gone: The requested resource is no longer available and will not be available again (often used when an API endpoint has been deprecated).
+
+// 415 Unsupported Media Type: The server does not support the media format of the request.
+
+// Example: Sending data in an unsupported format (e.g., sending XML when only JSON is accepted).
+// 422 Unprocessable Entity: The server understands the request but can't process the data due to validation errors.
+
+// Example: Invalid input format, like passing a string where a number is expected.
+// 429 Too Many Requests: The user has sent too many requests in a given time period, triggering rate-limiting.
+
+// Example: Making excessive API calls in a short time without respecting rate limits.
+// 5xx: Server Error Codes
+// These codes indicate a problem with the server while processing a valid request.
+
+// 500 Internal Server Error: The server encountered an unexpected condition that prevented it from fulfilling the request.
+
+// Example: A bug in the server code or unexpected conditions like database issues.
+// 501 Not Implemented: The server does not support the functionality required to fulfill the request.
+
+// Example: Requesting a feature that has not been implemented in the API.
+// 502 Bad Gateway: The server was acting as a gateway or proxy and received an invalid response from the upstream server.
+
+// Example: Issues with server-to-server communication (e.g., between a reverse proxy and the API server).
+// 503 Service Unavailable: The server is currently unable to handle the request due to being overloaded or down for maintenance.
+
+// 504 Gateway Timeout: The server was acting as a gateway or proxy and did not receive a timely response from the upstream server.
+
+// 507 Insufficient Storage: The server is unable to store the representation needed to complete the request.
+//syntax
+// {
+//   "error": {
+//     "code": 400,
+//     "message": "Invalid request parameter: 'username' is required"
+//   }
+// }
+
+// CSS border Property
+// The border property is used to create a line around the element's content and padding. It is part of the element's box model and affects the layout of the page by increasing the size of the element. Borders are drawn inside the element's dimensions.
+// CSS outline Property
+// The outline property is similar to the border, but there are key differences:
+
+// Outlines do not take up space: They are drawn outside the element's border, and they do not affect the element's size or layout.
+// Outlines are not part of the box model: They don't push content or increase the size of the element like borders do.
+// Outlines are often used for focus indicators: For example, when a user tabs through interactive elements.
+
+//CSS
+//For basic reflection effects, using CSS with the filter property and transformations is usually sufficient. If you require more advanced visual effects, consider exploring SVG filters.
+
+// let x={}, y={name:"satish"}, z={name:"pratik"}
+// x[y]={name:"Salman"}
+// x[z]={name:"SharRukh"}
+// console.log(x[y]) //{name:ShahRukh} //it will overwrite
+
+// console.log(1>2<3) //true 1>2 false mean 0<3 true
+
+// Key Characteristics of a First-Order Function:
+// It does not accept another function as an argument.
+// It does not return a function as a result.
+// It only works with simple data types or objects.
+
+// 1. Self Padding (Padding)
+// In CSS, padding refers to the space between the content of an element and its border. Self-padding could imply that the padding is applied to an element itself to create space between the content and the element's edges.
+
+// 2. Self Spacing (Margin, Gap)
+// Spacing in web design generally refers to the distance between elements, which is often controlled by margins or gaps (in flexbox and grid layouts). Self-spacing may refer to an element's margin that creates space around itself.
+
+//marquee tag
+// The <marquee> element in HTML was used to create scrolling text or images across the screen. It allows content (like text or images) to move horizontally or vertically within a web page.
+
