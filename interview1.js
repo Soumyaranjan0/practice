@@ -935,3 +935,64 @@
 //marquee tag
 // The <marquee> element in HTML was used to create scrolling text or images across the screen. It allows content (like text or images) to move horizontally or vertically within a web page.
 
+//CSS float property
+// The CSS float property is used to position elements to the left or right within their container,
+// float: left | right | none | inherit;
+
+//Z index
+// The z-index property in CSS controls the stacking order of elements that overlap each other
+
+//CSS counter
+//CSS counters provide a powerful and flexible way to manage automatic numbering in your designs.
+
+// let x ={name:'soumya',age:22}
+// let y ={name:'soumya',age:22}
+// console.log(x===y); //false  two different objects, each occupying its own space in memory, even though their contents (properties and values) are identical
+// console.log(JSON.stringify(x)===JSON.stringify(y)); //true
+
+// let x =2
+// let y =2
+// console.log(x===y); //true
+
+// var x; // undefined
+// x++; //undefined++ coerced to NaN
+// console.log(x); //NaN 
+// x=9;
+
+// let x=undefined++
+// console.log(x);
+
+// for (var i=0;i<5;i++){
+  // console.log(i); //01234
+  // setTimeout(()=>{
+  //   console.log(i)
+  // },1000)
+// } //five times 5
+
+// function func1(n){
+//   if (n==0) return 1;
+//   func1(n-1)
+//   console.log(n);
+// }
+// func1(3); //function recursion
+//The recursion starts with the highest value (3) and counts down to 0, but doesn't print anything for 0.
+// As the function unwinds (returns back to previous calls), it prints the numbers in increasing order (from 1 to 3).
+
+// let str="soumya is a very good boy"
+// let str1=str.split(" ")
+// str1.forEach(element => {
+//   console.log(element);
+// });
+
+// const arr=[1,2,3,4,5]
+// // output=120
+// const result=arr.reduce((acc,cur)=>acc*cur)
+// console.log(result);
+
+
+// Aspect	Function Declaration	Function Expression
+// Definition	Named function defined with function keyword.	Function assigned to a variable.
+// Syntax	function name() {}	const name = function() {}
+// Hoisting	Hoisted; can be called before definition.	Not hoisted; cannot be called before definition.
+// Name	Always has a name (the function name).	Can be anonymous or named.
+// Usage	Typically used for defining reusable functions.	Often used for callbacks and inline functions. 
