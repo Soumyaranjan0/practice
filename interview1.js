@@ -996,3 +996,47 @@
 // Hoisting	Hoisted; can be called before definition.	Not hoisted; cannot be called before definition.
 // Name	Always has a name (the function name).	Can be anonymous or named.
 // Usage	Typically used for defining reusable functions.	Often used for callbacks and inline functions. 
+
+// console.log(1+"1"+1); //111
+// console.log(1-"1"+1); //1
+
+// splice()
+// Purpose: Changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
+// Syntax: array.splice(start, deleteCount, item1, item2, ...)
+// start: The index at which to start changing the array.
+// deleteCount: The number of elements to remove from the array.
+// item1, item2, ...: Elements to add to the array (optional).
+// const arr=[1,2,3,4,5,6,7,8]
+// let result=arr.splice(2,0,8,9,7,89)
+// console.log(arr);
+
+// Use slice to create a new array without modifying the original.
+// Use splice to modify the original array by removing or adding elements.
+
+// console.log(isNaN("soumya")) //true
+// console.log(isNaN(console.log(2)))  //true
+//This prints the value 2 to the console.
+// However, the return value of console.log() is undefined. This is because console.log() is a function that logs output but doesn't return anything meaningful. So, it returns undefined implicitly.
+//isNaN(undefined)= true
+
+//First order function
+// A first-order function is simply a regular function that:
+// Does not take other functions as arguments.
+// Does not return a function as its result.
+
+// To check whether a variable is an array in JavaScript, you can use the built-in method Array.isArray().
+// const arr = [1, 2, 3];
+// const notArr = "Hello";
+// console.log(Array.isArray(arr));    // Output: true
+// console.log(Array.isArray(notArr)); // Output: false
+
+//undefined vrs undeclaired
+// let x
+// console.log(x) //undefined
+
+// console.log(c) //undeclaired
+
+
+// void elements (also known as self-closing elements) are elements that do not have any content and cannot have closing tags. alternative name is empty tag.
+
+
