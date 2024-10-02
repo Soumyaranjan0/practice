@@ -48,7 +48,6 @@
 // console.log("3"*4+5); //17
 
 // console.log(typeof(NaN)); //number
-// console.log(typeof NaN); //number
 
 // console.log("5"-"3"+6); //8
 
@@ -161,7 +160,7 @@
 //lifecyle method in react is used in classbased component where we are using useeffect hook in function based components.useeffect basically handel the side effect.
 
 //Differenece between context-api and redux
-//redux is used in big project while contextapi is used in samll to medium project
+//redux is used in big project while contextapi is used in small to medium project
 
 //custom hooks
 //diiference between usecallback and usememo hooks
@@ -608,8 +607,8 @@
 
 // const arr=[200,100,330,70]
 // arr.sort()
-// console.log(arr) //[ 100, 200, 330, 70 ]
-// console.log((a,b)=>a-b); //[ 70, 100, 200, 330 ]
+// console.log(arr) // [ 100, 200, 330, 70 ]
+// console.log((a,b)=>a-b); // [ 70, 100, 200, 330 ]
 
 // function abc(xyz){
 // console.log(~~xyz);
@@ -617,7 +616,7 @@
 // abc(1.87) //1
 
 // console.log([]==[]); //false
-// console.log([]=="") //true //because of type coercion .JavaScript will try to convert one or both values to a common type i.e string.
+// console.log([]=="") //true //because of type coercion . JavaScript will try to convert one or both values to a common type i.e string.
 // console.log(""==""); //true
 
 // function abc(a,b,c=0){
@@ -675,6 +674,11 @@
 //Lazy loading in React helps optimize performance by loading components only when they are needed.
 // You use React.lazy() to dynamically import components and Suspense to show a fallback UI while loading.
 // Lazy loading is especially beneficial for large apps and can also be applied to routes in React using React Router.
+
+// Key Benefits:
+// Faster initial loading time: Only essential data or resources are loaded initially.
+// Efficient use of memory: Resources are loaded on demand, which reduces memory usage.
+// Improved performance: Especially useful in large applications or websites with lots of content.
 
 //lists in css
 // Ordered List	<ol>	Use when the order matters.
@@ -1039,4 +1043,34 @@
 
 // void elements (also known as self-closing elements) are elements that do not have any content and cannot have closing tags. alternative name is empty tag.
 
+//WeakMap
+//In short, a WeakMap helps you store extra data about objects, and JavaScript automatically cleans up when those objects are no longer needed, preventing memory waste.
 
+// // Create a WeakMap
+// let weakMap = new WeakMap();
+
+// // Create multiple objects
+// let user1 = { name: "Alice" };
+// let user2 = { name: "Bob" };
+// let user3 = { name: "Charlie" };
+
+// // Add objects as keys with associated values
+// weakMap.set(user1, { age: 25, email: "alice@example.com" });
+// weakMap.set(user2, { age: 30, email: "bob@example.com" });
+// weakMap.set(user3, { age: 22, email: "charlie@example.com" });
+
+// // Access the data using the objects as keys
+// console.log(weakMap.get(user1)); // Output: { age: 25, email: "alice@example.com" }
+// console.log(weakMap.get(user2)); // Output: { age: 30, email: "bob@example.com" }
+// console.log(weakMap.get(user3)); // Output: { age: 22, email: "charlie@example.com" }
+
+// // If you stop using an object, it can be garbage-collected
+// user1 = null;
+
+// // The data for user1 is now eligible for garbage collection
+// // weakMap automatically cleans up, so you can no longer access user1's data
+
+//what is buffer class?
+//In JavaScript (specifically in Node.js), the Buffer class is used to handle binary data directly. It's not available in browser JavaScript but is part of Node.js, designed to work with raw binary data in a way that's similar to how arrays work with other types of data.
+
+// Buffers are useful when you need to work with streams of binary data, such as when handling files, network protocols, or any form of binary input/output.

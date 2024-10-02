@@ -1,12 +1,12 @@
 //1//find the duplicate element of an array.
-const arrNumber=[1,2,8,2,9,8,5,6,9]
+// const arrNumber=[1,2,8,2,9,8,5,6,9]
 // const duplicates=arrNumber.filter((ele,index,arr)=>arr.indexOf(ele)!==index)
 // console.log(duplicates);
 // remove the duplicate element;
 // const duplicates=arrNumber.filter((ele,index,arr)=>arr.indexOf(ele)==index)
 // console.log(duplicates);
 //indexOf() always returns the first occurance
-//Another way
+// Another way
 // function findDuplicates(arr) {
 //     const sortedArr = arr.sort();
 //     // console.log(sortedArr);
@@ -526,7 +526,7 @@ let string="soumya is a good boy";
 
 //28//
 let input = [2, 3, 4, 5, 3, 5, 3, 4, 5, 3];
-// // Count the frequency of each element using an object
+// // Count  the frequency of each element using an object
 // const frequencyMap = {};
 // for (const num of input) {
 //   frequencyMap[num] = (frequencyMap[num] || 0) + 1;
@@ -747,5 +747,5 @@ let input = [2, 3, 4, 5, 3, 5, 3, 4, 5, 3];
 //   }if(i<b.length){
 //     result+=b[i]
 //   }
-// }
+// } 
 // console.log(result);
