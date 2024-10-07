@@ -36,5 +36,46 @@ Proper indexing can significantly improve the speed of query execution, especial
 8.Pagination:
 Pagination is a technique used to divide a large dataset into smaller, more manageable chunks or pages for displaying to users.
 
+//join two collwction in MongoDB
 
+//students
+[
+  { "_id": 1, "name": "Alice", "course_id": 101 },
+  { "_id": 2, "name": "Bob", "course_id": 102 }
+]
+//courses
+[
+  { "_id": 101, "course_name": "Math" },
+  { "_id": 102, "course_name": "Physics" }
+]
 
+db.students.aggregate([
+  {
+    $lookup: {
+      from: "courses",         // The collection you're joining with
+      localField: "course_id", // Field in 'students' to match
+      foreignField: "_id",     // Field in 'courses' to match
+      as: "course_info"        // Name for the output
+    }
+  }
+])
+
+output:
+[
+  {
+    "_id": 1,
+    "name": "Alice",
+    "course_id": 101,
+    "course_info": [
+      { "_id": 101, "course_name": "Math" }
+    ]
+  },
+  {
+    "_id": 2,
+    "name": "Bob",
+    "course_id": 102,
+    "course_info": [
+      { "_id": 102, "course_name": "Physics" }
+    ]
+  }
+]

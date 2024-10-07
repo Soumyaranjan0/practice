@@ -114,7 +114,7 @@
 //   if (counter >= 5) {
 //     clearInterval(intervalId);
 //     console.log("Interval cleared!");
-//   }},1000)
+//   }
 
 // console.log(Nan==NaN) //ReferenceError: Nan is not defined
 // console.log(Nan===NaN) //ReferenceError: Nan is not defined
@@ -729,7 +729,7 @@
 // let c=a.split("").reverse().join("")
 // console.log(c);
 
-// console.log('3'+12*5); //160
+// console.log('3'+12*5); //360
 // console.log('3'+12+5); //3125
 // console.log('3'+"12"+5); //3125
 

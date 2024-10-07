@@ -95,7 +95,7 @@
 // for (let i = 1; i <= 10; i++) {
 //   // Check if the current number is missing in the array
 //   if (!array.includes(i)) {
-    // console.log("Missing Number:", i);
+// console.log("Missing Number:", i);
 //  // Stop the loop once the missing number is found
 //   }
 // }
@@ -337,7 +337,7 @@
 // console.log(kmtomiles);
 
 //21//To convert first letter of a string is in uppercase
-let string="soumya is a good boy";
+let string = "soumya is a good boy";
 // const convertfirstletter=(str)=>{
 //     var newstr=string.split(" ")
 //     const convert=newstr.map((element)=>{
@@ -394,7 +394,7 @@ let string="soumya is a good boy";
 //     console.log(row);
 //   }
 
-//Pyramid   
+//Pyramid
 // Set the height of the pyramid
 // const height = 5;
 // Outer loop: iterate through each row of the pyramid
@@ -541,7 +541,7 @@ let input = [2, 3, 4, 5, 3, 5, 3, 4, 5, 3];
 // console.log(sortedArray)
 
 // 29//
-// let string="Soumya is a good boy"
+// let string="Soumya is a go boy"
 // let array=string.trim().split("")
 // // console.log(array);
 // let freq={}
@@ -592,7 +592,7 @@ let input = [2, 3, 4, 5, 3, 5, 3, 4, 5, 3];
 //     }
 //     array[0]=temp
 // }
-// console.log(array)   
+// console.log(array)
 
 //Another method
 // let array=[2,56,-3,5,7,9]
@@ -686,7 +686,7 @@ let input = [2, 3, 4, 5, 3, 5, 3, 4, 5, 3];
 // let numbersOnly = array.filter(item => typeof item === 'number');
 // console.log(numbersOnly);
 
-// let arr = [2, 8, 4, 5, 6, 5, 7, 3]; //output:[[2, 8], [4, 6], [5, 5]]
+// let arr = [2, 8, 4, 5, 6, 5, 7, 3]; //output:[ [ 2, 8 ], [ 4, 6 ], [ 5, 5 ], [ 7, 3 ] ]
 // let targetSum = 10;
 // let result = [];
 //   for (let i = 0; i < arr.length; i++) {
@@ -705,7 +705,7 @@ let input = [2, 3, 4, 5, 3, 5, 3, 4, 5, 3];
 // console.log(newArray);
 
 //Reverse even index
-// let array = ["soumya", "ranjan", "behera", "is", "a", "good", "boy"];
+// let array = ["soumya", "ranjan"  , "behera", "is", "a", "good", "boy"];
 // for (let i = 1; i < array.length; i += 2) {
 //     array[i] = array[i].split("").reverse().join("");
 // }
@@ -714,7 +714,7 @@ let input = [2, 3, 4, 5, 3, 5, 3, 4, 5, 3];
 //find missing number in an array series
 // const arr = [7,9,11,15,17,19]
 // for(let i=0;i<arr.length;i++){
-// let start=arr[i] 
+// let start=arr[i]
 // let end =start+2
 // if(arr[i+1]!==end){
 //   console.log(end);
@@ -725,7 +725,6 @@ let input = [2, 3, 4, 5, 3, 5, 3, 4, 5, 3];
 // let arr = [7,9,11,15,17,19]
 // let reverse=arr.reduce((acc,cur)=>[cur,...acc],[])
 // console.log(reverse)
-
 
 // const names = [{id : 1, name:'mwb'},{id : 2, name:'yug'}]
 // const ages = [{id : 1, age : 22},{id : 2, age: 11}]
@@ -747,5 +746,56 @@ let input = [2, 3, 4, 5, 3, 5, 3, 4, 5, 3];
 //   }if(i<b.length){
 //     result+=b[i]
 //   }
-// } 
+// }
 // console.log(result);
+
+// let arr = [1, [4, 5], 5, [7, 8], 8, [[[2, 3]]]];
+// let flat = [];
+
+// function flattenArray(inputArray) {
+//     for (let i = 0; i < inputArray.length; i++) {
+//         if (Array.isArray(inputArray[i])) {
+//             flattenArray(inputArray[i]);  // Recursive call for nested arrays
+//         } else {
+//             flat.push(inputArray[i]);  // Push non-array elements
+//         }
+//     }
+// }
+
+// flattenArray(arr);
+// console.log(flat);
+
+// let arr=[1,[4,5],5,[7,8],8,[2,3]]
+// let flat=[]
+// for(let i=0;i<arr.length;i++){
+//     if(Array.isArray(arr[i])){
+//         for(let j=0;j<arr[i].length;j++){
+//             flat.push(arr[i][j])
+//         }
+//     }else{
+//         flat.push(arr[i])
+//     }
+// }
+// console.log(flat);
+
+
+//sort accoring to name or age
+// const students = [
+//     { name: "John Doe", age: 20, grade: "A" },
+//     { name: "Jane Smith", age: 22, grade: "B" },
+//     { name: "Michael Johnson", age: 21, grade: "A-" },
+//     { name: "Emily Davis", age: 23, grade: "B+" },
+//     { name: "Chris Brown", age: 20, grade: "C" }
+//   ];
+  
+//   students.sort((a,b)=>{
+//       if(a.age<b.age){
+//           return 1;
+//       }
+//       if(a.age>b.age){
+//           return -1;
+//       }else{
+//           return 0;
+//       }
+//   })
+//   console.log(students)

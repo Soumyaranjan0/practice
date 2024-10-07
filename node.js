@@ -4,7 +4,7 @@
 
 //What is bcrypt?
 //bcrypt is a password hashing function specifically designed to securely hash passwords.
-//Hashing is different from encryption in that it is a one-way process, meaning you cannot reverse it back to the original data.bcrypt is widely used for securely storing passwords in a database.
+//Hashing is different from encryption in that it is a one-way process, meaning you cannot reverse it back to the original da ta.bcrypt is widely used for securely storing passwords in a database.
 
 // example:
 // const bcrypt = require('bcrypt');
@@ -231,4 +231,49 @@ console.log('Decoded payload:', decoded);
 // Large data transformations
 // Encryption or compression
 
+//What is node.js
+//powerfull javascript frame work
+//developed chrome v8 javascript engine
+//used for creating server side web application
 
+//benifits of using node.Js
+//open source
+//simple @ fast
+//asynchronous
+//high scalability
+//single thread
+//no buffering
+//cross platform(windows,linux,ubunt etc..)
+
+//Api functions
+//1.Asynchronous-nonblocking functions
+//2.synchronous-blocking functions
+
+//package.json
+//it the heart of the entire application
+//That contains metadata about the projact where we define the properties of a package.
+
+//Stubs 
+//Using stubs in Node.js makes your tests more predictable, faster, and focused on the specific part of the system you are testing.
+
+//assert
+//provide feedback only when any of the running test cases fails.
+
+//process.nextTick() & setImmediate()
+//Both functons of the Timers module which help in executing the code after a predefined period.
+
+//How Nodejs handel the child threads?
+//Nodejs is single threaded process and doesnot expose the child threads or thread management methods.
+//you still use the child threads using spawn for some asynchronous operation.
+//also you can use madule called ChildProcess explicity.
+
+//Modules
+//modules are reusable block of code whose existance doesnot impact other code in any way.
+
+//require()
+//it is used to include modules from external files in node js.
+
+// payment gatewat integration
+// Integrating a payment gateway in a Node.js application involves connecting to a service that allows you to process payments securely. Some popular payment gateways include Stripe, PayPal, Square, and Razorpay. Each gateway provides its own API and SDKs to integrate payment functionality, such as accepting credit card payments, digital wallets, or bank transfers.
+
+//opps concept
