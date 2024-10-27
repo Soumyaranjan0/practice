@@ -2,8 +2,8 @@
 //"encrypt" refers to the process of converting plain text data into a secure format that can only be read by someone who has the correct decryption key.
 //encryption can be achieved using various libraries, with crypto being the built-in module for this purpose.
 
-//What is bcrypt?
-//bcrypt is a password hashing function specifically designed to securely hash passwords.
+// What is bcrypt?
+// bcrypt is a password hashing function specifically designed to securely hash passwords.
 //Hashing is different from encryption in that it is a one-way process, meaning you cannot reverse it back to the original da ta.bcrypt is widely used for securely storing passwords in a database.
 
 // example:
@@ -23,7 +23,7 @@
 //   });
 // });
 
-//JWT token
+// JWT token
 // It is commonly used for authentication and information exchange in web applications.
 // Structure of a JWT
 // A JWT consists of three parts, separated by dots (.):
@@ -50,7 +50,7 @@ const token = jwt.sign(payload, secretKey, { expiresIn: '1h' }); // Token expire
 
 console.log('Generated JWT:', token);
 
-//Verifying a JWT
+// Verifying a JWT
 const jwt = require('jsonwebtoken');
 
 // The token you want to verify (usually from a request header)
