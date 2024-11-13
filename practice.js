@@ -720,7 +720,7 @@ function callbackFunction() {
 //console.log(x); // ReferenceError: Cannot access 'x' before initialization
 // const x = 6;
 //in case of var it will show undefined and in case of let and const it will show reference error you cannot access  x before initialize.
-
+ 
 //console.log(x())
 // function x(){
 //   return 30;
