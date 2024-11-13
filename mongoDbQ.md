@@ -36,7 +36,7 @@ Proper indexing can significantly improve the speed of query execution, especial
 # Pagination:
 ### Pagination is a technique used to divide a large dataset into smaller, more manageable chunks or pages for displaying to users.
 
-# join two collwction in MongoDB
+# join two collection in MongoDB
 
 //students
 [
