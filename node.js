@@ -251,7 +251,7 @@ console.log('Decoded payload:', decoded);
 
 //package.json
 //it the heart of the entire application
-//That contains metadata about the projact where we define the properties of a package.
+//That contains metadata about the project where we define the properties of a package.
 
 //Stubs 
 //Using stubs in Node.js makes your tests more predictable, faster, and focused on the specific part of the system you are testing.

@@ -482,10 +482,7 @@
 // console.log("immediate invoke function")
 // })()
 
-// {
-//     var a =1 //global scope you can retrive it also outside the scope
-// }
-// console.log(a);
+c
 
 // function v(){
 //     var a = 10;
@@ -583,12 +580,6 @@
 // }
 // console.log(customArray);  // Output: [['a', 1], ['b', 2], ['c', 3]]
 
-// you can combine (or merge) rows and columns using the rowspan and colspan attributes.
-
-// div {
-//     border: 2px solid red; /* Border inside the box model */
-//     outline: 2px solid blue; /* Outline outside the border */
-//   }
 
 // Specificity Calculation:
 // Specificity is usually calculated using four values (A, B, C, D) where:
@@ -993,7 +984,7 @@
 // console.log(result);
 
 
-// Aspect	Function Declaration	Function Expression
+// Aspect	Function Expression	Function Declaration
 // Definition	Named function defined with function keyword.	Function assigned to a variable.
 // Syntax	function name() {}	const name = function() {}
 // Hoisting	Hoisted; can be called before definition.	Not hoisted; cannot be called before definition.
