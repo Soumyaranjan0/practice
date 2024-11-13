@@ -265,7 +265,7 @@ console.log('Decoded payload:', decoded);
 //How Nodejs handel the child threads?
 //Nodejs is single threaded process and doesnot expose the child threads or thread management methods.
 //you still use the child threads using spawn for some asynchronous operation.
-//also you can use madule called ChildProcess explicity.
+//also you can use module called ChildProcess explicity.
 
 //Modules
 //modules are reusable block of code whose existance doesnot impact other code in any way.
@@ -277,3 +277,16 @@ console.log('Decoded payload:', decoded);
 // Integrating a payment gateway in a Node.js application involves connecting to a service that allows you to process payments securely. Some popular payment gateways include Stripe, PayPal, Square, and Razorpay. Each gateway provides its own API and SDKs to integrate payment functionality, such as accepting credit card payments, digital wallets, or bank transfers.
 
 //opps concept
+
+//A CI/CD pipeline (Continuous Integration and Continuous Deployment) is an automated workflow that helps developers continuously integrate code changes, test them, and deploy the application efficiently. It typically has several stages:
+
+// Continuous Integration (CI): Every code change is automatically built and tested. This includes steps like:
+
+// Building: Compiling code to ensure it works.
+// Testing: Running unit, integration, or other tests to catch issues early.
+// Merging: Integrating code changes with the main codebase.
+// Continuous Deployment/Delivery (CD): Code that passes the tests is automatically deployed to production (Continuous Deployment) or prepared for manual release (Continuous Delivery). This step often includes:
+
+// Staging: Testing in a production-like environment.
+// Deployment: Releasing the code to production.
+// A CI/CD pipeline enables faster, safer releases by automating testing and deployment, helping teams quickly deliver updates to users.

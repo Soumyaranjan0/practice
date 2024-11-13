@@ -337,7 +337,7 @@
 // console.log(kmtomiles);
 
 //21//To convert first letter of a string is in uppercase
-let string = "soumya is a good boy";
+// let string = "soumya is a good boy";
 // const convertfirstletter=(str)=>{
 //     var newstr=string.split(" ")
 //     const convert=newstr.map((element)=>{
@@ -525,7 +525,7 @@ let string = "soumya is a good boy";
 // console.log(compressedString);
 
 //28//
-let input = [2, 3, 4, 5, 3, 5, 3, 4, 5, 3];
+// let input = [2, 3, 4, 5, 3, 5, 3, 4, 5, 3];
 // // Count  the frequency of each element using an object
 // const frequencyMap = {};
 // for (const num of input) {
@@ -704,7 +704,7 @@ let input = [2, 3, 4, 5, 3, 5, 3, 4, 5, 3];
 // let newArray = array.filter((_, index) => index % 2 == 0);
 // console.log(newArray);
 
-//Reverse even index
+// Reverse even index
 // let array = ["soumya", "ranjan"  , "behera", "is", "a", "good", "boy"];
 // for (let i = 1; i < array.length; i += 2) {
 //     array[i] = array[i].split("").reverse().join("");
@@ -778,7 +778,6 @@ let input = [2, 3, 4, 5, 3, 5, 3, 4, 5, 3];
 // }
 // console.log(flat);
 
-
 //sort accoring to name or age
 // const students = [
 //     { name: "John Doe", age: 20, grade: "A" },
@@ -787,7 +786,7 @@ let input = [2, 3, 4, 5, 3, 5, 3, 4, 5, 3];
 //     { name: "Emily Davis", age: 23, grade: "B+" },
 //     { name: "Chris Brown", age: 20, grade: "C" }
 //   ];
-  
+
 //   students.sort((a,b)=>{
 //       if(a.age<b.age){
 //           return 1;

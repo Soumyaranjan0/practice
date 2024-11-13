@@ -661,7 +661,6 @@
 // Learning curve	Easier to learn, depending on the library's purpose.	Can be more complex, as you need to learn the framework’s entire ecosystem.
 // Scope	Typically smaller and focused on specific functionalities.	Larger, more comprehensive solutions covering multiple aspects of development.
 // In short:
-
 // Library: You call it when needed.
 // Framework: It calls your code and dictates the architecture of the application.
 
