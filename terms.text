@@ -157,7 +157,7 @@ export default Memo;
 
 //MicroServices
 Microservices, also known as the microservices architecture, is an approach to software development where a large application is decomposed into small, independent services. Each of these services is designed to perform a specific business function and can operate independently of the others. These services communicate with each other through well-defined APIs (Application Programming Interfaces), typically over a network.
- 
+
 Key characteristics of microservices include:
 
 Modularity: Each microservice is a self-contained module, focusing on a specific business capability.

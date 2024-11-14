@@ -220,7 +220,7 @@ const studentdetail = () => {
 // studentdetail();
 
 //Promises
-//Promises are used to handel asynchronous operation in java script .they are easy to manage when dealing with multiple asynchronus operations where call backs can crete callback hell leading to unmanagable code.
+//Promises are used to handel asynchronous operation in java script .they are easy to manage when dealing with multiple asynchronus operations where call backs can creat callback hell leading to unmanagable code.
 //A promise ia an object that keep track about wheather a certain event has happened already or not
 //Determines what happens after the events has happend.
 //Promises are 3 stages
