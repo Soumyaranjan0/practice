@@ -360,6 +360,17 @@
 
 //output:[ 0, 1,  1,  2,  3, 5, 8, 13, 21, 34]
 
+
+//by using recursion
+
+// const fibbo=(number)=>{
+//     if(number<=1){
+//         return number
+//     }
+//    return fibbo(number-1)+fibbo(number-2)
+// }
+// console.log(fibbo(10))
+
 //Another way
 // let fibbo=10;
 // var a=0;

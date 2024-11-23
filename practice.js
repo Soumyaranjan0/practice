@@ -830,3 +830,29 @@ function callbackFunction() {
 // Chaining:
 // Promises allow easy chaining of multiple asynchronous operations using .then() and .catch().
 // async/await handles chaining by simply using multiple await expressions in a sequential manner.
+
+
+// Creating three promises and execute them parallaly and that shold be stored in a array.
+// const promise1 = new Promise((resolve) => {
+//   setTimeout(() => resolve('Promise 1 resolved'), 1000);
+// });
+
+// const promise2 = new Promise((resolve) => {
+//   setTimeout(() => resolve('Promise 2 resolved'), 2000);
+// });
+
+// const promise3 = new Promise((resolve) => {
+//   setTimeout(() => resolve('Promise 3 resolved'), 1500);
+// });
+
+// // Adding promises to an array
+// const promiseArray = [promise1, promise2, promise3];
+
+// // Executing promises in parallel using Promise.all
+// Promise.all(promiseArray)
+//   .then((results) => {
+//       console.log('All promises resolved:', results);
+//   })
+//   .catch((error) => {
+//       console.error('One of the promises failed:', error);
+//   });
