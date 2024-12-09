@@ -197,3 +197,81 @@
 
 //Pseudo-Elements are used to style specific parts of an element, rather than the whole element itself. They allow you to apply styles to certain content or portions of an element that are not part of the actual HTML structure, like the first letter of a paragraph or the content before or after an element.
 
+// const arr=[1,2,3,4,5]
+// const result=arr.map((ele)=>{
+//     return ele>2
+// })
+// console.log(result); //[ false, false, true, true, true ]
+
+//Object Destructuring
+// const person = {
+//     name: "Alice",
+//     age: 25,
+//     country: "USA"
+//   };
+  
+//   const { name, age, country } = person;
+//   console.log(name); // Alice
+//   console.log(age); // 25
+//   console.log(country); // USA
+
+// Feature                	<a> Tag	                                           <link> Tag
+// Purpose	Creates a hyperlink for navigation (clickable link).	Links external resources to the document (e.g., CSS, icons).
+// Common Usage	Navigating to other pages or resources.	Linking external stylesheets, icons, or preloading assets.
+// Attributes	href, target, title, rel, etc.	            rel, href, type, sizes, etc.
+// Display	    Creates a clickable element (text or link).	Does not display anything on the page.
+// Placement	Anywhere in the body of the document.	    Usually placed in the <head> section of the document.
+// Self-closing	No, it requires both an opening and closing tag (<a></a>). Yes, it is self-closing (<link />).
+
+// const arr = [1, 2, 3, 4][1, 2, 3]; // Interpreted as [1, 2, 3, 4][3]
+//take second array is an expression and retun the last value mean arr[3]
+// console.log(arr); // Output: 4
+
+// let  obj={
+//     1:"a",
+//     2:"b",
+//     "2":"b",
+//     [1]:"b"
+// }
+// console.log(obj); //{ '1': 'b', '2': 'b' }
+
+// {
+//     function fn1(){
+//         console.log("Hi");
+//     }
+// }
+// fn1() //Hi
+
+// function fn(){
+//     return 100;
+// }
+// var fn
+// console.log(fn); //[Function: fn],it take function as higher priority
+
+// class abc{
+
+// }
+// console.log(typeof(abc)); //typeof class is function
+
+// console.log(null==undefined); //true
+// console.log(null===undefined); //false
+
+// const arr=[1,2,3,4,5]
+// const res=arr.find(ele=>ele>2)
+// console.log(res)  // result:3  //find method always returns the first elemnt after checking the condition
+
+// function sum(a=100,b=200){
+//     return a+b
+// }
+// console.log(sum(null,20));  //0+20=20
+
+// function sum1(a=100,b=200){
+//     return a+b
+// }
+// console.log(sum1(undefined,20)); //100+20=120
+
+// const arr=[1,2,3,4,5]
+// console.log(arr.unshift(9)); //6
+// console.log(arr); //[ 9, 1, 2, 3, 4, 5 ]
+// console.log(arr.slice(1,3));//[ 2, 3 ]
+// console.log(arr); //[ 1, 2, 3, 4, 5 ]

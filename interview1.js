@@ -482,8 +482,6 @@
 // console.log("immediate invoke function")
 // })()
 
-c
-
 // function v(){
 //     var a = 10;
 //     let b=10
