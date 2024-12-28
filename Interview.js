@@ -552,7 +552,7 @@
 // console.log(sortedArray)
 
 // 29//
-// let string="Soumya is a go boy"
+// let string="Soumya is a good boy"
 // let array=string.trim().split("")
 // // console.log(array);
 // let freq={}

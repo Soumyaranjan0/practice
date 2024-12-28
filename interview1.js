@@ -13,7 +13,7 @@
 // let arr=[[1,2],[3,4],[5,6]]
 // console.log(arr.flat())
 
-//without inbuild method
+// without inbuild method
 
 // function flatarr(arr,n){
 //     let flatenarr=[];
@@ -51,9 +51,9 @@
 
 // console.log("5"-"3"+6); //8
 
-//important
+// important
 // let arr=["z","a","d","b","e"]
-//sort without inbuild method
+// sort without inbuild method
 
 // let arr=["3","2","67","56","34"]
 // for(j=0;j<arr.length;j++){
@@ -120,6 +120,8 @@
 // console.log(Nan===NaN) //ReferenceError: Nan is not defined
 // console.log([]=={}) //false
 // console.log({}=={}) //false
+// console.log(null || "" || false) //false(if all the value is falsy then it will take the last value)
+// console.log([] || 0 || true) //true(if any value is truthy then it will take the first value)
 
 //find the longest element of an array
 // let str="soumya ranjan behera is a very glorious man"

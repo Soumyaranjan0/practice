@@ -173,19 +173,15 @@
 
 //infinity curring
 // function sum(a) {
-//     let total = a;
-    
-//     function inner(b) {
+//     return function inner(b) {
 //       if (b === undefined) {  // Termination condition
-//         return total;
+//         return a;
 //       }
-//       total += b;
-//       return inner;  // Return the function itself for chaining
+// Return the function itself for chaining
+//       return sum(a+b)
 //     }
-    
-//     return inner;
 //   }
-  
+
 //   console.log(sum(1)(2)(3)(4)());
 
 //Use Cases of the <canvas>:
@@ -209,7 +205,7 @@
 //     age: 25,
 //     country: "USA"
 //   };
-  
+
 //   const { name, age, country } = person;
 //   console.log(name); // Alice
 //   console.log(age); // 25
@@ -275,3 +271,149 @@
 // console.log(arr); //[ 9, 1, 2, 3, 4, 5 ]
 // console.log(arr.slice(1,3));//[ 2, 3 ]
 // console.log(arr); //[ 1, 2, 3, 4, 5 ]
+
+// var a = 10;
+// console.log(a); // 10 bcz var is override the function
+// function a() {
+//   console.log("object");
+// }
+// console.log(a); // 10
+
+// console.log(Array(1,2)) //[ 1, 2 ] the arguments are treated as the elements of the array.
+// console.log(Array(2)) //[ <2 empty items> ] / Array() with a single numeric argument, it creates an array with a length equal to that number, but the array is empty (uninitialized).
+
+// if (NaN){
+//     console.log("Hi i am there");
+// }else{
+//     console.log("Hi i am not there");
+// } //it will print Hi i am not there because NaN is falsy value
+
+//common function for add(1,2) and add((1)(2))
+// function add(a, b) {
+//     if (b) {
+//       // Case 1: add(1, 2)
+//       return a + b;
+//     }
+//     // Case 2: add(1)(2)
+//     return function (b) {
+//       return a + b;
+//     };
+//   }
+
+//   // Usage
+//   console.log(add(1, 2));   // Output: 3
+//   console.log(add(1)(2));   // Output: 3
+
+// function abc(){
+//       console.log(abc.xyz)
+//   }
+//   abc()
+//   abc.xyz=400;
+//   abc.xyz=200;
+//   abc() //undefined and 200
+
+// const arr=[..."soumya"]
+// console.log(arr); //[ 's', 'o', 'u', 'm', 'y', 'a' ]
+
+// console.log(parseInt("10+2")); //10
+// console.log(parseInt("7FM")); //7
+// console.log(parseInt("M7F")); //NaN
+// console.log(parseInt("123.45"));  // 123 (stops at the decimal point)
+// console.log(parseInt("  99"));    // 99 (ignores leading spaces)
+//parseInt parses until it encounters an invalid character for the given base.
+//If the first character is invalid, it immediately returns NaN.
+
+// console.log([1,2].map(num=>{
+//       if(num>0) return;
+//       return num*2;
+// })); //[ undefined, undefined ]
+
+// function abc(){
+//       return ;
+// }
+// console.log(abc()); // undefined
+
+// "use strict"
+// {
+//       function abc(){
+//             console.log("Soumya");
+//       }
+// }
+// abc()
+
+// function abc(a,b){
+//       // "use strict"
+//       a=100
+//       b=200
+//       return arguments[0] + arguments[1]
+//       console.log(a+b);
+// }
+// console.log(abc(300,400));
+
+// console.log(abc())
+// function abc(){
+//     console.log("Soumya")
+// }
+// abc() //Soumya undefined Soumya
+
+// var mix = ["a", "e", 3, 4, 5, "y", "u", undefined, undefined]; // Replace undefined values here
+// const number = [];
+// const string = [];
+// const garbage = [];
+
+// mix.forEach((val) => {
+//     if (typeof val === "string") {
+//         string.push(val);
+//     }
+//     if (typeof val === "number") {
+//         number.push(val);
+//     }
+//     if (typeof val === "undefined") {
+//         garbage.push(val);
+//     }
+// });
+
+// console.log("Strings:", string);   // ["a", "e", "y", "u"]
+// console.log("Numbers:", number);   // [3, 4, 5]
+// console.log("Garbage:", garbage);  // [undefined, undefined]
+
+// const details={
+//       name:"soumya",
+//       age:26
+// }
+// const details1={...details}; //shallow copy
+// const details1=details; //deep copy
+// details1.name="dibya"
+// console.log(details);
+
+//divisible by 3 print fizz by 5 print buzz by both 3 & 5 print fizzbuzz
+// for (let i = 1; i <= 50; i++) {
+//   if (i % 3 == 0 && i % 5 != 0) {
+//     console.log(i);
+//     console.log("fizz");
+//   } else if (i % 5 == 0 && i % 3 !== 0) {
+//     console.log(i);
+//     console.log("buzz");
+//   } else if (i % 3 == 0 && i % 5 == 0) {
+//     console.log(i);
+//     console.log("fizzbuzz");
+//   }
+// }
+
+// Aspect	                  Controlled Component	                   Uncontrolled Component
+// Data Source	         React State	                              DOM (HTML element itself)
+// React Involvement	   Fully manages the form element	Minimal,    only to get or set value via ref
+// Use Case	               Preferred for dynamic or complex logic.	Simpler use cases, or when React control
+//                                                                      is unnecessary.
+// Example of Access	   value={state} with onChange	            ref to access the value
+
+// console.log(!false); //true
+// console.log(!"soumya"); //false
+// console.log("" == false); //true
+// console.log("" === false); //false
+// console.log(1 * false); //0
+
+//how can you get the value of 40 without creating extra variable
+// const [,,,a,]=[10,20,30,40,50]
+// const {3:a}=[10,20,30,40,50]
+// console.log(a);
