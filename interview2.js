@@ -8,7 +8,7 @@
 // console.log(abc); //[function: abc] //takes function as first priority and also abc is not assign any value
 
 // let n =10;
-// console.log(n.toString()); //10
+// console.log(n.toString()); //10 //default is decimal value so it will print 10 only. 
 // console.log(n.toString(8)); //12
 // n.toString(16) (Hexadecimal): "a"
 // n.toString(8) (Octal): "12"
@@ -401,11 +401,11 @@
 // }
 
 // Aspect	                  Controlled Component	                   Uncontrolled Component
-// Data Source	         React State	                              DOM (HTML element itself)
-// React Involvement	   Fully manages the form element	Minimal,    only to get or set value via ref
-// Use Case	               Preferred for dynamic or complex logic.	Simpler use cases, or when React control
-//                                                                      is unnecessary.
-// Example of Access	   value={state} with onChange	            ref to access the value
+// Data Source	           React State	                              DOM (HTML element itself)
+// React Involvement	   Fully manages the form element	Minimal,  only to get or set value via ref
+// Use Case	               Preferred for dynamic or complex logic.	  Simpler use cases, or when React control
+//                                                                    is unnecessary.
+// Example of Access	   value={state} with onChange	              ref to access the value
 
 // console.log(!false); //true
 // console.log(!"soumya"); //false

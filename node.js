@@ -136,11 +136,11 @@ console.log('Decoded payload:', decoded);
 // In Node.js, the Buffer class is used to handle binary data directly. Since JavaScript (the language of Node.js) was originally designed to handle strings and not binary data, the Buffer class was introduced to work with raw data (bytes). Buffers are useful when you deal with file I/O, streams, or binary data such as images, videos, and network protocols.
 // eg:const fs = require('fs');
 
-// // Read the file asynchronously as a buffer
+// Read the file asynchronously as a buffer
 // fs.readFile('file.txt', (err, data) => {
 //   if (err) throw err;
   
-//   // 'data' is a Buffer object
+// 'data' is a Buffer object
 //   console.log(data);           // Outputs the file content as a Buffer
 //   console.log(data.toString()); // Outputs the file content as a string
 // });
@@ -225,7 +225,7 @@ console.log('Decoded payload:', decoded);
 
 
 //What is worker thread?
-// Worker Threads allow you to perform tasks concurrently, taking full advantage of multi-core systems for CPU-bound operations like:
+// Worker Threads allow you to perform tasks concurrently, taking full advantage of multi-core systems for          CPU-bound operations like:
 // Complex calculations
 // Image processing
 // Large data transformations
