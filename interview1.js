@@ -23,7 +23,7 @@
 //             flatenarr.push(arr[i][j])
 //         }
 //     }
-//     return flatenarr
+//     return flatenarr;
 // }
 // console.log(flatarr(arr,1));
 
@@ -121,7 +121,30 @@
 // console.log([]=={}) //false
 // console.log({}=={}) //false
 // console.log(null || "" || false) //false(if all the value is falsy then it will take the last value)
-// console.log([] || 0 || true) //true(if any value is truthy then it will take the first value)
+// console.log([] || 0 || true) //[](if any value is truthy then it will take the first value)
+
+//JSON.parse() use cases :Parse JSON to a javascript value
+//to turn a JSON string into an object.
+// const jsonString = '{"name": "John", "age": 30}';
+// const obj = JSON.parse(jsonString);
+// console.log(obj.name); // Output: John
+
+//Parsing Arrays from JSON Strings
+// const jsonArray = '["apple", "banana", "cherry"]';
+// const arr = JSON.parse(jsonArray);
+// console.log(arr[1]); // Output: banana
+
+//Handling Nested JSON
+// const nestedJson = '{"user": {"name": "Alice", "age": 25}, "hobbies": ["reading", "traveling"]}';
+// const obj = JSON.parse(nestedJson);
+// console.log(obj.user.name); // Output: Alice
+// console.log(obj.hobbies[0]); // Output: reading
+
+//Using JSON.parse() with Dynamic Data
+// const apiResponse = '{"status": "success", "data": {"id": 1, "message": "Hello!"}}';
+// const result = JSON.parse(apiResponse);
+// console.log(result.data.message); // Output: Hello!
+
 
 //find the longest element of an array
 // let str="soumya ranjan behera is a very glorious man"
@@ -223,7 +246,7 @@
 //     name : "soumya",
 // }
 // let b={
-//     ...a
+//     ...a/
 // }
 // b.name="dibya"
 // console.log(a.name);
@@ -334,6 +357,17 @@
 // }
 // console.log(curry(7)(6)(2));
 
+// let data=["anil","soumya","dibya","ranjan"]
+// delete data[1]
+// console.log(data); //[ 'anil', <1 empty item>, 'dibya', 'ranjan' ]
+// console.log(data.length); //4 it will not affect the data length
+
+// const obj={name:"soumya"}
+// Object.seal(obj)
+// obj.name="dibya"
+// obj.age=28//you cant add new property but you can change the existing property value through seal method.
+// console.log(obj)
+
 // const str1="hello"
 // const str2="world1234"
 
@@ -382,7 +416,8 @@
 // The box-reflect property is currently only supported in WebKit-based browsers (e.g., Chrome, Safari). It is not supported in Firefox or Edge.
 // Always use the -webkit- prefix for compatibility.
 
-//what is empty tag? which not closing tag like br ,hr etc
+//what is empty tag? 
+// which not closing tag like br ,hr etc
 
 // how can we add gradient in css?
 // background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
@@ -401,7 +436,7 @@
 // auto: Shows scrollbars only when necessary.
 
 // property for image reflection?
-//Using the ::after pseudo-element to mirror and position the reflection.
+// Using the ::after pseudo-element to mirror and position the reflection.
 // Applying linear-gradient and opacity to achieve a fade-out effect.
 // Using transform: scaleY(-1) to flip the reflection vertically.
 
@@ -429,7 +464,7 @@
 // console.log(isNaN("hello"))    // true
 // console.log(isNaN(123));       // false
 // console.log(isNaN('123'));     // false
-// console.log(isNaN('abc'));     // true
+// console.log(isNaN('abc'));     // true  
 // console.log(isNaN(NaN));       // true
 // console.log(isNaN(undefined)); // true
 // For a stricter check, you can use Number.isNaN, which does not coerce the value.
@@ -593,7 +628,7 @@
 // }
 // console.log(fn.name); //fn
 
-// console.log(abc); //reference errpr: abc is not defined
+// console.log(abc); //reference error: abc is not defined
 // abc="soumya"
 
 // const arr=[200,100,330,70]
@@ -641,7 +676,7 @@
 // console.log(NaN == NaN); //False beacause of having different value
 
 // const arr=[1,2,3,4,5]
-// arr.splice(2,1) //length: 4
+// arr.splice(2,1) //length: 4 //can chages the original array
 // delete arr[2]  //length:5
 // console.log(arr.length);
 
@@ -796,7 +831,7 @@
 // ]
 
 // 1. find() Method
-// // The find() method is used to search for a specific element in an array based on a condition (callback function). It returns the first element that satisfies the provided testing function. If no elements satisfy the condition, it returns undefined.
+// The find() method is used to search for a specific element in an array based on a condition (callback function). It returns the first element that satisfies the provided testing function. If no elements satisfy the condition, it returns undefined.
 // const numbers = [1, 2, 3, 4, 5];
 // const found = numbers.find(element => element > 3);
 // console.log(found); // Output: 4
@@ -1036,29 +1071,29 @@
 //WeakMap
 //In short, a WeakMap helps you store extra data about objects, and JavaScript automatically cleans up when those objects are no longer needed, preventing memory waste.
 
-// // Create a WeakMap
+// Create a WeakMap
 // let weakMap = new WeakMap();
 
-// // Create multiple objects
+// Create multiple objects
 // let user1 = { name: "Alice" };
 // let user2 = { name: "Bob" };
 // let user3 = { name: "Charlie" };
 
-// // Add objects as keys with associated values
+// Add objects as keys with associated values
 // weakMap.set(user1, { age: 25, email: "alice@example.com" });
 // weakMap.set(user2, { age: 30, email: "bob@example.com" });
 // weakMap.set(user3, { age: 22, email: "charlie@example.com" });
 
-// // Access the data using the objects as keys
+// Access the data using the objects as keys
 // console.log(weakMap.get(user1)); // Output: { age: 25, email: "alice@example.com" }
 // console.log(weakMap.get(user2)); // Output: { age: 30, email: "bob@example.com" }
 // console.log(weakMap.get(user3)); // Output: { age: 22, email: "charlie@example.com" }
 
-// // If you stop using an object, it can be garbage-collected
+// If you stop using an object, it can be garbage-collected
 // user1 = null;
 
-// // The data for user1 is now eligible for garbage collection
-// // weakMap automatically cleans up, so you can no longer access user1's data
+// The data for user1 is now eligible for garbage collection
+// weakMap automatically cleans up, so you can no longer access user1's data
 
 //what is buffer class?
 //In JavaScript (specifically in Node.js), the Buffer class is used to handle binary data directly. It's not available in browser JavaScript but is part of Node.js, designed to work with raw binary data in a way that's similar to how arrays work with other types of data.
