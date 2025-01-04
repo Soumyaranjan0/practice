@@ -565,7 +565,7 @@ function sum2(a, b, c) {
   return a + b + c;
 }
 // sum2(1, 2, 3); // 6
-// //curring does
+//curring does
 // function sum2(a) {
 //   return (b) => {
 //     return (c) => {
@@ -629,13 +629,6 @@ function callbackFunction() {
 // var person1 = new Person("Vivek", 76, "male");
 // console.log(person1);
 
-// function Person(name, age, gender) {
-//   this.name = name;
-//   this.age = age;
-//   this.gender = gender;
-// }
-// var person1 = new Person("Vivek", 76, "male");
-// console.log(person1);
 
 // object destructuring?
 // to extract properties from objects and bind them to variables

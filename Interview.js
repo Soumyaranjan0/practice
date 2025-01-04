@@ -9,8 +9,8 @@
 // Another way
 // function findDuplicates(arr) {
 //     const sortedArr = arr.sort();
-//     // console.log(sortedArr);
-//     const duplicates = [];
+    // console.log(sortedArr);
+    // const duplicates = [];
 
 //     for (let i = 0; i < sortedArr.length; i++) {
 //       if (sortedArr[i] === sortedArr[i + 1]) {
@@ -646,9 +646,9 @@
 // console.log(sorted(array))
 
 // function findCharsAndNumbers(inputString) {
-// // Find characters
+// Find characters
 //     let characters = inputString.match(/[a-zA-Z]/g) || [];
-//     // Find numbers
+// Find numbers
 //     let numbers =inputString.match(/\d+/g) || [];
 //     let sum=numbers.reduce((acc,cur)=>acc+parseInt(cur),0);
 //     return (characters.join("")+sum)
@@ -823,10 +823,10 @@
 //     setTimeout(() => resolve('Promise 3 resolved'), 1500);
 // });
 
-// // Adding promises to an array
+// Adding promises to an array
 // const promiseArray = [promise1, promise2, promise3];
 
-// // Executing promises in parallel using Promise.all
+// Executing promises in parallel using Promise.all
 // Promise.all(promiseArray)
 //     .then((results) => {
 //         console.log('All promises resolved:', results);
