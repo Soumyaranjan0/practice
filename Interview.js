@@ -1,17 +1,16 @@
-//1//find the duplicate element of an array.
+//1//find the duplicate element of an array
 // const arrNumber=[1,2,8,2,9,8,5,6,9]
 // const duplicates=arrNumber.filter((ele,index,arr)=>arr.indexOf(ele)!==index)
 // console.log(duplicates);
 // remove the duplicate element;
 // const duplicates=arrNumber.filter((ele,index,arr)=>arr.indexOf(ele)==index)
 // console.log(duplicates);
-//indexOf() always returns the first occurance
+// indexOf() always returns the first occurance
 // Another way
 // function findDuplicates(arr) {
 //     const sortedArr = arr.sort();
-    // console.log(sortedArr);
-    // const duplicates = [];
-
+// console.log(sortedArr);
+// const duplicates = [];
 //     for (let i = 0; i < sortedArr.length; i++) {
 //       if (sortedArr[i] === sortedArr[i + 1]) {
 //         duplicates.push(sortedArr[i]);
@@ -42,7 +41,7 @@
 //another method
 // let maxNumber = arrNumber[0];
 // let minNumber = arrNumber[0];
-// // Iterate through the array to find max and min
+// Iterate through the array to find max and min
 // for (let i = 1; i < arrNumber.length; i++) {
 //   if (arrNumber[i] > maxNumber) {
 //     maxNumber = arrNumber[i];
@@ -91,12 +90,12 @@
 
 //another Method
 // const array = [1, 3, 4, 5, 6, 8, 10];
-// // Iterate through numbers from 1 to 10
+// Iterate through numbers from 1 to 10
 // for (let i = 1; i <= 10; i++) {
-//   // Check if the current number is missing in the array
+// Check if the current number is missing in the array
 //   if (!array.includes(i)) {
 // console.log("Missing Number:", i);
-//  // Stop the loop once the missing number is found
+// Stop the loop once the missing number is found
 //   }
 // }
 
@@ -291,9 +290,9 @@
 // var arr1=[2,9,6,8,4]
 // var arr2=[4,8,6,9,2]
 // const isarray=arr1.length===arr2.length && arr1.every((curelm)=>{
-// //  if(arr2.indexOf(curelm)>-1){
-// // return (curelm=[arr2.indexOf(curelm)])
-// //or
+//  if(arr2.indexOf(curelm)>-1){
+// return (curelm=[arr2.indexOf(curelm)])
+//or
 // if(arr2.includes(curelm)){
 //     return true;
 // }
@@ -360,7 +359,6 @@
 
 //output:[ 0, 1,  1,  2,  3, 5, 8, 13, 21, 34]
 
-
 //by using recursion
 
 // const fibbo=(number)=>{
@@ -394,7 +392,7 @@
 //       console.log(row);
 //     }
 //   }
-//   // Example: Print a right-angled triangle with height 5
+// Example: Print a right-angled triangle with height 5
 //   printRightAngleTriangle(5);
 //   Without Function
 //   for (let i = 1; i <= 5; i++) {
@@ -410,55 +408,55 @@
 // const height = 5;
 // Outer loop: iterate through each row of the pyramid
 // for (let i = 1; i <= height; i++) {
-//   // Inner loop 1: add spaces before the asterisks
+// Inner loop 1: add spaces before the asterisks
 //   for (let j =1; j<=5-i; j++) {
 // process.stdout.write(' ');
 //   }
-//   // Inner loop 2: add asterisks
+// Inner loop 2: add asterisks
 //   for (let k = 1; k <= i; k++) {
 //     process.stdout.write('*'+" ");
 //   }
-//   // Move to the next line after each row
+// Move to the next line after each row
 //   console.log();
 // }
 
 //another way in html file
 // for (let i = 1; i <= height; i++) {
-//     // Inner loop 1: add spaces before the asterisks
+// Inner loop 1: add spaces before the asterisks
 //     for (let j =1; j<=5-i; j++) {
 //       document.write("&nbsp;&nbsp;")
 //     }
-//     // Inner loop 2: add asterisks
+// Inner loop 2: add asterisks
 //     for (let k = 1; k <= i; k++) {
 //       document.write("*"+"&nbsp;&nbsp;")
 //     }
-//     // Move to the next line after each row
+// Move to the next line after each row
 //     document.write("<br>");
 //   }
 
 //Diamond
 // for (let i = 1; i <= height; i++) {
-//     // Inner loop 1: add spaces before the asterisks
+// Inner loop 1: add spaces before the asterisks
 //     for (let j =1; j<=5-i; j++) {
 //       process.stdout.write(' ');
 //     }
-//     // Inner loop 2: add asterisks
+// Inner loop 2: add asterisks
 //     for (let k = 1; k <= i; k++) {
 //       process.stdout.write('*'+" ");
 //     }
-//     // Move to the next line after each row
+// Move to the next line after each row
 //     console.log();
 //   }
 // for (let i = 1; i <= height; i++) {
-//     // Inner loop 1: add spaces before the asterisks
+// Inner loop 1: add spaces before the asterisks
 //     for (let j =1; j<=i; j++) {
 //       process.stdout.write(' ');
 //     }
-//     // Inner loop 2: add asterisks
+// Inner loop 2: add asterisks
 //     for (let k = 1; k <=5-i; k++) {
 //       process.stdout.write('*'+" ");
 //     }
-//     // Move to the next line after each row
+// Move to the next line after each row
 //     console.log();
 //   }
 
@@ -502,7 +500,7 @@
 // for (let i = 0; i < inputString.length; i+=2) {
 //   const char = inputString[i];
 //   const count = parseInt(inputString[i+1]);
-//   // Append the character to the result string 'count' times
+// Append the character to the result string 'count' times
 //   result += char.repeat(count);
 // }
 // console.log(result)
@@ -537,14 +535,14 @@
 
 //28//
 // let input = [2, 3, 4, 5, 3, 5, 3, 4, 5, 3];
-// // Count  the frequency of each element using an object
+// Count  the frequency of each element using an object
 // const frequencyMap = {};
 // for (const num of input) {
 //   frequencyMap[num] = (frequencyMap[num] || 0) + 1;
 // }
 // console.log(frequencyMap)
 
-// // Sort the array based on frequency and value
+// Sort the array based on frequency and value
 // const sortedArray = input.sort((a, b) => {
 //   const freqComparison = frequencyMap[b] - frequencyMap[a];
 //   return freqComparison === 0 ? a - b : freqComparison;
@@ -554,7 +552,7 @@
 // 29//
 // let string="Soumya is a good boy"
 // let array=string.trim().split("")
-// // console.log(array);
+// console.log(array);
 // let freq={}
 // for(let char of array){
 //     freq[char]=(freq[char] || 0) +1

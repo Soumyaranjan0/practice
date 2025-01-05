@@ -182,7 +182,7 @@ drawbacks
 //deployement
 
 //A monolithic application is a traditional software architecture where all the components of an application are tightly integrated and interconnected. In a monolithic architecture, the entire application is developed, deployed, and scaled as a single unit. The term "monolithic" refers to the fact that the application is a single, indivisible entity.
-
+  
 Key characteristics of monolithic applications include:
 
 Single Codebase: The entire application is developed and maintained within a single codebase.

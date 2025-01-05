@@ -813,9 +813,9 @@
 // Dependency Array (optional): An array that specifies the values that the effect depends on. React will re-run the effect only if any of the values in this array change.
 //syntax
 // useEffect(() => {
-//   // Your side effect logic here
+  // Your side effect logic here
 //   return () => {
-//     // Optional cleanup logic here
+    // Optional cleanup logic here
 //   };
 // }, [dependencies]);
 
