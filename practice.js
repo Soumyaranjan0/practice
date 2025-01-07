@@ -1,7 +1,7 @@
 //what is javascript
 //it is a scripting language that enables you to creat a dynamically updated content,control multimedia,animated images etc... and not only it uses in browser but also you can use it in server.
 
-//what is nodejs  
+//what is nodejs
 //node js is the runtime environment of javascript used to build the scalable application and it can run in multiple os,and it is asynchoronous in nature.
 
 //What is the newfeatures of HTML5 ?
@@ -77,7 +77,7 @@ const helloa = () => {
   // console.log("Hey how are you?");
   return "Soumya";
 };
-// helloa(); 
+// helloa();
 const e = helloa();
 // console.log(e)
 
@@ -344,7 +344,7 @@ getData();
 
 //MAP(),FIlTER(),REDUCE()
 //foreach Loop:Array Methods:CAlls a function,once for each array element
-const a1 = [2, 23, 5, 7, 28, 34]; 
+const a1 = [2, 23, 5, 7, 28, 34];
 // a1.forEach((value, index, array) => {
 // console.log(`${index}=${value} ${array}`)
 // });
@@ -353,7 +353,6 @@ const a1 = [2, 23, 5, 7, 28, 34];
 //databasename.collectionname.sort({salary:-1}).limit(1)
 //second highest salary
 //db.employees.find().sort({ salary: -1 }).limit(2).skip(1)
-
 
 // console.log(add(33));//33
 // console.log(add(1,2,3));//6
@@ -408,9 +407,9 @@ let j = Array.from("Soumya Ranjan Behera");
 // console.log(j)
 
 //For...of:To get values from an array
-for (let i of a1) { 
-  // console.log(i) 
-} 
+for (let i of a1) {
+  // console.log(i)
+}
 
 //For...in:To get indexs from an array
 for (let i in a1) {
@@ -451,7 +450,6 @@ for (let i in a1) {
 // console.log('Box1 is clocked')
 // },true)
 
-
 //What is Clouser?
 //A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment).
 function outerFunction() {
@@ -486,14 +484,14 @@ var di = {
 di.getname();
 
 var obj3 = {
-  name:"Soumya",
+  name: "Soumya",
   getname: function () {
     console.log(this.name);
   },
 };
 var getname1 = obj3.getname;
 var obj4 = {
-  name:"Akshya",
+  name: "Akshya",
   getname1,
 };
 //obj4.getname1()
@@ -629,7 +627,6 @@ function callbackFunction() {
 // var person1 = new Person("Vivek", 76, "male");
 // console.log(person1);
 
-
 // object destructuring?
 // to extract properties from objects and bind them to variables
 // const user = {
@@ -672,7 +669,7 @@ function callbackFunction() {
 // if (cluster.isMaster) {
 //   console.log(`Master ${process.pid} is running`);
 
-//   // Fork worker processes
+// Fork worker processes
 //   for (let i = 0; i < numCPUs; i++){
 //     cluster.fork();
 //   }
@@ -681,7 +678,7 @@ function callbackFunction() {
 //     console.log(`Worker ${worker.process.pid} died`);
 //   });
 // } else {
-//   // Worker process, run your Node.js application here
+// Worker process, run your Node.js application here
 //   http.createServer((req, res) => {
 //     res.writeHead(200);
 //     res.end('Hello, World!\n');
@@ -689,7 +686,6 @@ function callbackFunction() {
 
 //   console.log(`Worker ${process.pid} started`);
 // }
-
 
 //Eventdriven - "event-driven" means that much of the functionality is based on events and event handling.
 
@@ -700,7 +696,6 @@ function callbackFunction() {
 
 // const numbers = [1, 2, 3, 4, 5];
 // console.log(numbers.sum()); // Output: 15
- 
 
 //How can i push the value to an array even after i can declair it through const
 // const arr=[]
@@ -713,7 +708,7 @@ function callbackFunction() {
 //console.log(x); // ReferenceError: Cannot access 'x' before initialization
 // const x = 6;
 //in case of var it will show undefined and in case of let and const it will show reference error you cannot access  x before initialize.
- 
+
 //console.log(x())
 // function x(){
 //   return 30;
@@ -759,12 +754,12 @@ function callbackFunction() {
 // Purpose: Retrieves only the headers of the response, not the body.
 // Usage: Useful for checking the status of a resource without downloading the entire content.
 // Example: Checking if a file has been modified on the server without downloading the entire file.
-// 7. OPTIONS:  
+// 7. OPTIONS:
 // Purpose: Describes the communication options for the target resource.
 // Usage: Typically used to determine the allowed methods and other capabilities supported by a web server.
-// Example: Checking which HTTP methods are allowed on a particular endpoint. 
+// Example: Checking which HTTP methods are allowed on a particular endpoint.
 // OPTIONS /api/users HTTP/1.1
-// Host: example.com 
+// Host: example.com
 // inResponse
 //  HTTP/1.1 200 OK
 // Allow: GET, POST, PUT, DELETE
@@ -777,8 +772,7 @@ function callbackFunction() {
 // Usage: Used when a client needs to establish a secure tunnel through which it can communicate securely with the server.
 // Example: Establishing a secure connection to a proxy server for secure communication
 
-
-//what is the difference between normal function and arrow function 
+//what is the difference between normal function and arrow function
 // this Binding:Normal function support this binding but arrow function doesn't support.
 //new keyword:
 // Normal Function:
@@ -824,7 +818,6 @@ function callbackFunction() {
 // Promises allow easy chaining of multiple asynchronous operations using .then() and .catch().
 // async/await handles chaining by simply using multiple await expressions in a sequential manner.
 
-
 // Creating three promises and execute them parallaly and that shold be stored in a array.
 // const promise1 = new Promise((resolve) => {
 //   setTimeout(() => resolve('Promise 1 resolved'), 1000);
@@ -838,10 +831,10 @@ function callbackFunction() {
 //   setTimeout(() => resolve('Promise 3 resolved'), 1500);
 // });
 
-// // Adding promises to an array
+// Adding promises to an array
 // const promiseArray = [promise1, promise2, promise3];
 
-// // Executing promises in parallel using Promise.all
+// Executing promises in parallel using Promise.all
 // Promise.all(promiseArray)
 //   .then((results) => {
 //       console.log('All promises resolved:', results);

@@ -63,7 +63,7 @@
 //     arr.splice(index,1)
 //     const secondlargestvalue=Math.max(...arr)
 
-//     // return firstlargestvalue
+// return firstlargestvalue
 //     return secondlargestvalue
 // }
 // console.log(largestvalue(intArray));
@@ -151,7 +151,7 @@
 //     }
 //     return result;
 // }
-// // Example: Calculate the factorial of 5
+// Example: Calculate the factorial of 5
 // var result = factorial(5);
 // console.log(result); // Output: 120
 
@@ -832,3 +832,60 @@
 //     .catch((error) => {
 //         console.error('One of the promises failed:', error);
 //     });
+
+// const data = [
+//     { name: "Rajandra", score: 70 },
+//     { name: "satarup", score: 80 },
+//     { name: "Anuvab", score: 75 }
+//   ];
+
+//   const totalScore = data.reduce((acc, item) => acc + item.score, 0);
+
+//   console.log(`Total score: ${totalScore}`);
+
+// const data = [
+//     { name: "Rajandra", score: 70 },
+//     { name: "satarup", score: 80 },
+//     { name: "Anuvab", score: 75 }
+//   ];
+
+// Use map to create an array of scores
+//   const scores = data.map(item => item.score);
+
+// Use reduce to sum up the scores
+//   const totalScore = scores.reduce((acc, score) => acc + score, 0);
+
+//   console.log(`Total score: ${totalScore}`);
+
+// const Input="abc@1234$456"
+// let result=""
+// for(let i=0;i<Input.length;i++){
+//     if(Input[i]=="@"){
+//         result+=","
+//     }else if(Input[i]=="$"){
+//         result+=","
+//     }else{
+//         result+=Input[i]
+//     }
+// }
+// console.log(result)
+
+// function clock(){
+//     function find(){
+//     const date=new Date()
+//     const hours=date.getHours()
+//     const minutes=date.getMinutes()
+//     const seconds=date.getSeconds()
+//     return (`${hours}:${minutes}:${seconds}`)
+//     }
+//     setInterval(()=>{
+//       console.log(find())
+//     },1000)
+// }
+// clock()
+
+// setInterval(() => {
+//     const date = new Date(); // Get the current time each second
+//     const seconds = date.getSeconds(); // Get the current seconds
+//     console.log(seconds);
+// }, 1000);

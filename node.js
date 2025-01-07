@@ -33,25 +33,25 @@
 // Signature
 
 //Generating a JWT
-const jwt = require('jsonwebtoken');
+const jwt = require("jsonwebtoken");
 
 // Define a payload (data to encode in the token)
 const payload = {
   userId: 123,
-  username: 'johndoe',
-  role: 'admin'
+  username: "johndoe",
+  role: "admin",
 };
 
 // Secret key (you should keep this secret in a secure place, such as environment variables)
 // const secretKey = 'your-secret-key';
 
 // Generate a token
-const token = jwt.sign(payload, secretKey, { expiresIn: '1h' }); // Token expires in 1 hour
+const token = jwt.sign(payload, secretKey, { expiresIn: "1h" }); // Token expires in 1 hour
 
-console.log('Generated JWT:', token);
+console.log("Generated JWT:", token);
 
 // Verifying a JWT
-const jwt = require('jsonwebtoken');
+const jwt = require("jsonwebtoken");
 
 // The token you want to verify (usually from a request header)
 // const token = 'the-token-received-from-client';
@@ -61,24 +61,24 @@ const jwt = require('jsonwebtoken');
 
 jwt.verify(token, secretKey, (err, decoded) => {
   if (err) {
-    console.error('Token verification failed:', err.message);
+    console.error("Token verification failed:", err.message);
     return;
   }
 
-  console.log('Decoded payload:', decoded);
+  console.log("Decoded payload:", decoded);
   // Use the decoded payload for authentication/authorization purposes
 });
 
 //Decoding a JWT without Verification
 
-const jwt = require('jsonwebtoken');
+const jwt = require("jsonwebtoken");
 
 // The token you want to decode
 // const token = 'the-token-received-from-client';
 
 const decoded = jwt.decode(token);
 
-console.log('Decoded payload:', decoded);
+console.log("Decoded payload:", decoded);
 
 //Authentication
 //Authentication is the process of verifying the identity of a user or system. In a web application, this usually involves checking a user's credentials (like a username and password) to ensure they are who they claim to be.
@@ -139,7 +139,7 @@ console.log('Decoded payload:', decoded);
 // Read the file asynchronously as a buffer
 // fs.readFile('file.txt', (err, data) => {
 //   if (err) throw err;
-  
+
 // 'data' is a Buffer object
 //   console.log(data);           // Outputs the file content as a Buffer
 //   console.log(data.toString()); // Outputs the file content as a string
@@ -150,13 +150,13 @@ console.log('Decoded payload:', decoded);
 // Streams allow Node.js to process data asynchronously and incrementally, which helps in saving memory and improving performance. For example, when you work with large files or data sources, instead of loading the entire file into memory, you can read it in small parts (chunks) and process it bit by bit.
 // 1. Readable Stream Example (Reading from a File)
 // const fs = require('fs');
-// // Create a readable stream from a file
+// Create a readable stream from a file
 // const readableStream = fs.createReadStream('largefile.txt', 'utf8');
-// // Listen to 'data' event to receive chunks of data
+// Listen to 'data' event to receive chunks of data
 // readableStream.on('data', (chunk) => {
 //   console.log('New chunk received:', chunk);
 // });
-// // Listen to 'end' event to know when the file has been completely read
+// Listen to 'end' event to know when the file has been completely read
 // readableStream.on('end', () => {
 //   console.log('File reading complete.');
 // });
@@ -167,14 +167,14 @@ console.log('Decoded payload:', decoded);
 
 // 2. Writable Stream Example (Writing to a File)
 // const fs = require('fs');
-// // Create a writable stream
+// Create a writable stream
 // const writableStream = fs.createWriteStream('output.txt');
-// // Write some data to the file
+// Write some data to the file
 // writableStream.write('Hello, ');
 // writableStream.write('World!');
-// // Mark the end of the writing process
+// Mark the end of the writing process
 // writableStream.end();
-// // Listen to 'finish' event when writing is done
+// Listen to 'finish' event when writing is done
 // writableStream.on('finish', () => {
 //   console.log('File writing complete.');
 // });
@@ -186,11 +186,11 @@ console.log('Decoded payload:', decoded);
 // 3. Pipe Example (Connecting Readable and Writable Streams)
 // A common pattern in Node.js is using pipe() to connect a readable stream to a writable stream. This is especially useful for copying data from one place to another.
 // const fs = require('fs');
-// // Create a readable stream from a file
+// Create a readable stream from a file
 // const readableStream = fs.createReadStream('input.txt');
-// // Create a writable stream to a file
+// Create a writable stream to a file
 // const writableStream = fs.createWriteStream('output.txt');
-// // Pipe the data from the readable stream to the writable stream
+// Pipe the data from the readable stream to the writable stream
 // readableStream.pipe(writableStream);
 // In this example:
 // We use pipe() to send the data from the readable stream (input.txt) directly to the writable stream (output.txt).
@@ -205,7 +205,7 @@ console.log('Decoded payload:', decoded);
 // if (cluster.isMaster) {
 //   console.log(`Master ${process.pid} is running`);
 
-//   // Fork worker processes
+// Fork worker processes
 //   for (let i = 0; i < numCPUs; i++){
 //     cluster.fork();
 //   }
@@ -214,7 +214,7 @@ console.log('Decoded payload:', decoded);
 //     console.log(`Worker ${worker.process.pid} died`);
 //   });
 // } else {
-//   // Worker process, run your Node.js application here
+// Worker process, run your Node.js application here
 //   http.createServer((req, res) => {
 //     res.writeHead(200);
 //     res.end('Hello, World!\n');
@@ -223,9 +223,8 @@ console.log('Decoded payload:', decoded);
 //   console.log(`Worker ${process.pid} started`);
 // }
 
-
 //What is worker thread?
-// Worker Threads allow you to perform tasks concurrently, taking full advantage of multi-core systems for          CPU-bound operations like:
+// Worker Threads allow you to perform tasks concurrently, taking full advantage of multi-core systems for   CPU-bound operations like:
 // Complex calculations
 // Image processing
 // Large data transformations
@@ -253,7 +252,7 @@ console.log('Decoded payload:', decoded);
 //it the heart of the entire application
 //That contains metadata about the project where we define the properties of a package.
 
-//Stubs 
+//Stubs
 //Using stubs in Node.js makes your tests more predictable, faster, and focused on the specific part of the system you are testing.
 
 //assert

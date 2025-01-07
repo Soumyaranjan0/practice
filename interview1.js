@@ -110,7 +110,7 @@
 //   console.log("Counter:", counter);
 //   counter++;
 
-// // Stop the interval when counter reaches 5
+// Stop the interval when counter reaches 5
 //   if (counter >= 5) {
 //     clearInterval(intervalId);
 //     console.log("Interval cleared!");
@@ -144,7 +144,6 @@
 // const apiResponse = '{"status": "success", "data": {"id": 1, "message": "Hello!"}}';
 // const result = JSON.parse(apiResponse);
 // console.log(result.data.message); // Output: Hello!
-
 
 //find the longest element of an array
 // let str="soumya ranjan behera is a very glorious man"
@@ -310,7 +309,7 @@
 // let str1 = "123";
 // let result = '';
 // for (let i = 0; i < Math.max(str.length, str1.length); i++) {
-// //Ensures the loop runs as long as the longest of the two strings.
+//Ensures the loop runs as long as the longest of the two strings.
 //     if (i < str.length) {
 //         result += str[i];
 //     }
@@ -416,7 +415,7 @@
 // The box-reflect property is currently only supported in WebKit-based browsers (e.g., Chrome, Safari). It is not supported in Firefox or Edge.
 // Always use the -webkit- prefix for compatibility.
 
-//what is empty tag? 
+//what is empty tag?
 // which not closing tag like br ,hr etc
 
 // how can we add gradient in css?
@@ -464,7 +463,7 @@
 // console.log(isNaN("hello"))    // true
 // console.log(isNaN(123));       // false
 // console.log(isNaN('123'));     // false
-// console.log(isNaN('abc'));     // true  
+// console.log(isNaN('abc'));     // true
 // console.log(isNaN(NaN));       // true
 // console.log(isNaN(undefined)); // true
 // For a stricter check, you can use Number.isNaN, which does not coerce the value.
@@ -614,7 +613,6 @@
 //     customArray.push([key, obj[key]]);
 // }
 // console.log(customArray);  // Output: [['a', 1], ['b', 2], ['c', 3]]
-
 
 // Specificity Calculation:
 // Specificity is usually calculated using four values (A, B, C, D) where:
@@ -779,13 +777,13 @@
 
 // function MyComponent() {
 //   useEffect(() => {
-//     // Mounting logic
+// Mounting logic
 //     console.log('Component mounted');
 
-//     // Cleanup function for unmounting
+// Cleanup function for unmounting
 //     return () => {
 //       console.log('Component unmounted');
-//       // Cleanup code here (e.g., clearInterval, unsubscribe from events)
+// Cleanup code here (e.g., clearInterval, unsubscribe from events)
 //     };
 //   }, []); // Empty dependency array ensures this effect runs only once on mount/unmount
 
@@ -806,16 +804,15 @@
 // }
 // The effect runs every time the count prop changes. If there are multiple dependencies, the effect will run whenever any of those dependencies change.
 
-
 //useeffect parameter
 // The useEffect hook in React is used to handle side effects in function components. It takes two parameters:
 // Effect Callback Function: A function that contains the side effect logic you want to run.
 // Dependency Array (optional): An array that specifies the values that the effect depends on. React will re-run the effect only if any of the values in this array change.
 //syntax
 // useEffect(() => {
-  // Your side effect logic here
+// Your side effect logic here
 //   return () => {
-    // Optional cleanup logic here
+// Optional cleanup logic here
 //   };
 // }, [dependencies]);
 
@@ -985,17 +982,17 @@
 
 // var x; // undefined
 // x++; //undefined++ coerced to NaN
-// console.log(x); //NaN 
+// console.log(x); //NaN
 // x=9;
 
 // let x=undefined++
 // console.log(x);
 
 // for (var i=0;i<5;i++){
-  // console.log(i); //01234
-  // setTimeout(()=>{
-  //   console.log(i)
-  // },1000)
+// console.log(i); //01234
+// setTimeout(()=>{
+//   console.log(i)
+// },1000)
 // } //five times 5
 
 // function func1(n){
@@ -1018,13 +1015,12 @@
 // const result=arr.reduce((acc,cur)=>acc*cur)
 // console.log(result);
 
-
 // Aspect	Function Expression	Function Declaration
 // Definition	Named function defined with function keyword.	Function assigned to a variable.
 // Syntax	function name() {}	const name = function() {}
 // Hoisting	Hoisted; can be called before definition.	Not hoisted; cannot be called before definition.
 // Name	Always has a name (the function name).	Can be anonymous or named.
-// Usage	Typically used for defining reusable functions.	Often used for callbacks and inline functions. 
+// Usage	Typically used for defining reusable functions.	Often used for callbacks and inline functions.
 
 // console.log(1+"1"+1); //111
 // console.log(1-"1"+1); //1
@@ -1064,7 +1060,6 @@
 // console.log(x) //undefined
 
 // console.log(c) //undeclaired
-
 
 // void elements (also known as self-closing elements) are elements that do not have any content and cannot have closing tags. alternative name is empty tag.
 

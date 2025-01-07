@@ -178,13 +178,12 @@ const citrus = fruits.sort();
 // const num2 =10_000_00;
 // console.log(num1===num2); //because,ES6 new feature to separate large number for better readability
 
-//  const arr=[
-//     {
-//         id:12,marks:34,
-//         id:13,marks:56,
-//         id:14,marks:64
-//     }
-//  ]
+// const arr = [
+//     { id: 12, marks: 34 },
+//     { id: 13, marks: 56 },
+//     { id: 14, marks: 64 }
+// ];
+
  //check if any student is fail or not in a an array in different ways
 //  const passingmark=33;
 //  const  failed =arr.some(function(element){
@@ -195,7 +194,7 @@ const citrus = fruits.sort();
 // const  failed =arr.every(function(element){
 //     return element.marks<passingmark;
 // })
-// // console.log(failed);
+// console.log(failed);
 
 // const result = arr.map(student => {
 //     return {
@@ -207,7 +206,7 @@ const citrus = fruits.sort();
 // const result1=arr.forEach(student => {
 //    return student.status = student.marks >= passingmark ? 'Pass' : 'Fail';
 // });
-// // console.log(result);
+// console.log(result);
 
 // function show(){
 //     console.log("wow");
@@ -279,7 +278,6 @@ const citrus = fruits.sort();
 // const  arr=["e","t","t","y","u"]
 // const hasdata=arr.includes("y")
 // console.log(hasdata);
-
 
 //OTP generator
 // function generateOtp(length){
