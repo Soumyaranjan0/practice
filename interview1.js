@@ -1094,3 +1094,72 @@
 //In JavaScript (specifically in Node.js), the Buffer class is used to handle binary data directly. It's not available in browser JavaScript but is part of Node.js, designed to work with raw binary data in a way that's similar to how arrays work with other types of data.
 
 // Buffers are useful when you need to work with streams of binary data, such as when handling files, network protocols, or any form of binary input/output.
+
+//Webpack
+//Webpack is a powerful module bundler commonly used in React.js applications. It takes your JavaScript, CSS, images, and other assets, and bundles them into a single or smaller number of output files optimized for the browser.
+
+//React-Redux
+// Example Flow:
+// User clicks a button → an action is dispatched.
+// The reducer processes the action and returns a new state.
+// The store updates the state and informs the UI to re-render if needed.
+
+//Redux-Thunk
+//Redux Thunk is a middleware that makes handling asynchronous actions in Redux more manageable. It allows action creators to return functions instead of plain action objects, which can then be used to perform async operations and dispatch actions based on the outcome of those operations.
+
+
+//Diff. between redux-thunk and redux-saga
+// Feature	                Redux Thunk	                                  Redux Saga
+// Async Handling	         Imperative (callbacks, promises)	     Declarative (generators, effects)
+// Setup Complexity	       Simple, less boilerplate	             More complex, requires generators
+// Control Flow	           Chained promises and callbacks	       yield for control, advanced flows
+// Error Handling	         Using .catch() in promises	           Using try/catch in generator funcs
+// Learning Curve	         Low	                                 High (requires understanding of generators)
+// Best For	               Small to medium apps, simple async	   Complex async flows, large apps
+
+//Difference between classbased and functional component
+// Feature	               Class-based Component	                      Function-based Component
+// Syntax	Extends          React.Component, requires render()	        Simple function that returns JSX
+// State Management	       this.state and this.                       setState()	useState() hook
+// Lifecycle Methods	     componentDidMount, componentDidUpdate, etc.	   useEffect() hook
+// Performance	       Slightly higher overhead due to class structure.	Generally better, simpler, and faster
+// Hooks	           Cannot use hooks                         	Can use hooks like useState, useEffect, etc.
+// Code Readability	      More boilerplate and complexity	            Shorter, cleaner, and more readable
+// Use Cases	     Older codebases, when lifecycle methods are needed.	Modern development, recommended for new projects
+
+//Difference between export and export default
+//Feature	                   export default	                       export (Named Export)
+// Number of Exports	     Only one per file	Multiple exports allowed in a single file
+// Import Syntax	       import MyComponent from './MyComponent';	import { MyComponent } from './MyComponent';
+// Flexibility          on Import Name You can name the import whatever you want. 	You must use the exact name from the export
+// Use Case        	When you want to export one main item from a file	      When you want to export multiple values from a file
+// Example	        export default MyComponent;	                 export const MyComponent = ...;
+
+
+//e.g-export default
+// const Button = () => {
+//   return <button>Click me!</button>;
+// };
+
+// export default Button;
+// import Button from './Button'; // No curly braces needed
+//export
+// export const add = (a, b) => a + b;
+// export const subtract = (a, b) => a - b;
+// import { add, subtract } from './utils'; // Use curly braces
+
+// Reconciliation 
+// In React refers to the process by which React updates the DOM to reflect the latest state of the UI. It involves comparing the newly rendered virtual DOM (the result of the component's render method) with the previous virtual DOM, and then determining the minimal set of changes required to update the actual DOM efficiently.
+
+// Server-Side Rendering (SSR) 
+// In React is the process of rendering the app on the server and sending pre-rendered HTML to the client, which can improve the initial load time and SEO. While it comes with some complexity and challenges, it provides significant benefits in terms of performance and search engine optimization, especially for content-heavy or SEO-dependent websites.
+
+//how can i change my current port which is running right now in my current react application?
+//"scripts": {
+  // "start": "cross-env PORT=4000 react-scripts start"
+// }
+
+// Higher Order Component (HOC) 
+// In React is a function that takes a component and returns a new component with additional props or functionality. It is a pattern used to reuse component logic across multiple components.
+
+// In simple terms, a Higher Order Component is like a wrapper component that adds extra functionality or behavior to the component it wraps. It doesn't modify the original component directly but enhances it in a reusable way.

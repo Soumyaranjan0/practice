@@ -889,3 +889,39 @@
 //     const seconds = date.getSeconds(); // Get the current seconds
 //     console.log(seconds);
 // }, 1000);
+
+
+// /write a programme to multiply two number without using * operator
+// function multiply(a, b) {
+//     let result = 0;
+
+// Handle negative numbers
+//     let isNegative = false;
+//     if (a < 0 && b >= 0) {
+//       isNegative = true;
+//       a = -a;  // Convert 'a' to positive
+//     } else if (b < 0 && a >= 0) {
+//       isNegative = true;
+//       b = -b;  // Convert 'b' to positive
+//     } else if (a < 0 && b < 0) {
+//       a = -a;  // Convert both to positive
+//       b = -b;
+//     }
+
+// Add 'a' to itself 'b' times
+//     for (let i = 0; i < b; i++) {
+//       result += a;
+//     }
+
+// If one of the numbers was negative, the result should also be negative
+//     if (isNegative) {
+//       result = -result;
+//     }
+
+//     return result;
+//   }
+
+// Test the function
+//   console.log(multiply(5, 3));  // Output: 15
+//   console.log(multiply(6, -2)); // Output: -12
+//   console.log(multiply(-4, -3)); // Output: 12

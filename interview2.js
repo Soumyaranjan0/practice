@@ -417,3 +417,87 @@
 // const [,,,a,]=[10,20,30,40,50]
 // const {3:a}=[10,20,30,40,50]
 // console.log(a);
+
+//<!DOCTYPE html> is a key part of HTML5 documents that helps browsers render the content according to modern web standards, ensuring a consistent and expected behavior across different platforms. It is not a tag but an instruction to the browser about the version of HTML being used. The <!DOCTYPE html> declaration must be the first thing in an HTML document, before the <html> tag. It is case-insensitive and does not require a closing tag. The declaration tells the browser to render the document in standards mode, which helps avoid compatibility issues and ensures consistent rendering across browsers.
+
+// Key Differences Between Semantic and Non-Semantic Elements: 
+// Aspect	            Semantic Elements	                     Non-Semantic Elements
+// Meaning	P       rovide meaning about the content inside	     No inherent meaning about the content
+// Examples	        <header>, <footer>, <article>	             <div>, <span>
+// SEO	            Helps search engines understand content	     Does not directly aid in SEO
+// Accessibility	Improves screen reader interpretation	     Does not provide meaningful context
+// Readability	    Code is more readable and structured	     Code is more generic and harder to understand
+
+//The <iframe> tag in HTML is used to embed another HTML document within the current document. It creates an inline frame that allows you to display content from another webpage or a different source inside a section of your webpage. The <iframe> tag is commonly used to embed videos, maps, or other external content on a webpage. It has attributes like src, width, height, and title to specify the source URL, dimensions, and title of the iframe.
+{/* <iframe src="URL" width="600" height="400" title="Description of the content"></iframe> */}
+
+//Formatting Tag:
+{/* <b>, <i>, <u>, <em>, <strong>, <mark>, <small>, <del>, <ins>, <sub>, <sup>, <q>, <code>, <pre>, <span> */}
+// Semantic Tags: Tags like <em>, <strong>, <mark>, <del>, and <ins> provide meaning to the content and are useful for accessibility and SEO.
+// Non-Semantic Tags: Tags like <b>, <i>, <u>, <span>, and <pre> are used purely for styling purposes without conveying any specific meaning.
+
+//viewport: 
+//In HTML refers to the visible area of a web page on a device screen, which can vary in size depending on the device (e.g., mobile, tablet, or desktop). The viewport meta tag is used to control how the page content is scaled and displayed on different devices, especially for responsive web design.
+{/* <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"> */}
+
+// Types of Attributes:
+// id, class, src, href, alt, style, name, type, value, placeholder, target, disabled, checked, lang, title, readonly, maxlength, minlength, rel, action, method, for, contenteditable, data-*, tabindex, width, height, action, autocomplete, form, formaction, formmethod, formaction, formtarget, formnovalidate, allowfullscreen
+
+// Global Attributes: 
+// These attributes can be used on almost all HTML elements. Examples include id, class, style, title, and lang.
+// Specific Attributes: 
+// These attributes are specific to certain HTML elements. For example:
+// <a> uses the href attribute.
+// <img> uses the src and alt attributes.
+// <input> uses the type, value, placeholder, etc.
+// Boolean Attributes:
+// Some attributes don’t require a value (e.g., checked, disabled, readonly). If present, they’re considered true, and if absent, they’re considered false.
+
+// Browser Object Model (BOM):
+// it is a set of objects that JavaScript uses to interact with the browser and its environment. While BOM itself is not directly related to CSS, you can use JavaScript (via BOM) to modify the style or behavior of your CSS based on various browser-related properties (like window size, location, etc.)
+// Common BOM objects include window, screen, location, history, navigator, and document.
+//console.log(window.innerWidth);  // Accessing the browser's window width
+// console.log(window.location.href);  // Getting the current page URL
+// console.log(window.navigator.userAgent);  // Getting user-agent information
+
+// Box-sizing:
+// This property is used to control how the total width and height of an element are calculated, particularly when padding and borders are added. By default, the width and height of an element are calculated by the content area only. However, when you apply padding or borders, they are added outside of the specified width and height, causing the total size of the element to increase.
+// content-box (default value): The width and height of the element are calculated based on the content area only, excluding padding and border.
+// border-box: The padding and border are included in the specified width and height of the element, so they don’t affect the total size.
+
+//String Methods:
+// .charAt(), .charCodeAt(), .concat(), .includes(), .indexOf(), .lastIndexOf(), .match(), .replace(), .search(), .slice(), .split(), .substring(), .toLowerCase(), .toUpperCase(), .trim(), .trimStart(), .trimEnd(), .padStart(), .padEnd(), .repeat(), .startsWith(), .endsWith(), .localeCompare(), .split(), .valueOf(), .matchAll(), .normalize(), .anchor(), .bold(), .fixed(), .italics(), .link(), .small(), .strike(), .sub(), .sup().
+//Array Methods:
+//.push(), .pop(), .shift(), .unshift(), .concat(), .join(), .slice(), .splice(), .forEach(), .map(), .filter(), .reduce(), .reduceRight(), .some(), .every(), .find(), .findIndex(), .indexOf(), .lastIndexOf(), .includes(), .sort(), .reverse(), .flat(), .flatMap(), .copyWithin(), .fill(), .from(), .keys(), .values(), .entries(), .at(), .concat(), .findLast(), .findLastIndex(), .includes().
+
+// Key Differences Between Throttling and Debouncing:
+// Feature	              Debouncing	                         Throttling
+// Purpose	            Delays the function call until the event stops.	Limits the function call to once every interval.
+// Use Case	            Ideal for events triggered by user input (e.g., typing, resizing)	Ideal for events triggered continuously (e.g., scrolling, mouse movement)
+// Execution	        Executes after the last event, with a delay.	Executes at regular intervals, no matter how often the event occurs.
+// Function Calls	    Only called once after the event stops.	Called at fixed intervals during the event.
+
+
+//Difference between null and undefined:
+// Assigning null to a variable to indicate that it has no value=null
+// When a variable is declared but not initialized=undefined
+
+// Seal() vs Freeze():
+// Object.seal() allows modifications to existing properties but prevents adding or deleting properties.
+// Object.freeze() prevents all modifications, including adding, deleting, or changing values of properties.
+
+// how to stop event propagation in javascrit?
+// event.stopPropagation() method is used to stop the propagation of an event, preventing it from bubbling up the DOM tree. This method is commonly used to prevent parent elements from handling the same event.
+// HTML
+{/* <button id="btn">Click me</button>
+// JavaScript
+const btn = document.getElementById('btn');
+// Event listener on button to stop propagation
+btn.addEventListener('click', function(event) {
+  console.log("Button clicked");
+  event.stopPropagation(); // Stops the event from bubbling up to the parent
+});
+// Event listener on body to show if propagation reaches here
+document.body.addEventListener('click', function() {
+  console.log("Body clicked");
+}); */}
