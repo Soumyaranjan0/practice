@@ -11,12 +11,12 @@
 // const saltRounds = 10;
 // const password = 'mySecretPassword';
 
-// // Hashing the password
+// Hashing the password
 // bcrypt.hash(password, saltRounds, (err, hash) => {
 //   if (err) throw err;
 //   console.log('Hashed password:', hash);
 
-//   // Comparing the password with the hash
+// Comparing the password with the hash
 //   bcrypt.compare(password, hash, (err, result) => {
 //     if (err) throw err;
 //     console.log('Password match:', result);

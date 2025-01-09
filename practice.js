@@ -842,3 +842,41 @@ function callbackFunction() {
 //   .catch((error) => {
 //       console.error('One of the promises failed:', error);
 //   });
+
+
+// Controlled Component:
+// Definition: A controlled component is a component where React controls the form element's value through state.
+// e.g
+// import React, { useState } from 'react';
+
+// function ControlledComponent() {
+//   const [value, setValue] = useState('');
+
+//   const handleChange = (e) => {
+//     setValue(e.target.value);
+//   };
+
+//   return (
+//     <input type="text" value={value} onChange={handleChange} />
+//   );
+// }
+
+//Uncontrolled Component:
+// Definition: An uncontrolled component is a component where the form data is handled by the DOM itself, not by the React state.
+
+// import React, { useRef } from 'react';
+
+// function UncontrolledComponent() {
+//   const inputRef = useRef(null);
+
+//   const handleSubmit = () => {
+//     alert(`Input value: ${inputRef.current.value}`);
+//   };
+
+//   return (
+//     <>
+//       <input type="text" ref={inputRef} />
+//       <button onClick={handleSubmit}>Submit</button>
+//     </>
+//   );
+// }

@@ -981,7 +981,7 @@
 // console.log(x===y); //true
 
 // var x; // undefined
-// x++; //undefined++ coerced to NaN
+// x++; // undefined++ coerced to NaN
 // console.log(x); //NaN
 // x=9;
 
@@ -1063,7 +1063,7 @@
 
 // void elements (also known as self-closing elements) are elements that do not have any content and cannot have closing tags. alternative name is empty tag.
 
-//WeakMap
+//WeakMap 
 //In short, a WeakMap helps you store extra data about objects, and JavaScript automatically cleans up when those objects are no longer needed, preventing memory waste.
 
 // Create a WeakMap

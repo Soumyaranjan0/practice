@@ -413,7 +413,7 @@
 // console.log("" === false); //false
 // console.log(1 * false); //0
 
-//how can you get the value of 40 without creating extra variable
+// how can you get the value of 40 without creating extra variable
 // const [,,,a,]=[10,20,30,40,50]
 // const {3:a}=[10,20,30,40,50]
 // console.log(a);
