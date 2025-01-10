@@ -788,13 +788,13 @@
 // console.log(flat);
 
 //sort accoring to name or age
-// const students = [
-//     { name: "John Doe", age: 20, grade: "A" },
-//     { name: "Jane Smith", age: 22, grade: "B" },
-//     { name: "Michael Johnson", age: 21, grade: "A-" },
-//     { name: "Emily Davis", age: 23, grade: "B+" },
-//     { name: "Chris Brown", age: 20, grade: "C" }
-//   ];
+const students = [
+  { name: "John Doe", age: 20, grade: "A" },
+  { name: "Jane Smith", age: 22, grade: "B" },
+  { name: "Michael Johnson", age: 21, grade: "A-" },
+  { name: "Emily Davis", age: 23, grade: "B+" },
+  { name: "Chris Brown", age: 20, grade: "C" },
+];
 
 //   students.sort((a,b)=>{
 //       if(a.age<b.age){
@@ -806,6 +806,9 @@
 //           return 0;
 //       }
 //   })
+// or
+// students.sort((a,b)=>b.age-a.age)
+
 //   console.log(students)
 
 // Creating three promises
@@ -890,7 +893,6 @@
 //     console.log(seconds);
 // }, 1000);
 
-
 // /write a programme to multiply two number without using * operator
 // function multiply(a, b) {
 //     let result = 0;
@@ -925,3 +927,43 @@
 //   console.log(multiply(5, 3));  // Output: 15
 //   console.log(multiply(6, -2)); // Output: -12
 //   console.log(multiply(-4, -3)); // Output: 12
+
+// Use `reduce` to partition an array into two arrays based on a predicate (e.g., even and odd numbers).
+
+// const numbers = [1, 2, 3, 4, 5, 6];
+
+// const partitioned = numbers.reduce((acc, num) => {
+//     num % 2 === 0 ? acc.even.push(num) : acc.odd.push(num);
+//     return acc;
+// }, { even: [], odd: [] });
+// console.log(partitioned); // Output: { even: [2, 4, 6], odd: [1, 3, 5] }
+
+// Use `findIndex` to find the index of the first negative number.
+// const numbers = [4, 9, -5, 8, -2];
+// const firstNegativeIndex = numbers.findIndex(num => num < 0);
+// console.log(firstNegativeIndex); // Output: 2
+
+// Use `reduce` to count the number of vowels in a string.
+// const str = "javascript";
+// const vowelsCount = str.split('').reduce((count, char) => {
+//     return "aeiou".includes(char) ? count + 1 : count;
+// }, 0);
+// console.log(vowelsCount); // Output: 3
+
+// Methods to conver a number to string
+// let number=9
+// let string=number.toString()
+// let string1=String(number)
+// let string2=`${number}`
+// let string3=number+""
+// let string4=number.toLocaleString()
+// console.log(string,string1,string2,string3,string4)
+
+// Use `reduce` to chunk an array into smaller arrays of a specified size.
+// const array = [1, 2, 3, 4, 5, 6, 7, 8];
+// const chunkSize = 3;
+// const chunks = array.reduce((acc, _, i) => {
+//     if (i % chunkSize === 0) acc.push(array.slice(i, i + chunkSize));
+//     return acc;
+// }, []);
+// console.log(chunks); // Output: [[1, 2, 3], [4, 5, 6], [7, 8]]
