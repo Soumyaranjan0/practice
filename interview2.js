@@ -501,3 +501,59 @@ btn.addEventListener('click', function(event) {
 document.body.addEventListener('click', function() {
   console.log("Body clicked");
 }); */}
+
+// console.log("">-1); //true //empty string is converted to 0 and 0 is greater than -1
+// console.log("greater">"elephant"); //true //g is greater than e so it will return true 
+// console.log(![]+[]); //false 
+// console.log([]+![]); //false
+
+// var a = 10; // 'a' is declared with var and initialized to 10
+// {
+//     var a = -10; // 'a' is re-declared (or reassigned) within the block, but since 'var' has function or global scope, it affects the outer 'a'. Now 'a' is -10.
+// }
+// let b = a; // 'b' is declared with let and assigned the value of 'a', which is -10
+// {
+//     let b = 20; // A new block-scoped 'b' is declared and initialized to 20. This 'b' is separate from the outer 'b'.
+// }
+// console.log(b); // Refers to the outer 'b', which is still -10.
+
+// a=34;
+// let a;
+// console.log(a); //ReferenceError: Cannot access 'a' before initialization
+
+// const obj={
+//   sum:200
+// }
+// console.log(obj.sum) //200
+// delete obj.sum
+// console.log(obj.sum) //undefined
+
+// function one(a=5,b=7){
+//   console.log(a+b)
+// }
+// one(undefined,20) //25 //undefined is treated as 5 and 20 is passed as 20
+// function one(a=5,b=7){
+//   console.log(a+b)
+// }
+// one(null,20) //20 //null is treated as 0 and 20 is passed as 20
+
+// Specificity Order:
+// Inline styles (e.g., style="color: red;").
+// ID selectors (#id).
+// Class selectors, attributes, and pseudo-classes (e.g., .class, [type="text"], :hover).
+// Type selectors and pseudo-elements (e.g., div, p, ::before).
+
+// let str="MyNameIsHyder"
+// const result=str.replace(/([A-Z])/g," $1")
+// console.log(result)
+
+// let str="MyNameIsHyder"
+// let result=""
+// for(let i=0;i<str.length;i++){
+//     if(i>0 && str[i]==str[i].toUpperCase()){
+//         result+=" "+str[i]
+//     }else{
+//         result+=str[i]
+//     }
+// }
+// console.log(result) //My Name Is Hyder

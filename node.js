@@ -3,7 +3,7 @@
 //encryption can be achieved using various libraries, with crypto being the built-in module for this purpose.
 
 // What is bcrypt?
-// bcrypt is a password hashing function specifically designed to securely hash passwords.
+//bcrypt is a password hashing function specifically designed to securely hash passwords.
 //Hashing is different from encryption in that it is a one-way process, meaning you cannot reverse it back to the original da ta.bcrypt is widely used for securely storing passwords in a database.
 
 // example:

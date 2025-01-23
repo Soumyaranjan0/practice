@@ -495,7 +495,7 @@
 // }
 
 //27//
-// const inputString = "s3b4c2";
+// const inputString = "s3b4c2";  
 // let result = "";
 // for (let i = 0; i < inputString.length; i+=2) {
 //   const char = inputString[i];
@@ -719,6 +719,15 @@
 //     array[i] = array[i].split("").reverse().join("");
 // }
 // console.log(array);
+// let array = ["soumya", "ranjan", "behera", "is", "a", "good", "boy"];
+// const filter=array.map((ele,index)=>{
+//     if(index!==0 && index%2==0){
+//       return  ele.split("").reverse().join("")
+//     }else{
+//         return ele
+//     }
+// })
+// console.log(filter)
 
 //find missing number in an array series
 // const arr = [7,9,11,15,17,19]
