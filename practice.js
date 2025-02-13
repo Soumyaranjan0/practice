@@ -461,9 +461,9 @@ function outerFunction() {
 
   return innerFunction;
 }
-// // Create a closure by calling outerFunction and assigning the result to a variable
+// Create a closure by calling outerFunction and assigning the result to a variable
 let closureFunction = outerFunction();
-// // Call the closure, which still has access to outerVariable
+// Call the closure, which still has access to outerVariable
 // closureFunction(); // Output: "I am from the outer function"
 
 //What is Hoisting?

@@ -20,6 +20,21 @@
 //   }
 //   console.log(findDuplicates(arrNumber));
 
+//or
+// const arrNumber = [1, 2, 8, 2, 9, 8, 5, 6, 9];
+// const duplicates = [];
+
+// for (let i = 0; i < arrNumber.length; i++) {
+//     for (let j = i + 1; j < arrNumber.length; j++) {
+//         if (arrNumber[i] === arrNumber[j] && !duplicates.includes(arrNumber[i])) {
+//             duplicates.push(arrNumber[i]);
+//         }
+//     }
+// }
+
+// console.log(duplicates); // Output: [2, 8, 9]
+
+
 //2//How to find maximum and minimum array in javascript
 // const arrNumber = [1, 3, 5, 5, 55, 63, 1, 67, 89, 4];
 // const max = () => {
@@ -345,7 +360,7 @@
 //     })
 //     return convert.join(" ")
 // }
-// console.log(convertfirstletter(string))s
+// console.log(convertfirstletter(string))
 
 //22//Fibbonacci Series
 // const FibbonacciSeries=(num)=>{
@@ -360,7 +375,6 @@
 //output:[ 0, 1,  1,  2,  3, 5, 8, 13, 21, 34]
 
 //by using recursion
-
 // const fibbo=(number)=>{
 //     if(number<=1){
 //         return number
@@ -959,7 +973,7 @@ const students = [
 // }, 0);
 // console.log(vowelsCount); // Output: 3
 
-// Methods to conver a number to string
+// Methods to convert a number to string
 // let number=9
 // let string=number.toString()
 // let string1=String(number)

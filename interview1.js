@@ -187,6 +187,7 @@
 //redux is used in big project while contextapi is used in small to medium project
 
 //custom hooks
+
 //diiference between usecallback and usememo hooks
 // When to Use:
 // useCallback: When you need to memoize a function and want to avoid unnecessary re-creation of that function on each render (often for performance reasons when passing functions as props).
@@ -245,7 +246,7 @@
 //     name : "soumya",
 // }
 // let b={
-//     ...a/
+//     ...a
 // }
 // b.name="dibya"
 // console.log(a.name);
@@ -285,7 +286,7 @@
 //String(number)
 //number.toString()
 //number+""
-//`${numnber}`
+//`${number}`
 
 // let str="abcdef"
 // let str1=123;
@@ -765,7 +766,7 @@
 // function MyComponent() {
 //   useEffect(() => {
 //     console.log('Component mounted');
-//     // Code that runs when the component is first rendered
+    // Code that runs when the component is first rendered
 //   }, []); // Empty dependency array means it runs only on mount
 
 //   return <div>Hello, World!</div>;
@@ -797,7 +798,7 @@
 // function MyComponent({ count }) {
 //   useEffect(() => {
 //     console.log('Component updated with count:', count);
-//     // Runs whenever `count` prop changes
+    // Runs whenever `count` prop changes
 //   }, [count]); // Runs the effect when `count` changes
 
 //   return <div>Count: {count}</div>;
@@ -1011,14 +1012,14 @@
 // });
 
 // const arr=[1,2,3,4,5]
-// // output=120
+// output=120
 // const result=arr.reduce((acc,cur)=>acc*cur)
 // console.log(result);
 
 // Aspect	Function Expression	Function Declaration
-// Definition	Named function defined with function keyword.	Function assigned to a variable.
-// Syntax	function name() {}	const name = function() {}
-// Hoisting	Hoisted; can be called before definition.	Not hoisted; cannot be called before definition.
+// Definition	Named function defined with function keyword.	 Function assigned to a variable.
+// Syntax	function name() {}	                            const name = function() {}
+// Hoisting	Hoisted; can be called before definition.	  Not hoisted; cannot be called before definition.
 // Name	Always has a name (the function name).	Can be anonymous or named.
 // Usage	Typically used for defining reusable functions.	Often used for callbacks and inline functions.
 
