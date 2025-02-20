@@ -155,7 +155,7 @@ const obj2 = Object.assign({}, obj1);
 
 obj2.pass = "Param"; //Change the value in both objects if you dont use Object.assign({},objectname) method
 // console.log(obj1)
-// console.log(obj2)
+// console.log(obj2)  
 // eg2:
 const arr1 = [1, 2, 3, 4];
 // const arr2 = arr1;
@@ -880,3 +880,5 @@ function callbackFunction() {
 //     </>
 //   );
 // }
+
+//React Suspense is a feature in React that allows you to delay rendering parts of your UI until certain data or resources are ready. It helps improve user experience by showing a fallback UI (like a loading spinner) while waiting for components to load.

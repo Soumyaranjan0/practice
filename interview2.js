@@ -402,8 +402,8 @@
 
 // Aspect	                  Controlled Component	                   Uncontrolled Component
 // Data Source	           React State	                              DOM (HTML element itself)
-// React Involvement	   Fully manages the form element	Minimal,  only to get or set value via ref
-// Use Case	               Preferred for dynamic or complex logic.	  Simpler use cases, or when React control
+// React Involvement	    Fully manages the form element	Minimal,  only to get or set value via ref
+// Use Case	              Preferred for dynamic or complex logic.	  Simpler use cases, or when React control
 //                                                                    is unnecessary.
 // Example of Access	   value={state} with onChange	              ref to access the value
 
@@ -666,3 +666,89 @@ The <figure> tag does not display an image itself—it wraps content (like <img>
 // Can be called before definition?	✅ Yes	                    ❌ No
 // Syntax	function name() {}	                                  const name = function() {};
 // Best for	Defining functions normally	                        Assigning functions dynamically
+
+
+// const items = [
+//   { id: 1, name: "Item 1" },
+//   { id: 2, name: "Item 2", nested: { id: 5, name: "Item 5" } },
+//   { id: 3, name: "Item 3" },
+//   { 
+//     id: 4, 
+//     name: "Item 4", 
+//     nestedItems: [
+//       { id: 6, name: "Item 6" },
+//       { id: 7, name: "Item 7", nested: { id: 8, name: "Item 8" } }
+//     ]
+//   }
+// ];
+
+// function getNames(arr) {
+//   let result = [];
+  
+//   arr.forEach(item => {
+//     result.push(item.name); // Store the name
+//     if (item.nested) result.push(item.nested.name); // Store nested object name
+//     if (item.nestedItems) result.push(...getNames(item.nestedItems)); // Recursively get nested array names
+//   });
+
+//   return result;
+// }
+
+// console.log(getNames(items)); // Output: ["Item 1", "Item 2", "Item 5", "Item 3", "Item 4", "Item 6", "Item 7", "Item 8"]
+
+// import React, { useState, useEffect } from "react";
+
+// export function App() {
+//   const apiLink = "https://dummyjson.com/users";
+//   const [users, setUsers] = useState([]);
+
+//   useEffect(() => {
+//     fetch(apiLink)
+//       .then((res) => res.json())
+//       .then((res) => setUsers(res.users))
+//       .catch((err) => console.error("Error fetching data:", err));
+//   }, []);
+
+// by axios
+// import axios from "axios"; 
+// useEffect(() => {
+//   axios
+//     .get(apiLink) // Using axios to fetch data
+//     .then((res) => setUsers(res.data.users))
+//     .catch((err) => console.error("Error fetching data:", err));
+// }, []);
+
+// console.log(users)
+//   return (
+//     <div className="App">
+//       <h1>Hello React.</h1>
+//       {users
+//         .filter((user) => user.age > 30)
+//         .map((user) => (
+//           <p key={user.id}>{user.firstName}</p>
+//         ))}
+//     </div>
+//   );
+// }
+
+
+// import React, { useState } from "react";
+// const errmsg="Age shoud be greater than 18"
+// export default function App() {
+//     const[text,setText]=useState("")
+//     const [err,setErr]=useState(false)
+
+//     const handelText=(e)=>{
+//         setErr(false)
+//         console.log(e.target.value)
+//         setText(e.target.value)
+//         if(e.target.value<18){
+//                 setErr(true)
+//         }
+//     }
+//   return <>
+//       <input value={text} onChange={handelText}/>
+//       {
+//           err? errmsg : null
+//       }
+//   </>

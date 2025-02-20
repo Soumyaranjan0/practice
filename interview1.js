@@ -1016,11 +1016,11 @@
 // const result=arr.reduce((acc,cur)=>acc*cur)
 // console.log(result);
 
-// Aspect	Function Expression	Function Declaration
+// Aspect	Function Declaration                               	Function Expression
 // Definition	Named function defined with function keyword.	 Function assigned to a variable.
 // Syntax	function name() {}	                            const name = function() {}
 // Hoisting	Hoisted; can be called before definition.	  Not hoisted; cannot be called before definition.
-// Name	Always has a name (the function name).	Can be anonymous or named.
+// Name	Always has a name (the function name).	        Can be anonymous or named.
 // Usage	Typically used for defining reusable functions.	Often used for callbacks and inline functions.
 
 // console.log(1+"1"+1); //111
@@ -1053,7 +1053,7 @@
 // To check whether a variable is an array in JavaScript, you can use the built-in method Array.isArray().
 // const arr = [1, 2, 3];
 // const notArr = "Hello";
-// console.log(Array.isArray(arr));    // Output: true
+// console.log(Array.isArray(arr));     // Output: true
 // console.log(Array.isArray(notArr)); // Output: false
 
 //undefined vrs undeclaired
@@ -1099,14 +1099,14 @@
 //Webpack
 //Webpack is a powerful module bundler commonly used in React.js applications. It takes your JavaScript, CSS, images, and other assets, and bundles them into a single or smaller number of output files optimized for the browser.
 
-//React-Redux
+// React-Redux
 // Example Flow:
 // User clicks a button → an action is dispatched.
 // The reducer processes the action and returns a new state.
 // The store updates the state and informs the UI to re-render if needed.
 
-//Redux-Thunk
-//Redux Thunk is a middleware that makes handling asynchronous actions in Redux more manageable. It allows action creators to return functions instead of plain action objects, which can then be used to perform async operations and dispatch actions based on the outcome of those operations.
+// Redux-Thunk
+// Redux Thunk is a middleware that makes handling asynchronous actions in Redux more manageable. It allows action creators to return functions instead of plain action objects, which can then be used to perform async operations and dispatch actions based on the outcome of those operations.
 
 
 //Diff. between redux-thunk and redux-saga

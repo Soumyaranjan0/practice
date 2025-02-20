@@ -733,6 +733,7 @@
 //     array[i] = array[i].split("").reverse().join("");
 // }
 // console.log(array);
+
 // let array = ["soumya", "ranjan", "behera", "is", "a", "good", "boy"];
 // const filter=array.map((ele,index)=>{
 //     if(index!==0 && index%2==0){
